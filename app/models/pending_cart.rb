@@ -1,0 +1,2 @@
+class PendingCart < ApplicationRecord
+end
