@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_27_160814) do
+ActiveRecord::Schema.define(version: 2020_07_27_193859) do
 
   create_table "pending_carts", force: :cascade do |t|
     t.integer "user_id"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2020_07_27_160814) do
     t.integer "purchased_item_id"
     t.integer "user_id"
     t.string "name"
-    t.string "type"
+    t.string "product_type"
     t.integer "price"
     t.string "condition"
     t.string "color"
