@@ -38,4 +38,3 @@ end
       condition: "good", product_type: "shirt")
 end
 
-
