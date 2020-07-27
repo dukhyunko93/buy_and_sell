@@ -1,1 +1,5 @@
 <h1>List of Products</h1>
+
+<% @products.each do |product| %>
+  <p><%= link_to product.name, product %></p>
+<% end %>

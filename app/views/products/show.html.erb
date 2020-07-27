@@ -1,0 +1,8 @@
+<h1>Product Show Page</h1>
+
+<h3>Seller: <%= @product.seller.name %></h3>
+<p> Product: <%= @product.name %></p>
+<p>Price: $<%= @product.price %></p>
+<p>Type of Product: <%= @product.product_type %></p>
+<p>Color: <%= @product.color %></p>
+<p>Product Image: <marquee><img src="<%= @product.img_url %>" alt="<%= @product.name%>" class="show-img"></marquee></p>
