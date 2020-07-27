@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+Product.create(
+    name: Faker::Commerce.product_name, 
+    price:Faker::Commerce.price, 
+    color: "GREEN", 
+    img_url: Faker::LoremFlickr.colorized_image(size: "50x60", color: 'green', search_terms: ['shoe']), 
+    condition: "good")
