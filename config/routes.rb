@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  get root 'welcome#home'
+  get '/login' => 'welcome#login'
+
   resources :products
   resources :pending_carts
   resources :purchased_items
