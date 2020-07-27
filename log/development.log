@@ -508,3 +508,276 @@ Migrating to ChangeColumnName (20200727193859)
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "phone_number", "dob", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Carrol"], ["address", "Suite 847 59224 Julene Lights, Port Pablomouth, GA 91468"], ["email", "berneice@gislason.io"], ["phone_number", 0], ["dob", "1935-08-08"], ["created_at", "2020-07-27 20:04:52.849483"], ["updated_at", "2020-07-27 20:04:52.849483"]]
   [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.5ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.6ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.5ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.6ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 8]]
+  [1m[35m (14.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.5ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 10]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 11]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 12]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 13]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 14]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 15]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 16]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 17]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (1.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 18]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 19]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 20]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ergonomic Plastic Bench"], ["product_type", "SHOE"], ["price", 41], ["condition", "good"], ["color", "GREEN"], ["img_url", "https://loremflickr.com/green/50/60/shoe"], ["created_at", "2020-07-27 20:10:21.842967"], ["updated_at", "2020-07-27 20:10:21.842967"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (1.6ms)[0m  [1m[32mINSERT INTO "products" ("name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Gorgeous Wooden Coat"], ["product_type", "SHOE"], ["price", 68], ["condition", "good"], ["color", "GREEN"], ["img_url", "https://loremflickr.com/green/50/60/shoe"], ["created_at", "2020-07-27 20:10:21.854094"], ["updated_at", "2020-07-27 20:10:21.854094"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Synergistic Plastic Pants"], ["product_type", "SHOE"], ["price", 37], ["condition", "good"], ["color", "GREEN"], ["img_url", "https://loremflickr.com/green/50/60/shoe"], ["created_at", "2020-07-27 20:10:21.864207"], ["updated_at", "2020-07-27 20:10:21.864207"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (1.0ms)[0m  [1m[32mINSERT INTO "products" ("name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rustic Leather Shirt"], ["product_type", "SHOE"], ["price", 61], ["condition", "good"], ["color", "GREEN"], ["img_url", "https://loremflickr.com/green/50/60/shoe"], ["created_at", "2020-07-27 20:10:21.873034"], ["updated_at", "2020-07-27 20:10:21.873034"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (1.2ms)[0m  [1m[32mINSERT INTO "products" ("name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Gorgeous Plastic Clock"], ["product_type", "SHOE"], ["price", 22], ["condition", "good"], ["color", "GREEN"], ["img_url", "https://loremflickr.com/green/50/60/shoe"], ["created_at", "2020-07-27 20:10:21.884852"], ["updated_at", "2020-07-27 20:10:21.884852"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Enormous Granite Computer"], ["product_type", "shirt"], ["price", 37], ["condition", "good"], ["color", "red"], ["img_url", "https://loremflickr.com/red/50/60/shirt"], ["created_at", "2020-07-27 20:10:21.896763"], ["updated_at", "2020-07-27 20:10:21.896763"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Aerodynamic Wooden Chair"], ["product_type", "shirt"], ["price", 84], ["condition", "good"], ["color", "red"], ["img_url", "https://loremflickr.com/red/50/60/shirt"], ["created_at", "2020-07-27 20:10:21.907990"], ["updated_at", "2020-07-27 20:10:21.907990"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Small Plastic Shoes"], ["product_type", "shirt"], ["price", 88], ["condition", "good"], ["color", "red"], ["img_url", "https://loremflickr.com/red/50/60/shirt"], ["created_at", "2020-07-27 20:10:21.926267"], ["updated_at", "2020-07-27 20:10:21.926267"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sleek Steel Bench"], ["product_type", "shirt"], ["price", 96], ["condition", "good"], ["color", "red"], ["img_url", "https://loremflickr.com/red/50/60/shirt"], ["created_at", "2020-07-27 20:10:21.934989"], ["updated_at", "2020-07-27 20:10:21.934989"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sleek Paper Clock"], ["product_type", "shirt"], ["price", 53], ["condition", "good"], ["color", "red"], ["img_url", "https://loremflickr.com/red/50/60/shirt"], ["created_at", "2020-07-27 20:10:21.942204"], ["updated_at", "2020-07-27 20:10:21.942204"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "phone_number", "dob", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Gertrudis"], ["address", "Apt. 570 143 Rempel Knolls, Wuckertland, NE 96557-9191"], ["email", "isaac@gusikowski-ankunding.org"], ["phone_number", 1], ["dob", "1973-10-14"], ["created_at", "2020-07-27 20:10:21.950945"], ["updated_at", "2020-07-27 20:10:21.950945"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "phone_number", "dob", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mercedes"], ["address", "45661 Schuppe Union, South Daryl, MD 99634-9354"], ["email", "carlita@carter.com"], ["phone_number", 1], ["dob", "1955-07-09"], ["created_at", "2020-07-27 20:10:21.959695"], ["updated_at", "2020-07-27 20:10:21.959695"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "phone_number", "dob", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Lavada"], ["address", "840 Michal View, Port Alejandroberg, VA 92311-6226"], ["email", "leon@johns-gleichner.biz"], ["phone_number", 485], ["dob", "1931-12-17"], ["created_at", "2020-07-27 20:10:21.968429"], ["updated_at", "2020-07-27 20:10:21.968429"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "phone_number", "dob", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Wallace"], ["address", "753 Samual Cliff, East Yangview, AZ 68396"], ["email", "lenny@boehm-johns.info"], ["phone_number", 0], ["dob", "1998-07-09"], ["created_at", "2020-07-27 20:10:21.976174"], ["updated_at", "2020-07-27 20:10:21.976174"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "phone_number", "dob", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Leo"], ["address", "Apt. 558 31035 Homer Views, East Oraliashire, CO 72095"], ["email", "frederic@greenfelder-kris.co"], ["phone_number", 0], ["dob", "1975-01-17"], ["created_at", "2020-07-27 20:10:21.996849"], ["updated_at", "2020-07-27 20:10:21.996849"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "phone_number", "dob", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Antony"], ["address", "6824 Bogan Summit, Hicklestad, AR 05765-6594"], ["email", "zulma@jakubowski-hickle.name"], ["phone_number", 0], ["dob", "1972-05-10"], ["created_at", "2020-07-27 20:10:22.003475"], ["updated_at", "2020-07-27 20:10:22.003475"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "phone_number", "dob", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Lang"], ["address", "35375 Lindgren Camp, Marvinview, TN 18775"], ["email", "agatha@cartwright-parker.info"], ["phone_number", 1], ["dob", "1958-02-05"], ["created_at", "2020-07-27 20:10:22.031508"], ["updated_at", "2020-07-27 20:10:22.031508"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "phone_number", "dob", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Keenan"], ["address", "Apt. 673 93327 Daron Mews, North Danyelle, AK 40683"], ["email", "eda@stoltenberg.net"], ["phone_number", 0], ["dob", "1985-12-31"], ["created_at", "2020-07-27 20:10:22.039756"], ["updated_at", "2020-07-27 20:10:22.039756"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "phone_number", "dob", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Blake"], ["address", "Apt. 805 74479 Deeanna Road, Cameronborough, GA 25518-9174"], ["email", "clay@schuppe-collins.com"], ["phone_number", 694], ["dob", "1940-12-31"], ["created_at", "2020-07-27 20:10:22.047989"], ["updated_at", "2020-07-27 20:10:22.047989"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "phone_number", "dob", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Emmett"], ["address", "1829 Shields Springs, Juniorton, WA 79140-1817"], ["email", "odell_howell@murphy-morar.io"], ["phone_number", 934], ["dob", "1965-09-22"], ["created_at", "2020-07-27 20:10:22.053326"], ["updated_at", "2020-07-27 20:10:22.053326"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to ChangePhoneNumberToBeStringInUsers (20200727201410)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ausers" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "address" varchar DEFAULT NULL, "email" varchar DEFAULT NULL, "phone_number" integer DEFAULT NULL, "dob" date DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "ausers" ("id","name","address","email","phone_number","dob","created_at","updated_at")
+                     SELECT "id","name","address","email","phone_number","dob","created_at","updated_at" FROM "users"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "address" varchar DEFAULT NULL, "email" varchar DEFAULT NULL, "phone_number" varchar DEFAULT NULL, "dob" date DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "users" ("id","name","address","email","phone_number","dob","created_at","updated_at")
+                     SELECT "id","name","address","email","phone_number","dob","created_at","updated_at" FROM "ausers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "ausers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200727201410"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.6ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 9]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 10]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 21]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 22]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 23]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 24]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 25]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 26]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 27]]
+  [1m[35m (13.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 28]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 29]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 30]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Enormous Steel Knife"], ["product_type", "SHOE"], ["price", 70], ["condition", "good"], ["color", "GREEN"], ["img_url", "https://loremflickr.com/green/50/60/shoe"], ["created_at", "2020-07-27 20:30:24.333405"], ["updated_at", "2020-07-27 20:30:24.333405"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.6ms)[0m  [1m[32mINSERT INTO "products" ("name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Awesome Bronze Plate"], ["product_type", "SHOE"], ["price", 60], ["condition", "good"], ["color", "GREEN"], ["img_url", "https://loremflickr.com/green/50/60/shoe"], ["created_at", "2020-07-27 20:30:24.348981"], ["updated_at", "2020-07-27 20:30:24.348981"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rustic Steel Computer"], ["product_type", "SHOE"], ["price", 51], ["condition", "good"], ["color", "GREEN"], ["img_url", "https://loremflickr.com/green/50/60/shoe"], ["created_at", "2020-07-27 20:30:24.357597"], ["updated_at", "2020-07-27 20:30:24.357597"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mediocre Rubber Chair"], ["product_type", "SHOE"], ["price", 28], ["condition", "good"], ["color", "GREEN"], ["img_url", "https://loremflickr.com/green/50/60/shoe"], ["created_at", "2020-07-27 20:30:24.363342"], ["updated_at", "2020-07-27 20:30:24.363342"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Awesome Iron Shoes"], ["product_type", "SHOE"], ["price", 62], ["condition", "good"], ["color", "GREEN"], ["img_url", "https://loremflickr.com/green/50/60/shoe"], ["created_at", "2020-07-27 20:30:24.368885"], ["updated_at", "2020-07-27 20:30:24.368885"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Synergistic Marble Watch"], ["product_type", "shirt"], ["price", 80], ["condition", "good"], ["color", "red"], ["img_url", "https://loremflickr.com/red/50/60/shirt"], ["created_at", "2020-07-27 20:30:24.374808"], ["updated_at", "2020-07-27 20:30:24.374808"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Aerodynamic Cotton Bag"], ["product_type", "shirt"], ["price", 24], ["condition", "good"], ["color", "red"], ["img_url", "https://loremflickr.com/red/50/60/shirt"], ["created_at", "2020-07-27 20:30:24.380823"], ["updated_at", "2020-07-27 20:30:24.380823"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Durable Aluminum Plate"], ["product_type", "shirt"], ["price", 99], ["condition", "good"], ["color", "red"], ["img_url", "https://loremflickr.com/red/50/60/shirt"], ["created_at", "2020-07-27 20:30:24.387042"], ["updated_at", "2020-07-27 20:30:24.387042"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Small Linen Plate"], ["product_type", "shirt"], ["price", 49], ["condition", "good"], ["color", "red"], ["img_url", "https://loremflickr.com/red/50/60/shirt"], ["created_at", "2020-07-27 20:30:24.392836"], ["updated_at", "2020-07-27 20:30:24.392836"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Synergistic Granite Table"], ["product_type", "shirt"], ["price", 46], ["condition", "good"], ["color", "red"], ["img_url", "https://loremflickr.com/red/50/60/shirt"], ["created_at", "2020-07-27 20:30:24.399052"], ["updated_at", "2020-07-27 20:30:24.399052"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "phone_number", "dob", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Stacy"], ["address", "7726 Lidia Meadow, New Kendall, PA 24625-7698"], ["email", "jc_leuschke@bins.com"], ["phone_number", "(392) 905-5665"], ["dob", "1924-02-05"], ["created_at", "2020-07-27 20:30:24.407310"], ["updated_at", "2020-07-27 20:30:24.407310"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "phone_number", "dob", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tamra"], ["address", "Apt. 107 308 Amos Glen, Lake Demetrius, OH 51967-7657"], ["email", "kisha.macejkovic@nikolaus-lind.net"], ["phone_number", "1-219-113-8096 x64319"], ["dob", "1997-05-08"], ["created_at", "2020-07-27 20:30:24.415786"], ["updated_at", "2020-07-27 20:30:24.415786"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "phone_number", "dob", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Wesley"], ["address", "868 Wilton Manors, Lubowitztown, AR 89798-5004"], ["email", "suzette_schumm@schamberger.name"], ["phone_number", "815-961-6382 x54387"], ["dob", "1982-07-17"], ["created_at", "2020-07-27 20:30:24.422585"], ["updated_at", "2020-07-27 20:30:24.422585"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "phone_number", "dob", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Edgar"], ["address", "Suite 399 707 Delmer Fork, West Myrnafurt, MA 59873"], ["email", "katlyn@gusikowski.info"], ["phone_number", "1-850-652-4399 x062"], ["dob", "1950-10-11"], ["created_at", "2020-07-27 20:30:24.428863"], ["updated_at", "2020-07-27 20:30:24.428863"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "phone_number", "dob", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Kathlyn"], ["address", "Suite 644 715 Lucienne Fall, Mosciskifurt, OR 09700-5553"], ["email", "hollis@stracke.name"], ["phone_number", "(617) 207-6815"], ["dob", "1980-11-19"], ["created_at", "2020-07-27 20:30:24.434629"], ["updated_at", "2020-07-27 20:30:24.434629"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "phone_number", "dob", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Shirely"], ["address", "Suite 400 4987 Abbey Land, Parkerside, MT 11995"], ["email", "joe.quigley@labadie-little.co"], ["phone_number", "761-996-3377"], ["dob", "1925-12-06"], ["created_at", "2020-07-27 20:30:24.442282"], ["updated_at", "2020-07-27 20:30:24.442282"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "phone_number", "dob", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Brent"], ["address", "Suite 655 7338 Balistreri Fort, Rosarioport, WA 48856"], ["email", "evan@halvorson.org"], ["phone_number", "(870) 833-4079 x7225"], ["dob", "1983-04-02"], ["created_at", "2020-07-27 20:30:24.448503"], ["updated_at", "2020-07-27 20:30:24.448503"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "phone_number", "dob", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Casey"], ["address", "8170 Mills Walk, Carlifort, VT 91063-8470"], ["email", "rodney.renner@hessel.name"], ["phone_number", "332-094-2486 x26180"], ["dob", "1996-05-01"], ["created_at", "2020-07-27 20:30:24.456529"], ["updated_at", "2020-07-27 20:30:24.456529"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "phone_number", "dob", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Bess"], ["address", "Apt. 348 659 Langworth Stream, Roobshire, TN 16504-6559"], ["email", "gregoria@watsica-block.name"], ["phone_number", "(908) 143-6957 x988"], ["dob", "1927-12-20"], ["created_at", "2020-07-27 20:30:24.463573"], ["updated_at", "2020-07-27 20:30:24.463573"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "phone_number", "dob", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jack"], ["address", "863 Konopelski Square, Lake Rosy, AK 00501"], ["email", "jc_ledner@reynolds-vandervort.org"], ["phone_number", "266-651-3666 x5243"], ["dob", "1948-02-17"], ["created_at", "2020-07-27 20:30:24.471486"], ["updated_at", "2020-07-27 20:30:24.471486"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m

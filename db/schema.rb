@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_27_193859) do
+ActiveRecord::Schema.define(version: 2020_07_27_201410) do
 
   create_table "pending_carts", force: :cascade do |t|
     t.integer "user_id"
@@ -53,7 +53,7 @@ ActiveRecord::Schema.define(version: 2020_07_27_193859) do
     t.string "name"
     t.string "address"
     t.string "email"
-    t.integer "phone_number"
+    t.string "phone_number"
     t.date "dob"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
