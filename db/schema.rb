@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2020_07_27_201410) do
 
   create_table "products", force: :cascade do |t|
     t.integer "purchased_item_id"
-    t.integer "user_id"
+    t.integer "seller_id"
     t.string "name"
     t.string "product_type"
     t.integer "price"
