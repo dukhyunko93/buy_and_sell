@@ -7,4 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Product.create(name: Faker::Commerce.product_name, price:Faker::Commerce.price, color: "GREEN", img_url: Faker::LoremFlickr.colorized_image(size: "50x60", color: 'green', search_terms: ['shoe']), condition: "good")
+p1 = Product.create(name: Faker::Commerce.product_name, price:Faker::Commerce.price, color: "GREEN", img_url: Faker::LoremFlickr.colorized_image(size: "50x60", color: 'green', search_terms: ['shoe']), condition: "good")
