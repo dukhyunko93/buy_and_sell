@@ -1,0 +1,31 @@
+<h1>New User Information</h1>
+
+<div>
+    <%= form_for @user do |f| %>
+       
+        <%= f.label :user_name, "Username" %>
+        <%= f.text_field :user_name %><br><br>
+
+        <%= f.label :password, "Password" %>
+        <%= f.password_field :password %><br><br>
+        
+        <%= f.label :password_confirmation, "Password Confirmation" %>
+        <%= f.password_field :password_confirmation %><br><br>
+        
+        <%= f.label :name, "Your Name" %>
+        <%= f.text_field :name %><br><br>
+        
+        <%= f.label :address, "Address" %>
+        <%= f.text_field :address %><br><br>
+
+        <%= f.label :email, "E-Mail" %>
+        <%= f.text_field :email %><br><br>
+
+        <%= f.label :phone_number, "Phone Number" %>
+        <%= f.text_field :phone_number %><br><br>
+
+        <%= f.label :dob, "Date of Birth"%>
+        <%= f.date_field :dob, as: :date, value: f.object.try(:strftime,"%m/%d/%Y") %><br><br>
+
+  <%= f.submit "Create Account" %>
+<% end %>

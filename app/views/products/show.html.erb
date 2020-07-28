@@ -1,0 +1,12 @@
+<h1>Product Show Page</h1>
+
+<h3>Seller: <%= @seller.name %></h3>
+<p>Product: <%= @product.name %></p>
+<p>Price: $<%= @product.price %></p>
+<p>Type of Product: <%= @product.product_type %></p>
+<p>Color: <%= @product.color %></p>
+<p>Product Image: <marquee><%= image_tag(@product.image) %></marquee></p>
+
+
+<%= button_to "Purchase", new_purchased_item_path, params: { product_id: params[:id] }, :method => "get" %>
+

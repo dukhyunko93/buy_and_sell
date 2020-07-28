@@ -1,0 +1,25 @@
+<%= form_for @product do |p| %>
+
+<%= p.label :name, "Name" %>
+<%= p.text_field :name %>
+
+<%= p.label :product_type, "Type" %>
+<%= p.text_field :product_type %>
+
+<%= p.label :price, "Price" %>
+<%= p.number_field :price %>
+
+<%= p.label :condition, "Condition" %>
+<%= p.text_field :condition %>
+
+<%= p.label :color, "Color" %>
+<%= p.text_field :color %>
+
+<%= p.label :image, "Product Image" %>
+<%= p.file_field :image %>
+
+<%= p.label :publish_date %>
+<%= p.date_field :publish_date, as: :date, value: p.object.try(:strftime,"%m/%d/%Y") %>
+
+<%= p.submit "Sell" %>
+<% end %>

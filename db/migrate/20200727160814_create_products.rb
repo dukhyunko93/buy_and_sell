@@ -8,8 +8,6 @@ class CreateProducts < ActiveRecord::Migration[6.0]
       t.integer :price
       t.string :condition
       t.string :color
-      t.string :img_url
-      t.date :publish_date
 
       t.timestamps
     end
