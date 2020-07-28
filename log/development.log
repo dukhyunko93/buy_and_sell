@@ -9610,3 +9610,728 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 25ms (Views: 20.9ms | ActiveRecord: 0.2ms | Allocations: 8260)
 
 
+Started GET "/" for ::1 at 2020-07-28 09:02:29 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 0.8ms | Allocations: 507)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.7ms | Allocations: 7575)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:02:58 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 0.7ms | Allocations: 502)
+Completed 200 OK in 447ms (Views: 445.5ms | ActiveRecord: 0.1ms | Allocations: 79903)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:04:01 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 2.4ms | Allocations: 1359)
+Completed 200 OK in 404ms (Views: 401.5ms | ActiveRecord: 0.1ms | Allocations: 81992)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:04:27 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.6ms | Allocations: 1090)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.1ms | Allocations: 7002)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:04:28 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.8ms | Allocations: 1083)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.1ms | Allocations: 6997)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:04:57 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.5ms | Allocations: 1083)
+Completed 200 OK in 402ms (Views: 401.0ms | ActiveRecord: 0.1ms | Allocations: 80657)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:04:58 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.9ms | Allocations: 1083)
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 0.1ms | Allocations: 6992)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:05:24 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 2.1ms | Allocations: 1358)
+Completed 200 OK in 387ms (Views: 385.1ms | ActiveRecord: 0.1ms | Allocations: 82834)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:05:28 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.3ms | Allocations: 1090)
+Completed 200 OK in 388ms (Views: 386.4ms | ActiveRecord: 0.1ms | Allocations: 81118)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:06:01 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 2.8ms | Allocations: 1353)
+Completed 200 OK in 410ms (Views: 407.3ms | ActiveRecord: 0.1ms | Allocations: 81191)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:06:02 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.7ms | Allocations: 1090)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 7010)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:06:38 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.4ms | Allocations: 1083)
+Completed 200 OK in 381ms (Views: 379.8ms | ActiveRecord: 0.1ms | Allocations: 79948)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:06:40 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.7ms | Allocations: 1083)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 6994)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:06:56 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.5ms | Allocations: 1083)
+Completed 200 OK in 424ms (Views: 422.6ms | ActiveRecord: 0.1ms | Allocations: 79125)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:06:57 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.9ms | Allocations: 1083)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.1ms | Allocations: 6993)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:06:58 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.8ms | Allocations: 1083)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 6991)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:06:58 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.7ms | Allocations: 1083)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.1ms | Allocations: 6995)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:08:20 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 2.3ms | Allocations: 1360)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 7844)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:08:37 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 2.6ms | Allocations: 1348)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.1ms | Allocations: 7833)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:08:48 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 2.8ms | Allocations: 1353)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.2ms | Allocations: 7834)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:14:55 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.8ms | Allocations: 1343)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.4ms | Allocations: 7850)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:14:56 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.7ms | Allocations: 1082)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 6997)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:15:11 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.7ms | Allocations: 1348)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 7830)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:15:13 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.8ms | Allocations: 1082)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 6990)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:15:43 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 2.0ms | Allocations: 1348)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 7828)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:15:44 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.7ms | Allocations: 1082)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 6997)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:15:56 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 2.6ms | Allocations: 1347)
+Completed 200 OK in 427ms (Views: 424.3ms | ActiveRecord: 0.2ms | Allocations: 81070)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:16:11 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.5ms | Allocations: 1082)
+Completed 200 OK in 387ms (Views: 385.4ms | ActiveRecord: 0.1ms | Allocations: 81927)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:16:18 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.5ms | Allocations: 1075)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 7022)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:17:41 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.1ms | Allocations: 761)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.1ms | Allocations: 7920)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:17:43 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 0.9ms | Allocations: 504)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.2ms | Allocations: 7004)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:17:52 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 0.9ms | Allocations: 752)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 7837)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:18:18 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.5ms | Allocations: 752)
+Completed 200 OK in 418ms (Views: 415.8ms | ActiveRecord: 0.1ms | Allocations: 82025)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:18:20 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 0.8ms | Allocations: 504)
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.1ms | Allocations: 7003)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:18:49 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 0.8ms | Allocations: 502)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 7541)
+
+
+Started GET "/login" for ::1 at 2020-07-28 09:19:24 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 913)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.1ms | Allocations: 8032)
+
+
+Started POST "/login" for ::1 at 2020-07-28 09:19:29 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"mSgoXOMNuQz45yzN5y3OcQKb+4OwMwa4rnQ/3xi0X3yLzR7fGYP1o25dVbauXSJtx+iaJ9wHkT/8p8/Y/3uu8A==", "user"=>{"user_name"=>"Duke", "password"=>"[FILTERED]"}, "commit"=>"log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."user_name" = ? LIMIT ?[0m  [["user_name", "Duke"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 210ms (ActiveRecord: 0.3ms | Allocations: 1905)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:19:29 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 0.7ms | Allocations: 460)
+Completed 200 OK in 399ms (Views: 397.5ms | ActiveRecord: 0.1ms | Allocations: 82879)
+
+
+Started POST "/logout" for ::1 at 2020-07-28 09:19:39 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UAdKeT3hDheV5eXtnGnHW4ibt0TDjoJCdrtv9o6mFIaNEEf5xQLZ6G85iFdZp01NzZ0wiK3dGK64JD3uvwIgng=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 923)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:19:39 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 0.7ms | Allocations: 504)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.1ms | Allocations: 6997)
+
+
+Started GET "/login" for ::1 at 2020-07-28 09:19:48 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 908)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.2ms | Allocations: 8023)
+
+
+Started POST "/login" for ::1 at 2020-07-28 09:19:51 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"8U4yB+cdnvGDF7LCZ82w9Qq+4JfDLUt74+xFafMuPXTjqwSEHZPSXhWty7kuvVzpz82BM68Z3PyxP7VuFOHM+A==", "user"=>{"user_name"=>"Duke", "password"=>"[FILTERED]"}, "commit"=>"log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."user_name" = ? LIMIT ?[0m  [["user_name", "Duke"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 216ms (ActiveRecord: 0.3ms | Allocations: 1727)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:19:51 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.0ms | Allocations: 461)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 7381)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:20:18 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 0.5ms | Allocations: 212)
+Completed 200 OK in 410ms (Views: 408.8ms | ActiveRecord: 0.1ms | Allocations: 81533)
+
+
+Started POST "/logout" for ::1 at 2020-07-28 09:24:42 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vtMnLFXA6B3ciMKB+DAbjnVfAAE64hbmTuWHAbv3UZJjxCqsrSM/4iZUrzs9/pGYMFmHzVSxjAqAetUZilNlig=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 925)
+
+
+Started GET "/" for ::1 at 2020-07-28 09:24:42 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 0.7ms | Allocations: 504)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.1ms | Allocations: 6996)
+
+
+Started GET "/signup" for ::1 at 2020-07-28 10:04:24 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1255)
+Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 0.5ms | Allocations: 8054)
+
+
+Started POST "/users" for ::1 at 2020-07-28 10:05:12 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"QGqMLhocudrfGEnNaCqbYJGdN0ydBiBBDTu/OgmwiJyfVNZH1NRajADyPUxS7p5ComNdJpUd6qlMEnGtS/QtZA==", "user"=>{"user_name"=>"Sarah123", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Sarah", "address"=>"44-12 east ave", "email"=>"sarah@gmail.com", "phone_number"=>"7181234567", "dob"=>"2000-07-11"}, "commit"=>"Create Account"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (2.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password_digest", "address", "email", "phone_number", "dob", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sarah"], ["user_name", "Sarah123"], ["password_digest", "$2a$12$QkCHSlq58/PeipcmWBRxRu7ywEu6NL1hrc0rh44fxfCKMGVIoIvHi"], ["address", "44-12 east ave"], ["email", "sarah@gmail.com"], ["phone_number", "7181234567"], ["dob", "2000-07-11"], ["created_at", "2020-07-28 14:05:12.742677"], ["updated_at", "2020-07-28 14:05:12.742677"]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 223ms (ActiveRecord: 3.7ms | Allocations: 4282)
+
+
+Started GET "/login" for ::1 at 2020-07-28 10:05:12 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 679)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 6766)
+
+
+Started POST "/login" for ::1 at 2020-07-28 10:05:19 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"jAUiQoiazYVMDKZPk9KEDsOrQ8atG3hVIyFJ+VrgEoWe4BTBchSBKtq23zTaomgSBtgiYsEv79Jx8rn+vS/jCQ==", "user"=>{"user_name"=>"Sarah123", "password"=>"[FILTERED]"}, "commit"=>"log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."user_name" = ? LIMIT ?[0m  [["user_name", "Sarah123"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 212ms (ActiveRecord: 0.3ms | Allocations: 1606)
+
+
+Started GET "/" for ::1 at 2020-07-28 10:05:19 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 0.3ms | Allocations: 215)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.1ms | Allocations: 6562)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 8]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 10]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.3ms)[0m  [1m[32mINSERT INTO "products" ("seller_id", "name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["seller_id", 1], ["name", "Gorgeous Bronze Coat"], ["product_type", "SHOE"], ["price", 98], ["condition", "good"], ["color", "GREEN"], ["img_url", "https://loremflickr.com/green/50/60/shoe"], ["created_at", "2020-07-28 14:06:18.235902"], ["updated_at", "2020-07-28 14:06:18.235902"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.2ms)[0m  [1m[32mINSERT INTO "products" ("seller_id", "name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["seller_id", 2], ["name", "Sleek Aluminum Coat"], ["product_type", "SHOE"], ["price", 11], ["condition", "good"], ["color", "GREEN"], ["img_url", "https://loremflickr.com/green/50/60/shoe"], ["created_at", "2020-07-28 14:06:18.240975"], ["updated_at", "2020-07-28 14:06:18.240975"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.3ms)[0m  [1m[32mINSERT INTO "products" ("seller_id", "name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["seller_id", 2], ["name", "Rustic Linen Clock"], ["product_type", "SHOE"], ["price", 32], ["condition", "good"], ["color", "GREEN"], ["img_url", "https://loremflickr.com/green/50/60/shoe"], ["created_at", "2020-07-28 14:06:18.245640"], ["updated_at", "2020-07-28 14:06:18.245640"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.3ms)[0m  [1m[32mINSERT INTO "products" ("seller_id", "name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["seller_id", 1], ["name", "Small Linen Computer"], ["product_type", "SHOE"], ["price", 10], ["condition", "good"], ["color", "GREEN"], ["img_url", "https://loremflickr.com/green/50/60/shoe"], ["created_at", "2020-07-28 14:06:18.250127"], ["updated_at", "2020-07-28 14:06:18.250127"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.2ms)[0m  [1m[32mINSERT INTO "products" ("seller_id", "name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["seller_id", 1], ["name", "Sleek Plastic Hat"], ["product_type", "SHOE"], ["price", 98], ["condition", "good"], ["color", "GREEN"], ["img_url", "https://loremflickr.com/green/50/60/shoe"], ["created_at", "2020-07-28 14:06:18.254508"], ["updated_at", "2020-07-28 14:06:18.254508"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.3ms)[0m  [1m[32mINSERT INTO "products" ("seller_id", "name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["seller_id", 2], ["name", "Incredible Leather Chair"], ["product_type", "shirt"], ["price", 59], ["condition", "good"], ["color", "red"], ["img_url", "https://loremflickr.com/red/50/60/shirt"], ["created_at", "2020-07-28 14:06:18.259066"], ["updated_at", "2020-07-28 14:06:18.259066"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.2ms)[0m  [1m[32mINSERT INTO "products" ("seller_id", "name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["seller_id", 2], ["name", "Small Rubber Shoes"], ["product_type", "shirt"], ["price", 9], ["condition", "good"], ["color", "red"], ["img_url", "https://loremflickr.com/red/50/60/shirt"], ["created_at", "2020-07-28 14:06:18.263470"], ["updated_at", "2020-07-28 14:06:18.263470"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.2ms)[0m  [1m[32mINSERT INTO "products" ("seller_id", "name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["seller_id", 2], ["name", "Fantastic Concrete Computer"], ["product_type", "shirt"], ["price", 54], ["condition", "good"], ["color", "red"], ["img_url", "https://loremflickr.com/red/50/60/shirt"], ["created_at", "2020-07-28 14:06:18.267834"], ["updated_at", "2020-07-28 14:06:18.267834"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.2ms)[0m  [1m[32mINSERT INTO "products" ("seller_id", "name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["seller_id", 2], ["name", "Mediocre Marble Keyboard"], ["product_type", "shirt"], ["price", 96], ["condition", "good"], ["color", "red"], ["img_url", "https://loremflickr.com/red/50/60/shirt"], ["created_at", "2020-07-28 14:06:18.271999"], ["updated_at", "2020-07-28 14:06:18.271999"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.2ms)[0m  [1m[32mINSERT INTO "products" ("seller_id", "name", "product_type", "price", "condition", "color", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["seller_id", 1], ["name", "Intelligent Leather Bench"], ["product_type", "shirt"], ["price", 41], ["condition", "good"], ["color", "red"], ["img_url", "https://loremflickr.com/red/50/60/shirt"], ["created_at", "2020-07-28 14:06:18.276381"], ["updated_at", "2020-07-28 14:06:18.276381"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/show" for ::1 at 2020-07-28 10:06:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/show"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/products/" for ::1 at 2020-07-28 10:06:30 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:4:in `index'
+  Rendering products/index.html.erb within layouts/application
+  Rendered products/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 533)
+Completed 200 OK in 25ms (Views: 9.5ms | ActiveRecord: 0.8ms | Allocations: 18181)
+
+
+Started GET "/products/1" for ::1 at 2020-07-28 10:06:35 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:8:in `show'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:9:in `show'
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 353)
+Completed 200 OK in 15ms (Views: 7.1ms | ActiveRecord: 0.5ms | Allocations: 9573)
+
+
+Started POST "/logout" for ::1 at 2020-07-28 10:07:01 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iNcPrwOmi+FQ1C9sWokMhA8SZAu7CgfwM6qADAH1qO9VwAIv+0VcHqoIQtafR4aSShTjx9VZnRz9NdIUMFGc9w=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 915)
+
+
+Started GET "/" for ::1 at 2020-07-28 10:07:01 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 0.7ms | Allocations: 507)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.1ms | Allocations: 7002)
+
+
+Started GET "/signup" for ::1 at 2020-07-28 10:07:23 -0400
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 848)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.1ms | Allocations: 7049)
+
+
+Started GET "/login" for ::1 at 2020-07-28 10:07:27 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 679)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 6883)
+
+
+Started POST "/login" for ::1 at 2020-07-28 10:07:33 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"zD5sv1UCkv22E99hHsrHX03EwDaM4bF6pkgmAyuto27e21o8r4zeUiCpphpXuitDiLehkuDVJv30m9YEzGJS4g==", "user"=>{"user_name"=>"Duke", "password"=>"[FILTERED]"}, "commit"=>"log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."user_name" = ? LIMIT ?[0m  [["user_name", "Duke"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 212ms (ActiveRecord: 0.3ms | Allocations: 1723)
+
+
+Started GET "/" for ::1 at 2020-07-28 10:07:34 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 0.3ms | Allocations: 212)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.1ms | Allocations: 6549)
+
+
+Started POST "/logout" for ::1 at 2020-07-28 10:07:54 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6kZA/NOgF9bgwq3weVhwBY/niOyxKT5h6s4fktK+VQI3UU18K0PAKRoewEq8lvoTyuEPIN96pI0kUU2K4xphGg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 917)
+
+
+Started GET "/" for ::1 at 2020-07-28 10:07:54 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 0.6ms | Allocations: 502)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.1ms | Allocations: 6991)
+
+
+Started GET "/login" for ::1 at 2020-07-28 10:07:55 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 668)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.1ms | Allocations: 6867)
+
+
+Started GET "/login" for ::1 at 2020-07-28 10:08:00 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 668)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.1ms | Allocations: 6871)
+
+
+Started POST "/login" for ::1 at 2020-07-28 10:08:04 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"mEC4Wnfzg9Lp7JOBY1Mc06S32Ozenbxbfihe2s8MR8mKpY7ZjX3PfX9W6voqI/DPYcS5SLKpK9ws+67dKMO2RQ==", "user"=>{"user_name"=>"Sarah123", "password"=>"[FILTERED]"}, "commit"=>"log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."user_name" = ? LIMIT ?[0m  [["user_name", "Sarah123"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 215ms (ActiveRecord: 0.4ms | Allocations: 1731)
+
+
+Started GET "/" for ::1 at 2020-07-28 10:08:04 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 0.3ms | Allocations: 209)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.1ms | Allocations: 6558)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]

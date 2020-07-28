@@ -1,7 +1,8 @@
 <div class="header">
+
   <ul>
   <% if @user.valid? %>
-    <li><h3>Hi, <%= @user.name %> Welcome! </h3></li>
+    <li>Hi, <%= @user.name %> Welcome!</li>
     <li><%= button_to "Log Out", logout_path, :method => 'post', class: 'path_box' %></li>
 
     <% else %>
