@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
-    helper_method :current_user
     before_action :require_logged_in
     skip_before_action :require_logged_in, only: [:index, :show]
+    layout 'product'
 
     def index
       @products = Product.all.each {|t| t.purchased_item_id == nil}
@@ -14,6 +14,8 @@ class ProductsController < ApplicationController
 
     def new
       @product = Product.new
+      @categories = Category.all.sort_by{|t| t.title}
+      @conditions = Condition.all.sort_by{|t| t.id}.reverse
     end
 
     def create
@@ -29,6 +31,8 @@ class ProductsController < ApplicationController
 
     def edit
       @product = Product.find(params[:id])
+      @categories = Category.all.sort_by{|t| t.title}
+      @conditions = Condition.all.sort_by{|t| t.id}.reverse
     end
 
     def update

@@ -1,6 +1,11 @@
 <h1>List of Products</h1>
 <%= link_to "Sell Your Product", new_product_path %>
 
-<% @products.each do |product| %>
-  <p><%= link_to product.name, product %></p>
-<% end %>
+<div class=listing>
+<ul>
+  <% @products.each do |product| %>
+  <li><%= link_to image_tag(product.image), product%></li>
+  <li><%= link_to product.name, product %></li>
+  <% end %>
+  </ul>
+</div>

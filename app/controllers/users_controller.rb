@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-    helper_method :current_user
     before_action :require_logged_in
     skip_before_action :require_logged_in, only: [:new, :create]
     

@@ -1,22 +1,36 @@
 <%= form_for @product do |p| %>
 
+<div>
 <%= p.label :name, "Name" %>
 <%= p.text_field :name %>
+</div>
 
+<div>
 <%= p.label :product_type, "Type" %>
-<%= p.text_field :product_type %>
+<%= p.collection_select :product_type, @categories, :title, :title %>
+</div>
 
+<div>
 <%= p.label :price, "Price" %>
 <%= p.number_field :price %>
+</div>
 
+<div>
 <%= p.label :condition, "Condition" %>
-<%= p.text_field :condition %>
+<%= p.collection_select :condition, @conditions, :status, :status %>
+</div>
 
+<div>
 <%= p.label :color, "Color" %>
 <%= p.text_field :color %>
+</div>
 
+<div>
 <%= p.label :image, "Product Image" %>
 <%= p.file_field :image %>
+</div>
 
+<div>
 <%= p.submit "Sell" %>
+</div>
 <% end %>
