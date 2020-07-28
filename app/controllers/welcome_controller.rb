@@ -1,9 +1,7 @@
 class WelcomeController < ApplicationController
-  
-  def login
-  end
+    before_action :current_user
+    layout 'home'
 
-  def home
-  end
-  
+    def home
+    end
 end

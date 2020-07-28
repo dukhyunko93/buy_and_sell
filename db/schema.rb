@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 2020_07_27_201410) do
   end
 
   create_table "purchased_items", force: :cascade do |t|
-    t.integer "user_id"
+    t.integer "buyer_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -51,6 +51,8 @@ ActiveRecord::Schema.define(version: 2020_07_27_201410) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
+    t.string "user_name"
+    t.string "password_digest"
     t.string "address"
     t.string "email"
     t.string "phone_number"

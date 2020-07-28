@@ -1,11 +1,12 @@
 class ProductsController < ApplicationController
 
     def index
-      @products = Product.all
+      @products = Product.all.each {|t| t.purchased_item_id == nil}
     end
 
     def show
       @product = Product.find(params[:id])
+      @seller = @product.seller
     end
 
     private
