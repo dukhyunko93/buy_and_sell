@@ -12094,6 +12094,7 @@ Processing by ActiveStorage::DiskController#show as JPEG
 Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 381)
 
 
+<<<<<<< HEAD
 Started GET "/products" for ::1 at 2020-07-28 15:32:16 -0400
   [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -12323,10 +12324,861 @@ Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 391)
 
 
 Started GET "/" for ::1 at 2020-07-28 15:36:03 -0400
+=======
+Started GET "/products/" for ::1 at 2020-07-28 15:38:46 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:7:in `index'
+  Rendering products/index.html.erb within layouts/product
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  Rendered products/index.html.erb within layouts/product (Duration: 102.7ms | Allocations: 28908)
+Completed 200 OK in 3428ms (Views: 3369.6ms | ActiveRecord: 5.1ms | Allocations: 482917)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--604abf43c761f0c9dae39b3a3ff4cbc2994e3b6a/download.jpeg" for ::1 at 2020-07-28 15:38:49 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4bd79ab6c7183893cd916c2b229b44f053cfcb05/jordan.jpg" for ::1 at 2020-07-28 15:38:49 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6a026a13a3b57d8ee9c9c12f92e7deecadabdcb7/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg" for ::1 at 2020-07-28 15:38:49 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ActiveStorage::BlobsController#show as JPEG
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4bd79ab6c7183893cd916c2b229b44f053cfcb05", "filename"=>"jordan"}
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--604abf43c761f0c9dae39b3a3ff4cbc2994e3b6a", "filename"=>"download"}
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6a026a13a3b57d8ee9c9c12f92e7deecadabdcb7", "filename"=>"OFF-WHITE-Flamed-Bart-T-Shirt-White"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (236.8ms) [0m[34mGenerated URL for file at key: k5v7gg5s8v8ola740qjldygmyzvh (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDE5OjQzOjQ5Ljk2MFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--c15aa0543516a4bcc565d8e9848f12b251ddbeed/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg)[0m
+[36m  Disk Storage (396.2ms) [0m[34mGenerated URL for file at key: z45b9ppafhma8tfezlqpf6pgqy1j (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6NDM6NTAuMTI0WiIsInB1ciI6ImJsb2Jfa2V5In19--9c6cf18c0d32f6f3fef569d092325f8248c25282/download.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22download.jpeg%22%3B+filename%2A%3DUTF-8%27%27download.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6NDM6NTAuMTI0WiIsInB1ciI6ImJsb2Jfa2V5In19--9c6cf18c0d32f6f3fef569d092325f8248c25282/download.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22download.jpeg%22%3B+filename%2A%3DUTF-8%27%27download.jpeg
+[36m  Disk Storage (406.2ms) [0m[34mGenerated URL for file at key: 4ysrrykmazx0ml7kwk5se38a204u (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6NDM6NTAuMTMxWiIsInB1ciI6ImJsb2Jfa2V5In19--7e3479e4aa18ff75d99ee3aaef0c84a0936e5573/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg%22%3B+filename%2A%3DUTF-8%27%27OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg)[0m
+Completed 302 Found in 417ms (ActiveRecord: 0.2ms | Allocations: 588027)
+
+
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDE5OjQzOjQ5Ljk2MFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--c15aa0543516a4bcc565d8e9848f12b251ddbeed/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg
+Completed 302 Found in 418ms (ActiveRecord: 0.3ms | Allocations: 588376)
+
+
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6NDM6NTAuMTMxWiIsInB1ciI6ImJsb2Jfa2V5In19--7e3479e4aa18ff75d99ee3aaef0c84a0936e5573/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg%22%3B+filename%2A%3DUTF-8%27%27OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg
+Completed 302 Found in 418ms (ActiveRecord: 0.2ms | Allocations: 588569)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDE5OjQzOjQ5Ljk2MFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--c15aa0543516a4bcc565d8e9848f12b251ddbeed/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg" for ::1 at 2020-07-28 15:38:50 -0400
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6NDM6NTAuMTMxWiIsInB1ciI6ImJsb2Jfa2V5In19--7e3479e4aa18ff75d99ee3aaef0c84a0936e5573/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg%22%3B+filename%2A%3DUTF-8%27%27OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg" for ::1 at 2020-07-28 15:38:50 -0400
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6NDM6NTAuMTI0WiIsInB1ciI6ImJsb2Jfa2V5In19--9c6cf18c0d32f6f3fef569d092325f8248c25282/download.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22download.jpeg%22%3B+filename%2A%3DUTF-8%27%27download.jpeg" for ::1 at 2020-07-28 15:38:50 -0400
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"jordan.jpg\"; filename*=UTF-8''jordan.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDE5OjQzOjQ5Ljk2MFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--c15aa0543516a4bcc565d8e9848f12b251ddbeed", "filename"=>"jordan"}
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"download.jpeg\"; filename*=UTF-8''download.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6NDM6NTAuMTI0WiIsInB1ciI6ImJsb2Jfa2V5In19--9c6cf18c0d32f6f3fef569d092325f8248c25282", "filename"=>"download"}
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms | Allocations: 2792)
+
+
+Completed 200 OK in 9ms (ActiveRecord: 0.0ms | Allocations: 781)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg\"; filename*=UTF-8''OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6NDM6NTAuMTMxWiIsInB1ciI6ImJsb2Jfa2V5In19--7e3479e4aa18ff75d99ee3aaef0c84a0936e5573", "filename"=>"OFF-WHITE-Flamed-Bart-T-Shirt-White"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 339)
+
+
+Started GET "/products/2" for ::1 at 2020-07-28 15:38:56 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `show'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:12:in `show'
+  Rendering products/show.html.erb within layouts/product
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  Rendered products/show.html.erb within layouts/product (Duration: 4.2ms | Allocations: 2423)
+Completed 200 OK in 24ms (Views: 12.7ms | ActiveRecord: 1.3ms | Allocations: 11012)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDE5OjQzOjQ5Ljk2MFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--c15aa0543516a4bcc565d8e9848f12b251ddbeed/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg" for ::1 at 2020-07-28 15:38:56 -0400
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"jordan.jpg\"; filename*=UTF-8''jordan.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDE5OjQzOjQ5Ljk2MFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--c15aa0543516a4bcc565d8e9848f12b251ddbeed", "filename"=>"jordan"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 330)
+
+
+Started GET "/purchased_items/new?product_id=2" for ::1 at 2020-07-28 15:39:35 -0400
+Processing by PurchasedItemsController#new as HTML
+  Parameters: {"product_id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 406 Not Acceptable in 7ms (ActiveRecord: 0.2ms | Allocations: 2497)
+
+
+  
+ActionController::MissingExactTemplate (PurchasedItemsController#new is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.2) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.2) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.2) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/purchased_items/new?product_id=2" for ::1 at 2020-07-28 15:39:42 -0400
+Processing by PurchasedItemsController#new as HTML
+  Parameters: {"product_id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.2ms | Allocations: 1232)
+
+
+  
+ActionController::MissingExactTemplate (PurchasedItemsController#new is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.2) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.2) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.2) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/purchased_items/new?product_id=2" for ::1 at 2020-07-28 15:43:05 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PurchasedItemsController#new as HTML
+  Parameters: {"product_id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 404 Not Found in 30ms (ActiveRecord: 1.9ms | Allocations: 18565)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product without an ID):
+  
+app/controllers/purchased_items_controller.rb:5:in `new'
+Started GET "/products/2" for ::1 at 2020-07-28 15:44:14 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `show'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:12:in `show'
+  Rendering products/show.html.erb within layouts/product
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  Rendered products/show.html.erb within layouts/product (Duration: 24.3ms | Allocations: 16505)
+Completed 200 OK in 60ms (Views: 31.4ms | ActiveRecord: 3.7ms | Allocations: 44544)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4bd79ab6c7183893cd916c2b229b44f053cfcb05/jordan.jpg" for ::1 at 2020-07-28 15:44:14 -0400
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4bd79ab6c7183893cd916c2b229b44f053cfcb05", "filename"=>"jordan"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[36m  Disk Storage (0.7ms) [0m[34mGenerated URL for file at key: k5v7gg5s8v8ola740qjldygmyzvh (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDE5OjQ5OjE0LjgzM1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--c4b5ea1964bf2cf6dc0bfdb89281db91b36978c8/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDE5OjQ5OjE0LjgzM1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--c4b5ea1964bf2cf6dc0bfdb89281db91b36978c8/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms | Allocations: 2108)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDE5OjQ5OjE0LjgzM1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--c4b5ea1964bf2cf6dc0bfdb89281db91b36978c8/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg" for ::1 at 2020-07-28 15:44:14 -0400
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"jordan.jpg\"; filename*=UTF-8''jordan.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDE5OjQ5OjE0LjgzM1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--c4b5ea1964bf2cf6dc0bfdb89281db91b36978c8", "filename"=>"jordan"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 373)
+
+
+Started GET "/purchased_items/new?product_id=2" for ::1 at 2020-07-28 15:44:18 -0400
+Processing by PurchasedItemsController#new as HTML
+  Parameters: {"product_id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 404 Not Found in 73394ms (ActiveRecord: 1.0ms | Allocations: 168674)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product without an ID):
+  
+app/controllers/purchased_items_controller.rb:6:in `new'
+Started GET "/products/1" for ::1 at 2020-07-28 15:45:41 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `show'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:12:in `show'
+  Rendering products/show.html.erb within layouts/product
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  Rendered products/show.html.erb within layouts/product (Duration: 43.8ms | Allocations: 21291)
+Completed 200 OK in 192ms (Views: 124.0ms | ActiveRecord: 3.6ms | Allocations: 70656)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--604abf43c761f0c9dae39b3a3ff4cbc2994e3b6a/download.jpeg" for ::1 at 2020-07-28 15:45:41 -0400
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--604abf43c761f0c9dae39b3a3ff4cbc2994e3b6a", "filename"=>"download"}
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (236.3ms) [0m[34mGenerated URL for file at key: z45b9ppafhma8tfezlqpf6pgqy1j (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6NTA6NDEuODI5WiIsInB1ciI6ImJsb2Jfa2V5In19--b1d2fe290d6f696c0c17561bc2cdb131bff23275/download.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22download.jpeg%22%3B+filename%2A%3DUTF-8%27%27download.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6NTA6NDEuODI5WiIsInB1ciI6ImJsb2Jfa2V5In19--b1d2fe290d6f696c0c17561bc2cdb131bff23275/download.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22download.jpeg%22%3B+filename%2A%3DUTF-8%27%27download.jpeg
+Completed 302 Found in 241ms (ActiveRecord: 0.5ms | Allocations: 197432)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6NTA6NDEuODI5WiIsInB1ciI6ImJsb2Jfa2V5In19--b1d2fe290d6f696c0c17561bc2cdb131bff23275/download.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22download.jpeg%22%3B+filename%2A%3DUTF-8%27%27download.jpeg" for ::1 at 2020-07-28 15:45:41 -0400
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"download.jpeg\"; filename*=UTF-8''download.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6NTA6NDEuODI5WiIsInB1ciI6ImJsb2Jfa2V5In19--b1d2fe290d6f696c0c17561bc2cdb131bff23275", "filename"=>"download"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 377)
+
+
+Started GET "/purchased_items/new?id=1" for ::1 at 2020-07-28 15:45:43 -0400
+Processing by PurchasedItemsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/purchased_items_controller.rb:6:in `new'
+  Rendering purchased_items/new.html.erb within layouts/application
+  Rendered purchased_items/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 104)
+Completed 200 OK in 28796ms (Views: 424.0ms | ActiveRecord: 1.2ms | Allocations: 100214)
+
+
+Started GET "/purchased_items/new?id=1" for ::1 at 2020-07-28 15:46:22 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PurchasedItemsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/purchased_items_controller.rb:6:in `new'
+  Rendering purchased_items/new.html.erb within layouts/application
+Started GET "/purchased_items/new?id=1" for ::1 at 2020-07-28 15:46:40 -0400
+  Rendered purchased_items/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 908)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PurchasedItemsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/purchased_items_controller.rb:6:in `new'
+  Rendering purchased_items/new.html.erb within layouts/application
+  Rendered purchased_items/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+Completed 200 OK in 5399ms (Views: 107.2ms | ActiveRecord: 0.5ms | Allocations: 46839)
+
+
+Completed 200 OK in 23623ms (Views: 5413.6ms | ActiveRecord: 3.9ms | Allocations: 123977)
+
+
+Started GET "/products/" for ::1 at 2020-07-28 15:46:51 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:7:in `index'
+  Rendering products/index.html.erb within layouts/product
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  Rendered products/index.html.erb within layouts/product (Duration: 82.8ms | Allocations: 25198)
+Completed 200 OK in 141ms (Views: 109.1ms | ActiveRecord: 4.0ms | Allocations: 52492)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6a026a13a3b57d8ee9c9c12f92e7deecadabdcb7/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg" for ::1 at 2020-07-28 15:46:52 -0400
+Processing by ActiveStorage::BlobsController#show as JPEG
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6NTA6NDEuODI5WiIsInB1ciI6ImJsb2Jfa2V5In19--b1d2fe290d6f696c0c17561bc2cdb131bff23275/download.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22download.jpeg%22%3B+filename%2A%3DUTF-8%27%27download.jpeg" for ::1 at 2020-07-28 15:46:52 -0400
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6a026a13a3b57d8ee9c9c12f92e7deecadabdcb7", "filename"=>"OFF-WHITE-Flamed-Bart-T-Shirt-White"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+[36m  Disk Storage (125.7ms) [0m[34mGenerated URL for file at key: 4ysrrykmazx0ml7kwk5se38a204u (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6NTE6NTIuNDM0WiIsInB1ciI6ImJsb2Jfa2V5In19--a7809c4e1eb205a38ff2a7d43299b2c3c0772266/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg%22%3B+filename%2A%3DUTF-8%27%27OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg)[0m
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDE5OjQ5OjE0LjgzM1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--c4b5ea1964bf2cf6dc0bfdb89281db91b36978c8/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg" for ::1 at 2020-07-28 15:46:52 -0400
+Processing by ActiveStorage::DiskController#show as JPEG
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6NTE6NTIuNDM0WiIsInB1ciI6ImJsb2Jfa2V5In19--a7809c4e1eb205a38ff2a7d43299b2c3c0772266/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg%22%3B+filename%2A%3DUTF-8%27%27OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"download.jpeg\"; filename*=UTF-8''download.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6NTA6NDEuODI5WiIsInB1ciI6ImJsb2Jfa2V5In19--b1d2fe290d6f696c0c17561bc2cdb131bff23275", "filename"=>"download"}
+Completed 302 Found in 140ms (ActiveRecord: 0.3ms | Allocations: 201757)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 370)
+
+
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"jordan.jpg\"; filename*=UTF-8''jordan.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDE5OjQ5OjE0LjgzM1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--c4b5ea1964bf2cf6dc0bfdb89281db91b36978c8", "filename"=>"jordan"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 327)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6NTE6NTIuNDM0WiIsInB1ciI6ImJsb2Jfa2V5In19--a7809c4e1eb205a38ff2a7d43299b2c3c0772266/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg%22%3B+filename%2A%3DUTF-8%27%27OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg" for ::1 at 2020-07-28 15:46:52 -0400
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg\"; filename*=UTF-8''OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6NTE6NTIuNDM0WiIsInB1ciI6ImJsb2Jfa2V5In19--a7809c4e1eb205a38ff2a7d43299b2c3c0772266", "filename"=>"OFF-WHITE-Flamed-Bart-T-Shirt-White"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 330)
+
+
+Started GET "/products/3" for ::1 at 2020-07-28 15:46:53 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `show'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:12:in `show'
+  Rendering products/show.html.erb within layouts/product
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  Rendered products/show.html.erb within layouts/product (Duration: 3.8ms | Allocations: 2438)
+Completed 200 OK in 20ms (Views: 11.1ms | ActiveRecord: 1.1ms | Allocations: 11121)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6NTE6NTIuNDM0WiIsInB1ciI6ImJsb2Jfa2V5In19--a7809c4e1eb205a38ff2a7d43299b2c3c0772266/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg%22%3B+filename%2A%3DUTF-8%27%27OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg" for ::1 at 2020-07-28 15:46:53 -0400
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg\"; filename*=UTF-8''OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6NTE6NTIuNDM0WiIsInB1ciI6ImJsb2Jfa2V5In19--a7809c4e1eb205a38ff2a7d43299b2c3c0772266", "filename"=>"OFF-WHITE-Flamed-Bart-T-Shirt-White"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 331)
+
+
+Started GET "/purchased_items/new?id=3" for ::1 at 2020-07-28 15:46:58 -0400
+Processing by PurchasedItemsController#new as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/purchased_items_controller.rb:5:in `new'
+  Rendering purchased_items/new.html.erb within layouts/application
+  Rendered purchased_items/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+Completed 200 OK in 20ms (Views: 9.4ms | ActiveRecord: 0.9ms | Allocations: 11164)
+
+
+Started GET "/products/2" for ::1 at 2020-07-28 16:00:15 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `show'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:12:in `show'
+  Rendering products/show.html.erb within layouts/product
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  Rendered products/show.html.erb within layouts/product (Duration: 25.9ms | Allocations: 15812)
+Completed 200 OK in 67ms (Views: 33.8ms | ActiveRecord: 1.2ms | Allocations: 42966)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4bd79ab6c7183893cd916c2b229b44f053cfcb05/jordan.jpg" for ::1 at 2020-07-28 16:00:15 -0400
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4bd79ab6c7183893cd916c2b229b44f053cfcb05", "filename"=>"jordan"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[36m  Disk Storage (0.8ms) [0m[34mGenerated URL for file at key: k5v7gg5s8v8ola740qjldygmyzvh (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDIwOjA1OjE1LjUxN1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--1f9b5dd6fa5974c65549ba7032fd40960c1dfde3/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDIwOjA1OjE1LjUxN1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--1f9b5dd6fa5974c65549ba7032fd40960c1dfde3/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms | Allocations: 2103)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDIwOjA1OjE1LjUxN1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--1f9b5dd6fa5974c65549ba7032fd40960c1dfde3/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg" for ::1 at 2020-07-28 16:00:15 -0400
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"jordan.jpg\"; filename*=UTF-8''jordan.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDIwOjA1OjE1LjUxN1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--1f9b5dd6fa5974c65549ba7032fd40960c1dfde3", "filename"=>"jordan"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 372)
+
+
+Started GET "/purchased_items/new?id=2" for ::1 at 2020-07-28 16:00:16 -0400
+Processing by PurchasedItemsController#new as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/purchased_items_controller.rb:5:in `new'
+  Rendering purchased_items/new.html.erb within layouts/application
+  Rendered purchased_items/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 436)
+Completed 200 OK in 26ms (Views: 14.4ms | ActiveRecord: 0.3ms | Allocations: 11888)
+
+
+Started GET "/purchased_items/new?id=2" for ::1 at 2020-07-28 16:00:43 -0400
+Processing by PurchasedItemsController#new as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/purchased_items_controller.rb:5:in `new'
+  Rendering purchased_items/new.html.erb within layouts/application
+  Rendered purchased_items/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 540)
+Completed 200 OK in 42ms (Views: 34.2ms | ActiveRecord: 0.7ms | Allocations: 8217)
+
+
+Started POST "/purchased_items" for ::1 at 2020-07-28 16:00:47 -0400
+Processing by PurchasedItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"9HV7NfQCYO0scpH9d0NBqRIL33MXBHj0wrf/adq+7WaNliEbMI/2r25NXiDWVcH/chrdMLhyLEVW+IE854s8SA==", "commit"=>"Create Purchased item"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.2ms | Allocations: 1676)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: purchased_item):
+  
+app/controllers/purchased_items_controller.rb:21:in `purchase_params'
+app/controllers/purchased_items_controller.rb:11:in `create'
+Started POST "/purchased_items" for ::1 at 2020-07-28 16:01:21 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PurchasedItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"9HV7NfQCYO0scpH9d0NBqRIL33MXBHj0wrf/adq+7WaNliEbMI/2r25NXiDWVcH/chrdMLhyLEVW+IE854s8SA==", "commit"=>"Create Purchased item"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 400 Bad Request in 161380ms (ActiveRecord: 1.7ms | Allocations: 17763)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: purchased_item):
+  
+app/controllers/purchased_items_controller.rb:22:in `purchase_params'
+app/controllers/purchased_items_controller.rb:12:in `create'
+Started POST "/purchased_items" for ::1 at 2020-07-28 16:04:51 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PurchasedItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"9HV7NfQCYO0scpH9d0NBqRIL33MXBHj0wrf/adq+7WaNliEbMI/2r25NXiDWVcH/chrdMLhyLEVW+IE854s8SA==", "commit"=>"Create Purchased item"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 400 Bad Request in 18ms (ActiveRecord: 0.9ms | Allocations: 12359)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: purchased_item):
+  
+app/controllers/purchased_items_controller.rb:21:in `purchase_params'
+app/controllers/purchased_items_controller.rb:11:in `create'
+Started GET "/products/3" for ::1 at 2020-07-28 16:05:08 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `show'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:12:in `show'
+  Rendering products/show.html.erb within layouts/product
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  Rendered products/show.html.erb within layouts/product (Duration: 25.0ms | Allocations: 16498)
+Completed 200 OK in 54ms (Views: 32.4ms | ActiveRecord: 3.1ms | Allocations: 35374)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6a026a13a3b57d8ee9c9c12f92e7deecadabdcb7/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg" for ::1 at 2020-07-28 16:05:08 -0400
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6a026a13a3b57d8ee9c9c12f92e7deecadabdcb7", "filename"=>"OFF-WHITE-Flamed-Bart-T-Shirt-White"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[36m  Disk Storage (0.8ms) [0m[34mGenerated URL for file at key: 4ysrrykmazx0ml7kwk5se38a204u (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMjA6MTA6MDguNjMzWiIsInB1ciI6ImJsb2Jfa2V5In19--96a24964fea336c6f3c56b5d2e4c89cf903fe061/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg%22%3B+filename%2A%3DUTF-8%27%27OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMjA6MTA6MDguNjMzWiIsInB1ciI6ImJsb2Jfa2V5In19--96a24964fea336c6f3c56b5d2e4c89cf903fe061/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg%22%3B+filename%2A%3DUTF-8%27%27OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 2096)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMjA6MTA6MDguNjMzWiIsInB1ciI6ImJsb2Jfa2V5In19--96a24964fea336c6f3c56b5d2e4c89cf903fe061/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg%22%3B+filename%2A%3DUTF-8%27%27OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg" for ::1 at 2020-07-28 16:05:08 -0400
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg\"; filename*=UTF-8''OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMjA6MTA6MDguNjMzWiIsInB1ciI6ImJsb2Jfa2V5In19--96a24964fea336c6f3c56b5d2e4c89cf903fe061", "filename"=>"OFF-WHITE-Flamed-Bart-T-Shirt-White"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 368)
+
+
+Started GET "/purchased_items/new?id=3" for ::1 at 2020-07-28 16:05:10 -0400
+Processing by PurchasedItemsController#new as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/purchased_items_controller.rb:5:in `new'
+  Rendering purchased_items/new.html.erb within layouts/application
+  Rendered purchased_items/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 614)
+Completed 200 OK in 22ms (Views: 11.8ms | ActiveRecord: 1.5ms | Allocations: 10919)
+
+
+Started POST "/purchased_items" for ::1 at 2020-07-28 16:05:12 -0400
+Processing by PurchasedItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"C64S/22Bd4iOU5rLxwAoyWPsWGvYxSpzktD51p30ePZyTUjRqQzhysxsVRZmFqifA/1aKHezfsIGn4eDoMGp2A==", "commit"=>"Create Purchased item"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 400 Bad Request in 6ms (ActiveRecord: 0.5ms | Allocations: 1679)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: purchased_item):
+  
+app/controllers/purchased_items_controller.rb:21:in `purchase_params'
+app/controllers/purchased_items_controller.rb:11:in `create'
+Started GET "/products/1" for ::1 at 2020-07-28 16:09:01 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `show'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:12:in `show'
+  Rendering products/show.html.erb within layouts/product
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  Rendered products/show.html.erb within layouts/product (Duration: 51.8ms | Allocations: 21354)
+Completed 200 OK in 236ms (Views: 167.4ms | ActiveRecord: 4.2ms | Allocations: 70811)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--604abf43c761f0c9dae39b3a3ff4cbc2994e3b6a/download.jpeg" for ::1 at 2020-07-28 16:09:02 -0400
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--604abf43c761f0c9dae39b3a3ff4cbc2994e3b6a", "filename"=>"download"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (243.9ms) [0m[34mGenerated URL for file at key: z45b9ppafhma8tfezlqpf6pgqy1j (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMjA6MTQ6MDIuMzQxWiIsInB1ciI6ImJsb2Jfa2V5In19--ce32c6eb4444a47218a4a3afebf9b0d5bfb24c2b/download.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22download.jpeg%22%3B+filename%2A%3DUTF-8%27%27download.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMjA6MTQ6MDIuMzQxWiIsInB1ciI6ImJsb2Jfa2V5In19--ce32c6eb4444a47218a4a3afebf9b0d5bfb24c2b/download.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22download.jpeg%22%3B+filename%2A%3DUTF-8%27%27download.jpeg
+Completed 302 Found in 248ms (ActiveRecord: 0.2ms | Allocations: 197421)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMjA6MTQ6MDIuMzQxWiIsInB1ciI6ImJsb2Jfa2V5In19--ce32c6eb4444a47218a4a3afebf9b0d5bfb24c2b/download.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22download.jpeg%22%3B+filename%2A%3DUTF-8%27%27download.jpeg" for ::1 at 2020-07-28 16:09:02 -0400
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"download.jpeg\"; filename*=UTF-8''download.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMjA6MTQ6MDIuMzQxWiIsInB1ciI6ImJsb2Jfa2V5In19--ce32c6eb4444a47218a4a3afebf9b0d5bfb24c2b", "filename"=>"download"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 374)
+
+
+Started GET "/purchased_items/new?id=1" for ::1 at 2020-07-28 16:09:04 -0400
+Processing by PurchasedItemsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/purchased_items_controller.rb:5:in `new'
+  Rendering purchased_items/new.html.erb within layouts/application
+  Rendered purchased_items/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 551)
+Completed 200 OK in 24ms (Views: 13.4ms | ActiveRecord: 1.0ms | Allocations: 12798)
+
+
+Started POST "/purchased_items" for ::1 at 2020-07-28 16:09:06 -0400
+Processing by PurchasedItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"lbsd96IUSZj3BiDo/BgqrEKZvgi/gID9z9cEXs3/k+TsWEfZZpnf2rU57zVdDqr6Ioi8SxD21ExbmHoL8MpCyg==", "commit"=>"purchase"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 400 Bad Request in 220698ms (ActiveRecord: 0.2ms | Allocations: 38454)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: purchased_item):
+  
+app/controllers/purchased_items_controller.rb:22:in `purchase_params'
+app/controllers/purchased_items_controller.rb:12:in `create'
+Started GET "/purchased_items/new?id=1" for ::1 at 2020-07-28 16:12:55 -0400
+Processing by PurchasedItemsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/purchased_items_controller.rb:5:in `new'
+  Rendering purchased_items/new.html.erb within layouts/application
+  Rendered purchased_items/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1114)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.5ms | Allocations: 3424)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"purchased_items"}, missing required keys: [:id]):
+     9: 
+    10: 
+    11: 
+    12: <%= button_to "purchase", purchased_item_path, params: {product_id: params[:id]}, method: :post %> 
+  
+app/views/purchased_items/new.html.erb:12
+Started GET "/products/1" for ::1 at 2020-07-28 16:13:39 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `show'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:12:in `show'
+  Rendering products/show.html.erb within layouts/product
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  Rendered products/show.html.erb within layouts/product (Duration: 3.7ms | Allocations: 2383)
+Completed 200 OK in 21ms (Views: 12.2ms | ActiveRecord: 1.2ms | Allocations: 10895)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMjA6MTQ6MDIuMzQxWiIsInB1ciI6ImJsb2Jfa2V5In19--ce32c6eb4444a47218a4a3afebf9b0d5bfb24c2b/download.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22download.jpeg%22%3B+filename%2A%3DUTF-8%27%27download.jpeg" for ::1 at 2020-07-28 16:13:39 -0400
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"download.jpeg\"; filename*=UTF-8''download.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMjA6MTQ6MDIuMzQxWiIsInB1ciI6ImJsb2Jfa2V5In19--ce32c6eb4444a47218a4a3afebf9b0d5bfb24c2b", "filename"=>"download"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 326)
+
+
+Started GET "/purchased_items/new?id=1" for ::1 at 2020-07-28 16:13:40 -0400
+Processing by PurchasedItemsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/purchased_items_controller.rb:5:in `new'
+  Rendering purchased_items/new.html.erb within layouts/application
+  Rendered purchased_items/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 326)
+Completed 200 OK in 14ms (Views: 9.9ms | ActiveRecord: 0.4ms | Allocations: 8001)
+
+
+Started POST "/purchased_items" for ::1 at 2020-07-28 16:13:42 -0400
+Processing by PurchasedItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"qcJEjI7bkFoBk9+aDoY2kuiCGTFYXbuGFu/kxqz7R7LQIR6iSlYGGEOsEEevkLbEiJMbcvcr7zeCoJqTkc6WnA==", "product_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 400 Bad Request in 168350ms (ActiveRecord: 0.3ms | Allocations: 6655)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: purchased_item):
+  
+app/controllers/purchased_items_controller.rb:22:in `purchase_params'
+app/controllers/purchased_items_controller.rb:12:in `create'
+Started GET "/products/2" for ::1 at 2020-07-28 16:21:06 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `show'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:12:in `show'
+  Rendering products/show.html.erb within layouts/product
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  Rendered products/show.html.erb within layouts/product (Duration: 29.0ms | Allocations: 16504)
+Completed 200 OK in 74ms (Views: 36.8ms | ActiveRecord: 3.0ms | Allocations: 44682)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4bd79ab6c7183893cd916c2b229b44f053cfcb05/jordan.jpg" for ::1 at 2020-07-28 16:21:06 -0400
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4bd79ab6c7183893cd916c2b229b44f053cfcb05", "filename"=>"jordan"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[36m  Disk Storage (0.9ms) [0m[34mGenerated URL for file at key: k5v7gg5s8v8ola740qjldygmyzvh (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDIwOjI2OjA2Ljc3N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--f7e570ba02166ee6f9d6e5e27d31825095ec0903/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDIwOjI2OjA2Ljc3N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--f7e570ba02166ee6f9d6e5e27d31825095ec0903/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg
+Completed 302 Found in 14ms (ActiveRecord: 0.2ms | Allocations: 2100)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDIwOjI2OjA2Ljc3N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--f7e570ba02166ee6f9d6e5e27d31825095ec0903/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg" for ::1 at 2020-07-28 16:21:06 -0400
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"jordan.jpg\"; filename*=UTF-8''jordan.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDIwOjI2OjA2Ljc3N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--f7e570ba02166ee6f9d6e5e27d31825095ec0903", "filename"=>"jordan"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 372)
+
+
+Started GET "/purchased_items/new?id=2" for ::1 at 2020-07-28 16:21:09 -0400
+Processing by PurchasedItemsController#new as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/purchased_items_controller.rb:5:in `new'
+  Rendering purchased_items/new.html.erb within layouts/application
+  Rendered purchased_items/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 327)
+Completed 200 OK in 20ms (Views: 10.1ms | ActiveRecord: 0.9ms | Allocations: 11998)
+
+
+Started POST "/purchased_items" for ::1 at 2020-07-28 16:21:11 -0400
+Processing by PurchasedItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"afG2HZdxwKMZwFacw/eUFtSAzV9wbiUgXyHUTro9FkUQEuwzU/xW4Vv/mUFi4RRAtJHPHN8YcZHLbqobhwjHaw==", "id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/purchased_items_controller.rb:12:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/purchased_items_controller.rb:12:in `create'
+  [1m[36mPurchasedItem Create (1.7ms)[0m  [1m[32mINSERT INTO "purchased_items" ("buyer_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["buyer_id", 3], ["created_at", "2020-07-28 20:21:11.153129"], ["updated_at", "2020-07-28 20:21:11.153129"]]
+  ↳ app/controllers/purchased_items_controller.rb:12:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/purchased_items_controller.rb:12:in `create'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/purchased_items_controller.rb:13:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 3.4ms | Allocations: 6202)
+
+
+Started GET "/" for ::1 at 2020-07-28 16:21:11 -0400
+>>>>>>> e29a54acf93dc6a3411f9bf91c54afcc8bd94f88
 Processing by WelcomeController#home as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:5:in `current_user'
   Rendering welcome/home.html.erb within layouts/home
+<<<<<<< HEAD
   Rendered welcome/home.html.erb within layouts/home (Duration: 0.5ms | Allocations: 215)
 Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.1ms | Allocations: 6656)
 
@@ -12437,5 +13289,352 @@ Processing by WelcomeController#home as HTML
   Rendering welcome/home.html.erb within layouts/home
   Rendered welcome/home.html.erb within layouts/home (Duration: 0.5ms | Allocations: 310)
 Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 7092)
+
+
+=======
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.5ms | Allocations: 569)
+Completed 200 OK in 428ms (Views: 425.7ms | ActiveRecord: 0.1ms | Allocations: 63648)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPurchasedItem Load (0.2ms)[0m  [1m[34mSELECT "purchased_items".* FROM "purchased_items" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPurchasedItem Load (0.7ms)[0m  [1m[34mSELECT "purchased_items".* FROM "purchased_items" ORDER BY "purchased_items"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPurchasedItem Destroy (1.1ms)[0m  [1m[31mDELETE FROM "purchased_items"[0m
+  [1m[36mPurchasedItem Load (0.5ms)[0m  [1m[34mSELECT "purchased_items".* FROM "purchased_items" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/products/2" for ::1 at 2020-07-28 16:24:36 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `show'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:12:in `show'
+  Rendering products/show.html.erb within layouts/product
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  Rendered products/show.html.erb within layouts/product (Duration: 45.8ms | Allocations: 21382)
+Completed 200 OK in 238ms (Views: 173.0ms | ActiveRecord: 4.5ms | Allocations: 70690)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDIwOjI2OjA2Ljc3N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--f7e570ba02166ee6f9d6e5e27d31825095ec0903/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg" for ::1 at 2020-07-28 16:24:36 -0400
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"jordan.jpg\"; filename*=UTF-8''jordan.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDIwOjI2OjA2Ljc3N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--f7e570ba02166ee6f9d6e5e27d31825095ec0903", "filename"=>"jordan"}
+Completed 304 Not Modified in 2ms (ActiveRecord: 0.0ms | Allocations: 448)
+
+
+Started GET "/purchased_items/new?id=2" for ::1 at 2020-07-28 16:24:38 -0400
+Processing by PurchasedItemsController#new as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/purchased_items_controller.rb:5:in `new'
+  Rendering purchased_items/new.html.erb within layouts/application
+  Rendered purchased_items/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 345)
+Completed 200 OK in 45ms (Views: 32.3ms | ActiveRecord: 1.1ms | Allocations: 12548)
+
+
+Started POST "/purchased_items" for ::1 at 2020-07-28 16:24:39 -0400
+Processing by PurchasedItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"IfN8MvLbRzAMSlR40weRikWynvInloSIonBnWkJ3rstYECYcNlbRck51m6VyERHcJaOcsYjg0Dk2PxkPf0J/5Q==", "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/purchased_items_controller.rb:12:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/purchased_items_controller.rb:12:in `create'
+  [1m[36mPurchasedItem Create (0.5ms)[0m  [1m[32mINSERT INTO "purchased_items" ("buyer_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["buyer_id", 3], ["created_at", "2020-07-28 20:24:39.952382"], ["updated_at", "2020-07-28 20:24:39.952382"]]
+  ↳ app/controllers/purchased_items_controller.rb:12:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/purchased_items_controller.rb:12:in `create'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/purchased_items_controller.rb:13:in `create'
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ (byebug):1:in `create'
+  [1m[36mPurchasedItem Load (0.4ms)[0m  [1m[34mSELECT "purchased_items".* FROM "purchased_items" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/controllers/purchased_items_controller.rb:17:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 123023ms (ActiveRecord: 2.2ms | Allocations: 53063)
+
+
+Started GET "/" for ::1 at 2020-07-28 16:26:42 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.6ms | Allocations: 577)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.2ms | Allocations: 8201)
+
+
+Started GET "/products/2" for ::1 at 2020-07-28 16:27:30 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `show'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:12:in `show'
+  Rendering products/show.html.erb within layouts/product
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  Rendered products/show.html.erb within layouts/product (Duration: 4.5ms | Allocations: 2189)
+Completed 200 OK in 20ms (Views: 11.3ms | ActiveRecord: 1.0ms | Allocations: 9982)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4bd79ab6c7183893cd916c2b229b44f053cfcb05/jordan.jpg" for ::1 at 2020-07-28 16:27:30 -0400
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4bd79ab6c7183893cd916c2b229b44f053cfcb05", "filename"=>"jordan"}
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[36m  Disk Storage (145.2ms) [0m[34mGenerated URL for file at key: k5v7gg5s8v8ola740qjldygmyzvh (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDIwOjMyOjMxLjA0MloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--045fb09eafbba8c7ed0f685366e1eadb4c32b0d1/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDIwOjMyOjMxLjA0MloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--045fb09eafbba8c7ed0f685366e1eadb4c32b0d1/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg
+Completed 302 Found in 148ms (ActiveRecord: 0.1ms | Allocations: 197328)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDIwOjMyOjMxLjA0MloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--045fb09eafbba8c7ed0f685366e1eadb4c32b0d1/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg" for ::1 at 2020-07-28 16:27:31 -0400
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"jordan.jpg\"; filename*=UTF-8''jordan.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDIwOjMyOjMxLjA0MloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--045fb09eafbba8c7ed0f685366e1eadb4c32b0d1", "filename"=>"jordan"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 333)
+
+
+Started GET "/products/3" for ::1 at 2020-07-28 16:27:34 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `show'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:12:in `show'
+  Rendering products/show.html.erb within layouts/product
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  Rendered products/show.html.erb within layouts/product (Duration: 3.6ms | Allocations: 2176)
+Completed 200 OK in 17ms (Views: 9.8ms | ActiveRecord: 0.9ms | Allocations: 9973)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6a026a13a3b57d8ee9c9c12f92e7deecadabdcb7/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg" for ::1 at 2020-07-28 16:27:34 -0400
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6a026a13a3b57d8ee9c9c12f92e7deecadabdcb7", "filename"=>"OFF-WHITE-Flamed-Bart-T-Shirt-White"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[36m  Disk Storage (0.7ms) [0m[34mGenerated URL for file at key: 4ysrrykmazx0ml7kwk5se38a204u (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMjA6MzI6MzQuNTkyWiIsInB1ciI6ImJsb2Jfa2V5In19--b08b8fc9ebc9f5cf03bc4e312ed079850406f9bf/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg%22%3B+filename%2A%3DUTF-8%27%27OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMjA6MzI6MzQuNTkyWiIsInB1ciI6ImJsb2Jfa2V5In19--b08b8fc9ebc9f5cf03bc4e312ed079850406f9bf/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg%22%3B+filename%2A%3DUTF-8%27%27OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg
+Completed 302 Found in 10ms (ActiveRecord: 0.2ms | Allocations: 1763)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMjA6MzI6MzQuNTkyWiIsInB1ciI6ImJsb2Jfa2V5In19--b08b8fc9ebc9f5cf03bc4e312ed079850406f9bf/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg%22%3B+filename%2A%3DUTF-8%27%27OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg" for ::1 at 2020-07-28 16:27:34 -0400
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg\"; filename*=UTF-8''OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMjA6MzI6MzQuNTkyWiIsInB1ciI6ImJsb2Jfa2V5In19--b08b8fc9ebc9f5cf03bc4e312ed079850406f9bf", "filename"=>"OFF-WHITE-Flamed-Bart-T-Shirt-White"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 334)
+
+
+Started GET "/purchased_items/new?id=3" for ::1 at 2020-07-28 16:27:37 -0400
+Processing by PurchasedItemsController#new as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/purchased_items_controller.rb:5:in `new'
+  Rendering purchased_items/new.html.erb within layouts/application
+  Rendered purchased_items/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 179)
+Completed 200 OK in 15ms (Views: 8.0ms | ActiveRecord: 0.7ms | Allocations: 6963)
+
+
+Started POST "/purchased_items" for ::1 at 2020-07-28 16:27:39 -0400
+Processing by PurchasedItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"SItoZK2p7ESJ7y5t3zloVPVJ+igSIVaLBMnpIOe116UxaDJKaSR6BsvQ4bB+L+gClVj4a71XAjqQhpd12oAGiw==", "id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/purchased_items_controller.rb:12:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/purchased_items_controller.rb:12:in `create'
+  [1m[36mPurchasedItem Create (0.4ms)[0m  [1m[32mINSERT INTO "purchased_items" ("buyer_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["buyer_id", 3], ["created_at", "2020-07-28 20:27:39.885570"], ["updated_at", "2020-07-28 20:27:39.885570"]]
+  ↳ app/controllers/purchased_items_controller.rb:12:in `create'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/purchased_items_controller.rb:12:in `create'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/purchased_items_controller.rb:13:in `create'
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ (byebug):1:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 163931ms (ActiveRecord: 2.2ms | Allocations: 53852)
+
+
+Started GET "/products/3" for ::1 at 2020-07-28 16:30:33 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `show'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:12:in `show'
+  Rendering products/show.html.erb within layouts/product
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  Rendered products/show.html.erb within layouts/product (Duration: 41.7ms | Allocations: 16292)
+Completed 200 OK in 96ms (Views: 52.9ms | ActiveRecord: 4.2ms | Allocations: 43959)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMjA6MzI6MzQuNTkyWiIsInB1ciI6ImJsb2Jfa2V5In19--b08b8fc9ebc9f5cf03bc4e312ed079850406f9bf/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg%22%3B+filename%2A%3DUTF-8%27%27OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg" for ::1 at 2020-07-28 16:30:33 -0400
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg\"; filename*=UTF-8''OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMjA6MzI6MzQuNTkyWiIsInB1ciI6ImJsb2Jfa2V5In19--b08b8fc9ebc9f5cf03bc4e312ed079850406f9bf", "filename"=>"OFF-WHITE-Flamed-Bart-T-Shirt-White"}
+Completed 304 Not Modified in 2ms (ActiveRecord: 0.0ms | Allocations: 443)
+
+
+Started GET "/purchased_items/new?id=3" for ::1 at 2020-07-28 16:30:35 -0400
+Processing by PurchasedItemsController#new as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/purchased_items_controller.rb:5:in `new'
+  Rendering purchased_items/new.html.erb within layouts/application
+  Rendered purchased_items/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 179)
+Completed 200 OK in 19ms (Views: 8.0ms | ActiveRecord: 1.0ms | Allocations: 11119)
+
+
+Started POST "/purchased_items" for ::1 at 2020-07-28 16:30:37 -0400
+Processing by PurchasedItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"9KIjY6JC8EVYES6IC8D8cRoDv6uK9006bQ83zp4uLpqNQXlNZs9mBxou4VWq1nwnehK96CWBGYv5QEmboxv/tA==", "id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/purchased_items_controller.rb:12:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/purchased_items_controller.rb:12:in `create'
+  [1m[36mPurchasedItem Create (0.4ms)[0m  [1m[32mINSERT INTO "purchased_items" ("buyer_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["buyer_id", 3], ["created_at", "2020-07-28 20:30:37.235125"], ["updated_at", "2020-07-28 20:30:37.235125"]]
+  ↳ app/controllers/purchased_items_controller.rb:12:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/purchased_items_controller.rb:12:in `create'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/purchased_items_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/purchased_items_controller.rb:15:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/purchased_items_controller.rb:15:in `create'
+  [1m[36mProduct Update (0.4ms)[0m  [1m[33mUPDATE "products" SET "purchased_item_id" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["purchased_item_id", 4], ["updated_at", "2020-07-28 20:30:37.243464"], ["id", 3]]
+  ↳ app/controllers/purchased_items_controller.rb:15:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/purchased_items_controller.rb:15:in `create'
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ (byebug):1:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 39542ms (ActiveRecord: 3.6ms | Allocations: 51450)
+
+
+Started GET "/" for ::1 at 2020-07-28 16:31:16 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 0.5ms | Allocations: 310)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.1ms | Allocations: 7137)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPurchasedItem Destroy (0.9ms)[0m  [1m[31mDELETE FROM "purchased_items"[0m
+  [1m[36mPurchasedItem Load (0.5ms)[0m  [1m[34mSELECT "purchased_items".* FROM "purchased_items" LIMIT ?[0m  [["LIMIT", 11]]
+>>>>>>> e29a54acf93dc6a3411f9bf91c54afcc8bd94f88
+Started GET "/" for ::1 at 2020-07-28 16:37:55 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.9ms | Allocations: 916)
+Completed 200 OK in 225ms (Views: 200.5ms | ActiveRecord: 1.0ms | Allocations: 49909)
+
+
+Started GET "/products" for ::1 at 2020-07-28 16:37:58 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:7:in `index'
+  Rendering products/index.html.erb within layouts/product
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  Rendered products/index.html.erb within layouts/product (Duration: 56.9ms | Allocations: 25234)
+Completed 200 OK in 97ms (Views: 72.5ms | ActiveRecord: 4.6ms | Allocations: 46065)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--604abf43c761f0c9dae39b3a3ff4cbc2994e3b6a/download.jpeg" for ::1 at 2020-07-28 16:37:59 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6a026a13a3b57d8ee9c9c12f92e7deecadabdcb7/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg" for ::1 at 2020-07-28 16:37:59 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4bd79ab6c7183893cd916c2b229b44f053cfcb05/jordan.jpg" for ::1 at 2020-07-28 16:37:59 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ActiveStorage::BlobsController#show as JPEG
+Processing by ActiveStorage::BlobsController#show as JPEG
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6a026a13a3b57d8ee9c9c12f92e7deecadabdcb7", "filename"=>"OFF-WHITE-Flamed-Bart-T-Shirt-White"}
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--604abf43c761f0c9dae39b3a3ff4cbc2994e3b6a", "filename"=>"download"}
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4bd79ab6c7183893cd916c2b229b44f053cfcb05", "filename"=>"jordan"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (274.3ms) [0m[34mGenerated URL for file at key: 4ysrrykmazx0ml7kwk5se38a204u (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMjA6NDI6NTkuMzg3WiIsInB1ciI6ImJsb2Jfa2V5In19--6bb3e5669bda76369dd4987a91e10806909b0dee/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg%22%3B+filename%2A%3DUTF-8%27%27OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg)[0m
+[36m  Disk Storage (289.6ms) [0m[34mGenerated URL for file at key: k5v7gg5s8v8ola740qjldygmyzvh (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDIwOjQyOjU5LjQwOFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--9110953eec2f685d07deec75b56ad5614e00055a/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg)[0m
+[36m  Disk Storage (431.5ms) [0m[34mGenerated URL for file at key: z45b9ppafhma8tfezlqpf6pgqy1j (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMjA6NDI6NTkuNTUyWiIsInB1ciI6ImJsb2Jfa2V5In19--f4dd279f36d9f1ad884e633a2fef21fb1f2bdf11/download.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22download.jpeg%22%3B+filename%2A%3DUTF-8%27%27download.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMjA6NDI6NTkuMzg3WiIsInB1ciI6ImJsb2Jfa2V5In19--6bb3e5669bda76369dd4987a91e10806909b0dee/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg%22%3B+filename%2A%3DUTF-8%27%27OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDIwOjQyOjU5LjQwOFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--9110953eec2f685d07deec75b56ad5614e00055a/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg
+Completed 302 Found in 444ms (ActiveRecord: 0.3ms | Allocations: 588382)
+
+
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMjA6NDI6NTkuNTUyWiIsInB1ciI6ImJsb2Jfa2V5In19--f4dd279f36d9f1ad884e633a2fef21fb1f2bdf11/download.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22download.jpeg%22%3B+filename%2A%3DUTF-8%27%27download.jpeg
+Completed 302 Found in 440ms (ActiveRecord: 0.2ms | Allocations: 587284)
+
+
+Completed 302 Found in 443ms (ActiveRecord: 0.1ms | Allocations: 588149)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMjA6NDI6NTkuMzg3WiIsInB1ciI6ImJsb2Jfa2V5In19--6bb3e5669bda76369dd4987a91e10806909b0dee/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg%22%3B+filename%2A%3DUTF-8%27%27OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg" for ::1 at 2020-07-28 16:37:59 -0400
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDIwOjQyOjU5LjQwOFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--9110953eec2f685d07deec75b56ad5614e00055a/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg" for ::1 at 2020-07-28 16:37:59 -0400
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMjA6NDI6NTkuNTUyWiIsInB1ciI6ImJsb2Jfa2V5In19--f4dd279f36d9f1ad884e633a2fef21fb1f2bdf11/download.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22download.jpeg%22%3B+filename%2A%3DUTF-8%27%27download.jpeg" for ::1 at 2020-07-28 16:37:59 -0400
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg\"; filename*=UTF-8''OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMjA6NDI6NTkuMzg3WiIsInB1ciI6ImJsb2Jfa2V5In19--6bb3e5669bda76369dd4987a91e10806909b0dee", "filename"=>"OFF-WHITE-Flamed-Bart-T-Shirt-White"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 849)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"jordan.jpg\"; filename*=UTF-8''jordan.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDIwOjQyOjU5LjQwOFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--9110953eec2f685d07deec75b56ad5614e00055a", "filename"=>"jordan"}
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"download.jpeg\"; filename*=UTF-8''download.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMjA6NDI6NTkuNTUyWiIsInB1ciI6ImJsb2Jfa2V5In19--f4dd279f36d9f1ad884e633a2fef21fb1f2bdf11", "filename"=>"download"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 419)
+
+
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 781)
 
 

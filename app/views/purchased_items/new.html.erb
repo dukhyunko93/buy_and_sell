@@ -1,0 +1,12 @@
+<h1>Form</h1>
+
+
+
+
+<p>Name:<%= @product.name %></p>
+<p>Price:<%= @product.price %></p>
+<p>id: <%= @product.id %></p>
+
+
+
+<%= button_to "purchase", purchased_items_path, params: {id: params[:id]}, method: :post %> 
