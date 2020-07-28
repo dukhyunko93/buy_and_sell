@@ -18,8 +18,5 @@
 <%= p.label :image, "Product Image" %>
 <%= p.file_field :image %>
 
-<%= p.label :publish_date %>
-<%= p.date_field :publish_date, as: :date, value: p.object.try(:strftime,"%m/%d/%Y") %>
-
 <%= p.submit "Sell" %>
 <% end %>
