@@ -15,7 +15,7 @@
       name: Faker::Commerce.product_name,
       price:Faker::Commerce.price,
       color: "GREEN",
-      condition: "good", 
+      condition: "good",
       product_type: "SHOE")
 end
 
@@ -25,7 +25,6 @@ end
       name: Faker::Commerce.product_name,
       price:Faker::Commerce.price,
       color: "red",
-      condition: "good", 
-      product_type: "shirt",
+      condition: "good",
+      product_type: "shirt")
 end
-

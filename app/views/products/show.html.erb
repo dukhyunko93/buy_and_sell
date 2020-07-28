@@ -8,5 +8,4 @@
 <p>Product Image: <marquee><%= image_tag(@product.image) %></marquee></p>
 
 
-<%= button_to "Purchase", new_purchased_item_path, params: { product_id: params[:id] }, :method => "get" %>
-
+<%= button_to "Purchase", new_purchased_item_path, params: { id: params[:id] }, :method => "get" %>
