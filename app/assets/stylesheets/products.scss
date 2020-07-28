@@ -1,6 +1,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.logo img{
+    width: 200px;
+}
 
 .lsting li{
     display: inline-block;
