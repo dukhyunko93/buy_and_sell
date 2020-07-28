@@ -1,6 +1,7 @@
 class PurchasedItemsController < ApplicationController
 
     def new
+          byebug
       @purchased_item = PurchasedItem.new
       @product = Product.find(params[:id])
 
@@ -13,7 +14,6 @@ class PurchasedItemsController < ApplicationController
       product = Product.find(params[:id])
       product.purchased_item_id = purchased_item.id
       product.save
-      byebug
 
       redirect_to root_path
 
