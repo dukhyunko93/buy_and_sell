@@ -12094,3 +12094,348 @@ Processing by ActiveStorage::DiskController#show as JPEG
 Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 381)
 
 
+Started GET "/products" for ::1 at 2020-07-28 15:32:16 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:7:in `index'
+  Rendering products/index.html.erb within layouts/product
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  Rendered products/index.html.erb within layouts/product (Duration: 51.6ms | Allocations: 26697)
+Completed 200 OK in 285ms (Views: 240.4ms | ActiveRecord: 4.3ms | Allocations: 100677)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--604abf43c761f0c9dae39b3a3ff4cbc2994e3b6a/download.jpeg" for ::1 at 2020-07-28 15:32:17 -0400
+Processing by ActiveStorage::BlobsController#show as JPEG
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4bd79ab6c7183893cd916c2b229b44f053cfcb05/jordan.jpg" for ::1 at 2020-07-28 15:32:17 -0400
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--604abf43c761f0c9dae39b3a3ff4cbc2994e3b6a", "filename"=>"download"}
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6a026a13a3b57d8ee9c9c12f92e7deecadabdcb7/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg" for ::1 at 2020-07-28 15:32:17 -0400
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ActiveStorage::BlobsController#show as JPEG
+[36m  Disk Storage (177.7ms) [0m[34mGenerated URL for file at key: z45b9ppafhma8tfezlqpf6pgqy1j (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6Mzc6MTcuNDU4WiIsInB1ciI6ImJsb2Jfa2V5In19--f400e204825517d9857a0fef8ce7224a8722bd72/download.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22download.jpeg%22%3B+filename%2A%3DUTF-8%27%27download.jpeg)[0m
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4bd79ab6c7183893cd916c2b229b44f053cfcb05", "filename"=>"jordan"}
+Processing by ActiveStorage::BlobsController#show as JPEG
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6Mzc6MTcuNDU4WiIsInB1ciI6ImJsb2Jfa2V5In19--f400e204825517d9857a0fef8ce7224a8722bd72/download.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22download.jpeg%22%3B+filename%2A%3DUTF-8%27%27download.jpeg
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6a026a13a3b57d8ee9c9c12f92e7deecadabdcb7", "filename"=>"OFF-WHITE-Flamed-Bart-T-Shirt-White"}
+Completed 302 Found in 186ms (ActiveRecord: 0.2ms | Allocations: 201503)
+
+
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[36m  Disk Storage (0.4ms) [0m[34mGenerated URL for file at key: k5v7gg5s8v8ola740qjldygmyzvh (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDE5OjM3OjE3LjQ2N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--56e050c03a747757f5b75238aed98223b7dea837/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg)[0m
+[36m  Disk Storage (0.4ms) [0m[34mGenerated URL for file at key: 4ysrrykmazx0ml7kwk5se38a204u (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6Mzc6MTcuNDY4WiIsInB1ciI6ImJsb2Jfa2V5In19--3ab15f572118ef0fa1e156bda0e243876f8effb5/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg%22%3B+filename%2A%3DUTF-8%27%27OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDE5OjM3OjE3LjQ2N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--56e050c03a747757f5b75238aed98223b7dea837/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6Mzc6MTcuNDU4WiIsInB1ciI6ImJsb2Jfa2V5In19--f400e204825517d9857a0fef8ce7224a8722bd72/download.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22download.jpeg%22%3B+filename%2A%3DUTF-8%27%27download.jpeg" for ::1 at 2020-07-28 15:32:17 -0400
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6Mzc6MTcuNDY4WiIsInB1ciI6ImJsb2Jfa2V5In19--3ab15f572118ef0fa1e156bda0e243876f8effb5/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg%22%3B+filename%2A%3DUTF-8%27%27OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg
+Completed 302 Found in 15ms (ActiveRecord: 0.2ms | Allocations: 4803)
+
+
+Completed 302 Found in 15ms (ActiveRecord: 0.1ms | Allocations: 4475)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDE5OjM3OjE3LjQ2N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--56e050c03a747757f5b75238aed98223b7dea837/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg" for ::1 at 2020-07-28 15:32:17 -0400
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"download.jpeg\"; filename*=UTF-8''download.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6Mzc6MTcuNDU4WiIsInB1ciI6ImJsb2Jfa2V5In19--f400e204825517d9857a0fef8ce7224a8722bd72", "filename"=>"download"}
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6Mzc6MTcuNDY4WiIsInB1ciI6ImJsb2Jfa2V5In19--3ab15f572118ef0fa1e156bda0e243876f8effb5/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg%22%3B+filename%2A%3DUTF-8%27%27OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg" for ::1 at 2020-07-28 15:32:17 -0400
+Processing by ActiveStorage::DiskController#show as JPEG
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms | Allocations: 3346)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"jordan.jpg\"; filename*=UTF-8''jordan.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDE5OjM3OjE3LjQ2N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--56e050c03a747757f5b75238aed98223b7dea837", "filename"=>"jordan"}
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg\"; filename*=UTF-8''OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6Mzc6MTcuNDY4WiIsInB1ciI6ImJsb2Jfa2V5In19--3ab15f572118ef0fa1e156bda0e243876f8effb5", "filename"=>"OFF-WHITE-Flamed-Bart-T-Shirt-White"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 442)
+
+
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 762)
+
+
+Started GET "/" for ::1 at 2020-07-28 15:32:20 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.4ms | Allocations: 598)
+Completed 200 OK in 27ms (Views: 24.2ms | ActiveRecord: 0.3ms | Allocations: 8092)
+
+
+Started GET "/products" for ::1 at 2020-07-28 15:32:24 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:7:in `index'
+  Rendering products/index.html.erb within layouts/product
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  Rendered products/index.html.erb within layouts/product (Duration: 20.4ms | Allocations: 6436)
+Completed 200 OK in 35ms (Views: 31.0ms | ActiveRecord: 1.2ms | Allocations: 13537)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6Mzc6MTcuNDY4WiIsInB1ciI6ImJsb2Jfa2V5In19--3ab15f572118ef0fa1e156bda0e243876f8effb5/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg%22%3B+filename%2A%3DUTF-8%27%27OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg" for ::1 at 2020-07-28 15:32:24 -0400
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6Mzc6MTcuNDU4WiIsInB1ciI6ImJsb2Jfa2V5In19--f400e204825517d9857a0fef8ce7224a8722bd72/download.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22download.jpeg%22%3B+filename%2A%3DUTF-8%27%27download.jpeg" for ::1 at 2020-07-28 15:32:24 -0400
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDE5OjM3OjE3LjQ2N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--56e050c03a747757f5b75238aed98223b7dea837/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg" for ::1 at 2020-07-28 15:32:24 -0400
+Processing by ActiveStorage::DiskController#show as JPEG
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"download.jpeg\"; filename*=UTF-8''download.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6Mzc6MTcuNDU4WiIsInB1ciI6ImJsb2Jfa2V5In19--f400e204825517d9857a0fef8ce7224a8722bd72", "filename"=>"download"}
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg\"; filename*=UTF-8''OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6Mzc6MTcuNDY4WiIsInB1ciI6ImJsb2Jfa2V5In19--3ab15f572118ef0fa1e156bda0e243876f8effb5", "filename"=>"OFF-WHITE-Flamed-Bart-T-Shirt-White"}
+Processing by ActiveStorage::DiskController#show as JPEG
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 388)
+
+
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 386)
+
+
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"jordan.jpg\"; filename*=UTF-8''jordan.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDE5OjM3OjE3LjQ2N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--56e050c03a747757f5b75238aed98223b7dea837", "filename"=>"jordan"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 382)
+
+
+Started GET "/products" for ::1 at 2020-07-28 15:36:00 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:7:in `index'
+  Rendering products/index.html.erb within layouts/product
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  Rendered products/index.html.erb within layouts/product (Duration: 9.2ms | Allocations: 6403)
+Completed 200 OK in 20ms (Views: 16.4ms | ActiveRecord: 0.9ms | Allocations: 13449)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDE5OjM3OjE3LjQ2N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--56e050c03a747757f5b75238aed98223b7dea837/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg" for ::1 at 2020-07-28 15:36:00 -0400
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6Mzc6MTcuNDY4WiIsInB1ciI6ImJsb2Jfa2V5In19--3ab15f572118ef0fa1e156bda0e243876f8effb5/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg%22%3B+filename%2A%3DUTF-8%27%27OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg" for ::1 at 2020-07-28 15:36:00 -0400
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6Mzc6MTcuNDU4WiIsInB1ciI6ImJsb2Jfa2V5In19--f400e204825517d9857a0fef8ce7224a8722bd72/download.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22download.jpeg%22%3B+filename%2A%3DUTF-8%27%27download.jpeg" for ::1 at 2020-07-28 15:36:00 -0400
+Processing by ActiveStorage::DiskController#show as JPEG
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"jordan.jpg\"; filename*=UTF-8''jordan.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDE5OjM3OjE3LjQ2N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--56e050c03a747757f5b75238aed98223b7dea837", "filename"=>"jordan"}
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"download.jpeg\"; filename*=UTF-8''download.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6Mzc6MTcuNDU4WiIsInB1ciI6ImJsb2Jfa2V5In19--f400e204825517d9857a0fef8ce7224a8722bd72", "filename"=>"download"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 384)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 759)
+
+
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg\"; filename*=UTF-8''OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6Mzc6MTcuNDY4WiIsInB1ciI6ImJsb2Jfa2V5In19--3ab15f572118ef0fa1e156bda0e243876f8effb5", "filename"=>"OFF-WHITE-Flamed-Bart-T-Shirt-White"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 384)
+
+
+Started GET "/products" for ::1 at 2020-07-28 15:36:00 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:7:in `index'
+  Rendering products/index.html.erb within layouts/product
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:7
+  Rendered products/index.html.erb within layouts/product (Duration: 9.2ms | Allocations: 6405)
+Completed 200 OK in 19ms (Views: 15.0ms | ActiveRecord: 0.9ms | Allocations: 13457)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6Mzc6MTcuNDU4WiIsInB1ciI6ImJsb2Jfa2V5In19--f400e204825517d9857a0fef8ce7224a8722bd72/download.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22download.jpeg%22%3B+filename%2A%3DUTF-8%27%27download.jpeg" for ::1 at 2020-07-28 15:36:00 -0400
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDE5OjM3OjE3LjQ2N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--56e050c03a747757f5b75238aed98223b7dea837/jordan.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22jordan.jpg%22%3B+filename%2A%3DUTF-8%27%27jordan.jpg" for ::1 at 2020-07-28 15:36:00 -0400
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6Mzc6MTcuNDY4WiIsInB1ciI6ImJsb2Jfa2V5In19--3ab15f572118ef0fa1e156bda0e243876f8effb5/OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg%22%3B+filename%2A%3DUTF-8%27%27OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg" for ::1 at 2020-07-28 15:36:00 -0400
+Processing by ActiveStorage::DiskController#show as JPEG
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"jordan.jpg\"; filename*=UTF-8''jordan.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhelYyTjJkbk5YTTRkamh2YkdFM05EQnhhbXhrZVdkdGVYcDJhQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1wdmNtUmhiaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoycHZjbVJoYmk1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIwLTA3LTI4VDE5OjM3OjE3LjQ2N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--56e050c03a747757f5b75238aed98223b7dea837", "filename"=>"jordan"}
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"download.jpeg\"; filename*=UTF-8''download.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6Mzc6MTcuNDU4WiIsInB1ciI6ImJsb2Jfa2V5In19--f400e204825517d9857a0fef8ce7224a8722bd72", "filename"=>"download"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 383)
+
+
+Completed 304 Not Modified in 0ms (ActiveRecord: 0.0ms | Allocations: 397)
+
+
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg\"; filename*=UTF-8''OFF-WHITE-Flamed-Bart-T-Shirt-White.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOSGx6Y25KNWEyMWhlbmd3Yld3M2EzZHJOWE5sTXpoaE1qQTBkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWs5R1JpMVhTRWxVUlMxR2JHRnRaV1F0UW1GeWRDMVVMVk5vYVhKMExWZG9hWFJsTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMDlHUmkxWFNFbFVSUzFHYkdGdFpXUXRRbUZ5ZEMxVUxWTm9hWEowTFZkb2FYUmxMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6Mzc6MTcuNDY4WiIsInB1ciI6ImJsb2Jfa2V5In19--3ab15f572118ef0fa1e156bda0e243876f8effb5", "filename"=>"OFF-WHITE-Flamed-Bart-T-Shirt-White"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 381)
+
+
+Started GET "/products/1" for ::1 at 2020-07-28 15:36:01 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `show'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:12:in `show'
+  Rendering products/show.html.erb within layouts/product
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:8
+  Rendered products/show.html.erb within layouts/product (Duration: 3.7ms | Allocations: 2400)
+Completed 200 OK in 16ms (Views: 9.7ms | ActiveRecord: 0.7ms | Allocations: 10924)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6Mzc6MTcuNDU4WiIsInB1ciI6ImJsb2Jfa2V5In19--f400e204825517d9857a0fef8ce7224a8722bd72/download.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22download.jpeg%22%3B+filename%2A%3DUTF-8%27%27download.jpeg" for ::1 at 2020-07-28 15:36:01 -0400
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"download.jpeg\"; filename*=UTF-8''download.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlalExWWpsd2NHRm1hRzFoT0hSbVpYcHNjWEJtTm5CbmNYa3hhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SdmQyNXNiMkZrTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZDI1c2IyRmtMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDctMjhUMTk6Mzc6MTcuNDU4WiIsInB1ciI6ImJsb2Jfa2V5In19--f400e204825517d9857a0fef8ce7224a8722bd72", "filename"=>"download"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 391)
+
+
+Started GET "/" for ::1 at 2020-07-28 15:36:03 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 0.5ms | Allocations: 215)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.1ms | Allocations: 6656)
+
+
+Started GET "/" for ::1 at 2020-07-28 15:39:42 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.7ms | Allocations: 859)
+Completed 200 OK in 100ms (Views: 76.0ms | ActiveRecord: 0.7ms | Allocations: 37823)
+
+
+Started POST "/logout" for ::1 at 2020-07-28 15:39:44 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mUx7EQ55qzCeXKslR3XTXvYBTcFW5Dra5rxlu019ty5EW3aR9pp8z2SAxp+Cu1lIswfKDTi3oDYoIzejfNmDNg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1028)
+
+
+Started GET "/" for ::1 at 2020-07-28 15:39:45 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 165.5ms | Allocations: 195918)
+Completed 200 OK in 174ms (Views: 171.9ms | ActiveRecord: 0.2ms | Allocations: 202547)
+
+
+Started GET "/login" for ::1 at 2020-07-28 15:39:46 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2139)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.1ms | Allocations: 9667)
+
+
+Started POST "/login" for ::1 at 2020-07-28 15:39:48 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"uBx+p0YX1TZsOGt12GmOq/HqawH7PALGFkMCG9WbVAyq+UgkvJmZmfqCEg6RGWK3NJkKpZcIlUFEkPIcMlSlgA==", "user"=>{"user_name"=>"Peter123", "password"=>"[FILTERED]"}, "commit"=>"log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."user_name" = ? LIMIT ?[0m  [["user_name", "Peter123"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms | Allocations: 2485)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:10:in `create'
+Started POST "/login" for ::1 at 2020-07-28 15:39:59 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"uBx+p0YX1TZsOGt12GmOq/HqawH7PALGFkMCG9WbVAyq+UgkvJmZmfqCEg6RGWK3NJkKpZcIlUFEkPIcMlSlgA==", "user"=>{"user_name"=>"Peter123", "password"=>"[FILTERED]"}, "commit"=>"log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."user_name" = ? LIMIT ?[0m  [["user_name", "Peter123"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 224ms (ActiveRecord: 0.8ms | Allocations: 11257)
+
+
+Started GET "/login" for ::1 at 2020-07-28 15:40:00 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1422)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.1ms | Allocations: 7828)
+
+
+Started POST "/login" for ::1 at 2020-07-28 15:40:11 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"pNwKaBPXyb3N55Pihk6S3qEm+L3GU3DT+vmi/lwDyDC2OTzr6VmFEltd6pnPPn7CZFWZGapn51SoKlL5u8w5vA==", "user"=>{"user_name"=>"Peter123", "password"=>"[FILTERED]"}, "commit"=>"log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."user_name" = ? LIMIT ?[0m  [["user_name", "Peter123"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Completed 500 Internal Server Error in 389ms (ActiveRecord: 0.2ms | Allocations: 108594)
+
+
+  
+NameError (undefined local variable or method `root' for #<SessionsController:0x00007f83e3c431c8>):
+  
+app/controllers/sessions_controller.rb:12:in `create'
+Started POST "/login" for ::1 at 2020-07-28 15:40:19 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"pNwKaBPXyb3N55Pihk6S3qEm+L3GU3DT+vmi/lwDyDC2OTzr6VmFEltd6pnPPn7CZFWZGapn51SoKlL5u8w5vA==", "user"=>{"user_name"=>"Peter123", "password"=>"[FILTERED]"}, "commit"=>"log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."user_name" = ? LIMIT ?[0m  [["user_name", "Peter123"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 226ms (ActiveRecord: 0.9ms | Allocations: 11116)
+
+
+Started GET "/" for ::1 at 2020-07-28 15:40:20 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 0.5ms | Allocations: 310)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 7092)
+
+
