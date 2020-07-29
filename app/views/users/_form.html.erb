@@ -25,5 +25,5 @@
         <%= f.label :dob, "Date of Birth"%>
         <%= f.date_field :dob, as: :date, value: f.object.try(:strftime,"%m/%d/%Y") %><br><br>
 
-  <%= f.submit "Create Account" %>
+  <%= f.submit "Save Account" %>
 <% end %>

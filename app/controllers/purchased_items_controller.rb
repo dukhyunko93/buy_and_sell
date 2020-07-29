@@ -1,5 +1,6 @@
 class PurchasedItemsController < ApplicationController
     before_action :require_logged_in
+    layout 'purchased_items'
 
     def new
       # @purchased_item = PurchasedItem.new

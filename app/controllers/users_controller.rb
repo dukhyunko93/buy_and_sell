@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
     before_action :require_logged_in
     skip_before_action :require_logged_in, only: [:new, :create]
+    layout 'users'
 
     def new
         @user = User.new
@@ -18,11 +19,16 @@ class UsersController < ApplicationController
     end
 
     def edit
-
     end
 
     def update
-
+        user = User.find(params[:id])
+        if user.update(user_params)
+            redirect_to user_path(user)
+        else
+            flash[:user_error] = user.errors.full_messages
+            redirect_to edit_user_path
+        end
     end
 
     def show
