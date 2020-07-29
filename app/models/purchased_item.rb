@@ -3,5 +3,5 @@ class PurchasedItem < ApplicationRecord
     has_many :products
     # accepts_nested_attributes_for :products
     has_many :sellers, through: :products
-
+    
 end

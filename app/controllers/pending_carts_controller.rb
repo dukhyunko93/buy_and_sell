@@ -1,14 +1,8 @@
 class PendingCartsController < ApplicationController
   layout 'cart'
 
-  def new
-
-  end
-
   def index
-    # @pending =
-    @items = PendingCart.all
-
+    @cart = PendingCart.all
   end
 
   def destroy
@@ -24,10 +18,4 @@ class PendingCartsController < ApplicationController
     redirect_to pending_carts_path
   end
 
-
-
-  private
-  # def pending_params
-  #   params.require(:pending_cart)
-  # end
 end

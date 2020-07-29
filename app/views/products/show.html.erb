@@ -1,3 +1,9 @@
+ <div class='error_message'>
+    <% if flash[:user_error] %>
+        <p><%= flash[:user_error] %></p>
+    <% end %>
+</div>
+
 <div class='product_info'>
     
     <div class='img_box'>
@@ -7,8 +13,8 @@
     <div class='details'>
         <h3>Product: <%= @product.name %></h3>
         <p>Seller: <%= link_to @seller.name, user_path(@seller) %></p>
-        <p>Price: $<%= @product.price %></p>
-        <p>Type of Product: <%= @product.product_type %></p>
+        <p>$<%= @product.price %></p>
+        <p>Category: <%= @product.product_type %></p>
         <p>Color: <%= @product.color %></p>
         <div class='bttngrp'>
             <%= button_to "Purchase", new_purchased_item_path, params: { id: params[:id] }, :method => "get", :class => 'bttn' %>

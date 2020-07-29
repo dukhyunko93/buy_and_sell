@@ -6,7 +6,12 @@
 
 
 /* show page */
-
+.error_message{
+    color: red;
+    position: relative;
+    left: 475px;
+    top: 50px;
+}
 .bttn {
     background-color: black;
     color: white;
@@ -34,7 +39,6 @@
 .details {
     position: relative;
     left: 50px;
-    top: 100px;
     border: none;
 }
 

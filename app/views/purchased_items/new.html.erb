@@ -1,12 +1,17 @@
-<h1>Form</h1>
+<div class='purchase_box'>
+    <div class='img_box'>
+        <%= image_tag(@product.image, class:'img') %></p>
+    </div>
 
+    <div class='product_details'>
+        <p>Name: <%= @product.name %></p>
+        <p>Seller: <%= @product.seller.name%></p>
+        <p>Contact info: <%= @product.seller.email %></p>
+        <p>Condition: <%= @product.condition %>
+        <p>$<%= @product.price %></p>
+    </div>
 
+    <div >
 
-
-<p>Name:<%= @product.name %></p>
-<p>Price:<%= @product.price %></p>
-<p>id: <%= @product.id %></p>
-
-
-
-<%= button_to "purchase", purchased_items_path, params: {id: params[:id]}, method: :post %> 
+        <%= button_to "purchase", purchased_items_path, params: {id: params[:id]}, method: :post %> 
+</div>
