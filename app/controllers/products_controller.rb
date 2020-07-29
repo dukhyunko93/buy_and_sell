@@ -3,6 +3,8 @@ class ProductsController < ApplicationController
     skip_before_action :require_logged_in, only: [:index, :show]
     layout 'product'
 
+    #delete and edit
+    
     def index
       @shoes = Product.shoe.select {|t| t.notsold}
       @accessories = Product.accessory.select {|t| t.notsold}
