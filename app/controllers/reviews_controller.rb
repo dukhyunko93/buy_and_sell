@@ -6,16 +6,14 @@ class ReviewsController < ApplicationController
   end
 
   def create
-    review = Review.create(review_params)
-    # product = Product.find(params[:id])
-
-    redirect_to root_path
+    Review.create(review_params)
+    redirect_to purchased_items_path
   end
 
   private
 
   def review_params
-    params.require(:review).permit(:comment, :rating, :product_id, :purchased_item_id)
+    params.require(:review).permit(:comment, :rating, :purchased_item_id )
   end
 
 end

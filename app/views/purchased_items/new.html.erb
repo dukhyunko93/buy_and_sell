@@ -13,5 +13,4 @@
 
     <div >
 
-        <%= button_to "purchase", purchased_items_path, params: {id: params[:id]}, method: :post %> 
-</div>
+<%= button_to "purchase", purchased_items_path, params: {purchased_item: {product_id: params[:id], buyer_id: @current_user.id}}, method: :post %>

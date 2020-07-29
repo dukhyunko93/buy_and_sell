@@ -3,9 +3,8 @@ class PurchasedItemsController < ApplicationController
     layout 'purchased_items'
 
     def new
-      @purchased_item = PurchasedItem.new
+      @current_user = current_user
       @product = Product.find(params[:id])
-      @user = current_user
       if current_user.id == @product.seller_id
         flash[:user_error] = "* You cannot buy your own item *"
         redirect_to product_path(@product)
@@ -15,22 +14,21 @@ class PurchasedItemsController < ApplicationController
     end
 
     def create
-      buyer_id = current_user.id
-      purchased_item = PurchasedItem.create(buyer_id: buyer_id)
-      product = Product.find(params[:id])
+      purchased_item = PurchasedItem.create(purchase_params)
+      product = purchased_item.product
       product.purchased_item_id = purchased_item.id
       product.save
       redirect_to root_path
     end
 
     def index
-
+      @purchased_items = PurchasedItem.all
     end
 
     private
 
     def purchase_params
-        params.require(:purchased_item).permit(:buyer_id)
+        params.require(:purchased_item).permit(:buyer_id, :product_id)
     end
 
 end

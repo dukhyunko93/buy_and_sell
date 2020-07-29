@@ -6,10 +6,7 @@
 <%= f.label :rating %>
 <%= f.number_field :rating, min: 1, max: 5 %>
 
-
-
-
-
+<%= f.hidden_field :purchased_item_id, :value => @purchased_item.id%>
 
 <%= f.submit "Submit Review" %>
 <% end %>
