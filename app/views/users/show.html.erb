@@ -5,11 +5,18 @@
 <p>Contact: <%= @user.email %></p>
 <% @user.products.each do |product|%>
 <p>Currently Selling: <%= product.name %></p>
+<<<<<<< HEAD
 <p>Reviews: <%= @user.reviews %></p>
 
+=======
+>>>>>>> 42a70a79c8c1b2cf7a3361431b198fe59c15c4e1
 <%= link_to image_tag(product.image, style: "width:100px;"),  product_path(product)%>
 <% end %>
 
+<% @user.seller_reviews.each do |review| %>
+<%= review.comment %>
+<%= review.rating %>
+<% end %>
 
 
 

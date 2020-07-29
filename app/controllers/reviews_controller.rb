@@ -2,6 +2,8 @@ class ReviewsController < ApplicationController
 
   def new
     @purchased_item = PurchasedItem.find(params[:id])
+    @seller = @purchased_item.product.seller
+    @buyer = current_user
     @review = Review.new
   end
 
@@ -13,7 +15,7 @@ class ReviewsController < ApplicationController
   private
 
   def review_params
-    params.require(:review).permit(:comment, :rating, :purchased_item_id )
+    params.require(:review).permit(:comment, :rating, :purchased_item_id, :buyer_id, :seller_id)
   end
 
 end
