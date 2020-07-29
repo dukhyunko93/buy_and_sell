@@ -1,31 +1,4 @@
-<div class="header">
-
-  <ul>
-  <% if @user.valid? %>
-    <li>Hi, <%= @user.name %> Welcome!</li>
-    <li><%= button_to "Log Out", logout_path, :method => 'post', class: 'path_box' %></li>
-
-    <% else %>
-    <li><%= button_to "Log In", login_path, :method => "get", class: 'path_box' %></li>
-    <li><%= button_to "New Account", signup_path, :method => "get", class: 'path_box' %></li>
-  <% end %>
-    <li><div class="dropdown"><button>Browse</button></li>
-    <!--<div>
-      <a href="#">Long Link</a>
-      <a href="#">Link</a>
-      <a href="#">Link</a>
-    </div>-->
-    </div>
-
+<div id='slogan_box'>
+  <h1 class='slogan'>Buy & Sell</h1>
 </div>
 
-
-
-<!--
-Have tabs for for links
-                1 - Account details ('user#show')
-                2 - Purchased History ('purchased_item#index')
-                3 - Search bar to find items ()
-                4 - Sell button
-                5 - Browse tab to choose what type of merchandise
--->

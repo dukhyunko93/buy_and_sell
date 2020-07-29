@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ScareCrow</title>
+   <%= stylesheet_link_tag 'pending_carts' %>
+  </head>
+
+  <body>
+    
+    <div id='cartbanner'>
+    <%= link_to image_tag('logo.png'), root_path, class: "logo" %>
+    <h1 class='bannertext'>Shopping Cart</h1>
+    </div>
+
+  <div class='header'>
+
+  <% if @user.valid? %>
+  <div class='greeting'>
+    Hi, <%= @user.name %> Welcome!
+  </div>
+  
+    <div class='myaccount'>
+      <button>My Account</button>
+      <ul>
+        <li><%= button_to 'History', user_path(@user), class: 'account_tab', :method => 'get' %></li>
+        <li><%= button_to 'Security', edit_user_path(@user), class: 'account_tab', :method => 'get' %></li>
+        <li><%= button_to 'Portfolio', purchased_items_path, class: 'account_tab', :method => 'get' %></li>
+      </ul>
+    </div>
+    
+  <% else %>
+    <%= button_to 'Log In', login_path, :method => 'get', class: 'path_box' %>
+    <%= button_to 'New Account', signup_path, :method => 'get', class: 'path_box' %>
+    
+  <% end %>
+
+    <div class='browse'>
+        <button>Browse</button>
+        <ul>
+          <li><%= button_to 'All Item', products_path, class: 'browse_tab', :method => 'get' %></li>
+          <li><%= button_to 'All Item', products_path, class: 'browse_tab', :method => 'get' %></li>
+          <li><%= button_to 'All Item', products_path, class: 'browse_tab', :method => 'get' %></li>
+        </ul>
+    </div>
+    
+    <%= button_to "Sell", new_product_path, :method => 'get', class: 'path_box' %>
+
+    <%= button_to 'Log Out', logout_path, :method => 'post', class: 'path_box' %>
+</div>
+
+    <%= yield %>
+  </body>
+</html>
