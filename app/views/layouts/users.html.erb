@@ -10,14 +10,14 @@
     <%= link_to image_tag('logo.png'), root_path, class: "logo" %>
 
     <% if @user.valid? %>
-    <%= link_to image_tag('cart.png'), pending_carts_path, class: 'cart' %>   
+    <%= link_to image_tag('cart.png'), pending_carts_path, class: 'cart' %>
     <% end %>
 
       <div class='header'>
 
         <% if @user.valid? %>
           <div class='greeting'>
-            Hi, <%= @user.name %> Welcome!
+            Hi, <%= @user.name %>. Welcome Back!
           </div>
 
           <div class='myaccount'>
@@ -59,6 +59,8 @@
       <% end %>
       
       </div>
+
+
 
     <%= yield %>
   </body>
