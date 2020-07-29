@@ -3,10 +3,15 @@
 
 <p>Name: <%= @user.name %></p>
 <p>Contact: <%= @user.email %></p>
+<% @user.products.each do |product|%>
+<p>Currently Selling: <%= product.name %></p>
+
+<%= link_to image_tag(product.image, style: "width:100px;"),  product_path(product)%>
+<% end %>
 
 
 
 
-We need link for
+<p>We need link for
     1. creating new reviews about this user (reviews#new => reviews#create)
-    2. We want name, reviews, contact info, products purchased and sold.
+    2. We want name, reviews, contact info, products purchased and sold.</p>

@@ -2,8 +2,8 @@ PurchasedItem Index
 
 
 <% @purchased_items.each do |item| %>
-<%= item.product.name %>
+<p><%= item.product.name %></p>
+
 
 <%= button_to 'Review this Purchase', new_review_path, params: {id: item.id}, :method => 'get' %>
 <% end %>
-
