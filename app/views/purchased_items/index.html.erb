@@ -1,1 +1,9 @@
-Portfolio
+PurchasedItem Index
+
+
+<% @purchased_items.each do |item| %>
+<% item.products.each do |product| %>
+<%= product.name %>
+<% end %>
+
+<% end %>

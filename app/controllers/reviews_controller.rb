@@ -1,11 +1,15 @@
 class ReviewsController < ApplicationController
 
   def new
-    @purchased_item = PurchasedItem.find(params[:id])
-    @review = Review.new
+    # byebug
+    # button from index page of purchased_item
+    purchased_item = PurchasedItem.find(params[:id])
+    @review = Review.new(purchased_item_id:purchased_item.id)
   end
 
   def create
+    byebug
+
     review = Review.create(review_params)
     # product = Product.find(params[:id])
 
@@ -15,7 +19,7 @@ class ReviewsController < ApplicationController
   private
 
   def review_params
-    params.require(:review).permit(:comment, :rating, :product_id, :purchased_item_id)
+    params.require(:review).permit(:comment, :rating, :purchased_item_id )
   end
 
 end
