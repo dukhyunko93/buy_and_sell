@@ -33931,6 +33931,359 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 15ms (Views: 9.1ms | ActiveRecord: 0.5ms | Allocations: 8303)
 
 
+<<<<<<< HEAD
+Started GET "/users/9" for ::1 at 2020-07-29 10:18:33 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 476)
+Completed 200 OK in 153ms (Views: 123.5ms | ActiveRecord: 1.0ms | Allocations: 39751)
+
+
+Started GET "/reviews/new?id=9" for ::1 at 2020-07-29 10:18:42 -0400
+Processing by ReviewsController#new as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_form.html.erb (Duration: 0.2ms | Allocations: 75)
+  Rendered reviews/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 385)
+Completed 200 OK in 28ms (Views: 10.6ms | ActiveRecord: 0.8ms | Allocations: 13637)
+
+
+Started GET "/reviews/new?id=9" for ::1 at 2020-07-29 10:21:24 -0400
+Processing by ReviewsController#new as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_form.html.erb (Duration: 1.8ms | Allocations: 416)
+  Rendered reviews/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 716)
+Completed 200 OK in 18ms (Views: 14.6ms | ActiveRecord: 0.3ms | Allocations: 7872)
+
+
+Started GET "/reviews/new?id=9" for ::1 at 2020-07-29 10:27:10 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#new as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_form.html.erb (Duration: 272.1ms | Allocations: 198536)
+  Rendered reviews/new.html.erb within layouts/application (Duration: 273.2ms | Allocations: 198839)
+Completed 200 OK in 285ms (Views: 281.2ms | ActiveRecord: 0.5ms | Allocations: 206043)
+
+
+Started GET "/reviews/new?id=9" for ::1 at 2020-07-29 10:29:29 -0400
+Processing by ReviewsController#new as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_form.html.erb (Duration: 13.3ms | Allocations: 3180)
+  Rendered reviews/new.html.erb within layouts/application (Duration: 15.1ms | Allocations: 3482)
+Completed 200 OK in 29ms (Views: 24.0ms | ActiveRecord: 0.4ms | Allocations: 10642)
+
+
+Started GET "/reviews/new?id=9" for ::1 at 2020-07-29 10:29:48 -0400
+Processing by ReviewsController#new as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_form.html.erb (Duration: 2.2ms | Allocations: 795)
+  Rendered reviews/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1097)
+Completed 200 OK in 18ms (Views: 12.5ms | ActiveRecord: 0.4ms | Allocations: 8271)
+
+
+Started GET "/reviews/new?id=9" for ::1 at 2020-07-29 10:34:43 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#new as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_form.html.erb (Duration: 1.6ms | Allocations: 852)
+  Rendered reviews/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1159)
+Completed 200 OK in 49ms (Views: 26.1ms | ActiveRecord: 1.2ms | Allocations: 23495)
+
+
+Started POST "/reviews" for ::1 at 2020-07-29 10:34:52 -0400
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"0IbhcP/kwPofqhnBsfRMdKTO7f2gkMs9UWYdS2En8wtOHIgo2BU89yhoMnYQ43k/Du0fvBxY5eNd7iWYybLFCg==", "review"=>{"comment"=>"2"}, "commit"=>"Submit Review"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 500 Internal Server Error in 203ms (ActiveRecord: 0.2ms | Allocations: 112361)
+
+
+  
+NameError (undefined local variable or method `root' for #<ReviewsController:0x00007fa5b5ceb758>):
+  
+app/controllers/reviews_controller.rb:10:in `create'
+Started POST "/reviews" for ::1 at 2020-07-29 10:35:06 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"0IbhcP/kwPofqhnBsfRMdKTO7f2gkMs9UWYdS2En8wtOHIgo2BU89yhoMnYQ43k/Du0fvBxY5eNd7iWYybLFCg==", "review"=>{"comment"=>"2"}, "commit"=>"Submit Review"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Redirected to http://localhost:3000/
+Completed 302 Found in 62ms (ActiveRecord: 1.3ms | Allocations: 19758)
+
+
+Started GET "/" for ::1 at 2020-07-29 10:35:06 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 0.8ms | Allocations: 97)
+Completed 200 OK in 30ms (Views: 25.6ms | ActiveRecord: 0.2ms | Allocations: 9468)
+
+
+Started GET "/reviews/new?id=9" for ::1 at 2020-07-29 10:39:15 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReviewsController#new as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_form.html.erb (Duration: 119.0ms | Allocations: 196875)
+  Rendered reviews/new.html.erb within layouts/application (Duration: 120.1ms | Allocations: 197326)
+Completed 200 OK in 230ms (Views: 187.9ms | ActiveRecord: 1.5ms | Allocations: 241558)
+
+
+Started POST "/reviews" for ::1 at 2020-07-29 10:39:23 -0400
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"5Vrh7gHndMAXMNay80kQYR4jEdSFqVSD+DW9dIjH+4t7wIi2JhaIzSDy/QVSXiUqtADjlTlhel30vYWnIFLNig==", "review"=>{"comment"=>"3"}, "commit"=>"Submit Review"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 0.4ms | Allocations: 5427)
+
+
+Started GET "/" for ::1 at 2020-07-29 10:39:23 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 0.5ms | Allocations: 98)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.1ms | Allocations: 9453)
+
+
+Started GET "/login" for ::1 at 2020-07-29 10:44:55 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering sessions/new.html.erb within layouts/sessions
+  Rendered sessions/new.html.erb within layouts/sessions (Duration: 120.4ms | Allocations: 197654)
+Completed 200 OK in 209ms (Views: 189.9ms | ActiveRecord: 1.0ms | Allocations: 233889)
+
+
+Started GET "/users/9" for ::1 at 2020-07-29 10:45:04 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 267)
+Completed 200 OK in 17ms (Views: 12.3ms | ActiveRecord: 0.4ms | Allocations: 9007)
+
+
+Started GET "/reviews/new?id=9" for ::1 at 2020-07-29 10:45:06 -0400
+Processing by ReviewsController#new as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_form.html.erb (Duration: 2.4ms | Allocations: 996)
+  Rendered reviews/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1307)
+Completed 200 OK in 29ms (Views: 9.7ms | ActiveRecord: 2.2ms | Allocations: 14459)
+
+
+Started POST "/reviews" for ::1 at 2020-07-29 10:45:11 -0400
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"i6gSdgJgexXmTkJ6NrUCeS9sTkVOlbcw8FKmumoCVSkVMnsuJZGHGNGMac2XojcyhU+8BPJdme782p5pwpdjKA==", "review"=>{"comment"=>"3"}, "commit"=>"Submit Review"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms | Allocations: 3500)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd9d78766b8>):
+  
+app/controllers/reviews_controller.rb:9:in `create'
+Started POST "/reviews" for ::1 at 2020-07-29 10:45:59 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"i6gSdgJgexXmTkJ6NrUCeS9sTkVOlbcw8FKmumoCVSkVMnsuJZGHGNGMac2XojcyhU+8BPJdme782p5pwpdjKA==", "review"=>{"comment"=>"3"}, "commit"=>"Submit Review"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 500 Internal Server Error in 240ms (ActiveRecord: 1.2ms | Allocations: 127593)
+
+
+  
+NameError (undefined local variable or method `user' for #<ReviewsController:0x00007fd9dcf019d8>
+Did you mean?  @user):
+  
+app/controllers/reviews_controller.rb:10:in `create'
+Started POST "/reviews" for ::1 at 2020-07-29 10:46:11 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"i6gSdgJgexXmTkJ6NrUCeS9sTkVOlbcw8FKmumoCVSkVMnsuJZGHGNGMac2XojcyhU+8BPJdme782p5pwpdjKA==", "review"=>{"comment"=>"3"}, "commit"=>"Submit Review"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Redirected to http://localhost:3000/users.9
+Completed 302 Found in 27ms (ActiveRecord: 2.4ms | Allocations: 19660)
+
+
+Started GET "/users.9" for ::1 at 2020-07-29 10:46:11 -0400
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.3.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/reviews" for ::1 at 2020-07-29 10:47:13 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"i6gSdgJgexXmTkJ6NrUCeS9sTkVOlbcw8FKmumoCVSkVMnsuJZGHGNGMac2XojcyhU+8BPJdme782p5pwpdjKA==", "review"=>{"comment"=>"3"}, "commit"=>"Submit Review"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Redirected to http://localhost:3000/
+Completed 302 Found in 24ms (ActiveRecord: 1.2ms | Allocations: 19531)
+
+
+Started GET "/" for ::1 at 2020-07-29 10:47:13 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 0.5ms | Allocations: 102)
+Completed 200 OK in 21ms (Views: 17.4ms | ActiveRecord: 0.2ms | Allocations: 9454)
+
+
+Started POST "/reviews" for ::1 at 2020-07-29 10:48:27 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"i6gSdgJgexXmTkJ6NrUCeS9sTkVOlbcw8FKmumoCVSkVMnsuJZGHGNGMac2XojcyhU+8BPJdme782p5pwpdjKA==", "review"=>{"comment"=>"3"}, "commit"=>"Submit Review"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Redirected to http://localhost:3000/
+Completed 302 Found in 322683ms (ActiveRecord: 1.5ms | Allocations: 256938)
+
+
+Started GET "/" for ::1 at 2020-07-29 10:53:50 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 0.8ms | Allocations: 223)
+Completed 200 OK in 144ms (Views: 141.1ms | ActiveRecord: 0.1ms | Allocations: 29587)
+
+
+Started POST "/reviews" for ::1 at 2020-07-29 10:53:58 -0400
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"i6gSdgJgexXmTkJ6NrUCeS9sTkVOlbcw8FKmumoCVSkVMnsuJZGHGNGMac2XojcyhU+8BPJdme782p5pwpdjKA==", "review"=>{"comment"=>"3"}, "commit"=>"Submit Review"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Redirected to http://localhost:3000/
+Completed 302 Found in 19179ms (ActiveRecord: 0.4ms | Allocations: 7298)
+
+
+Started GET "/" for ::1 at 2020-07-29 10:54:17 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 7807)
+
+
+Started POST "/reviews" for ::1 at 2020-07-29 10:54:52 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"i6gSdgJgexXmTkJ6NrUCeS9sTkVOlbcw8FKmumoCVSkVMnsuJZGHGNGMac2XojcyhU+8BPJdme782p5pwpdjKA==", "review"=>{"comment"=>"3"}, "commit"=>"Submit Review"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Redirected to http://localhost:3000/
+Completed 302 Found in 5690ms (ActiveRecord: 1.1ms | Allocations: 256024)
+
+
+Started GET "/" for ::1 at 2020-07-29 10:54:58 -0400
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering welcome/home.html.erb within layouts/home
+  Rendered welcome/home.html.erb within layouts/home (Duration: 1.1ms | Allocations: 227)
+Completed 200 OK in 154ms (Views: 149.2ms | ActiveRecord: 0.2ms | Allocations: 29776)
+=======
 Started GET "/" for ::1 at 2020-07-29 10:00:49 -0400
   [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -36653,6 +37006,7 @@ Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 337)
 
 
 Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 322)
+>>>>>>> e1fc4c7c1268cfa8808249c123f5557c5e3da139
 
 
 Started GET "/products" for ::1 at 2020-07-29 11:15:15 -0400
