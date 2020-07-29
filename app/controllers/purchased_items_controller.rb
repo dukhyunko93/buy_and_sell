@@ -15,6 +15,10 @@ class PurchasedItemsController < ApplicationController
       redirect_to root_path
     end
 
+    def index
+
+    end
+
     private
 
     def purchase_params
