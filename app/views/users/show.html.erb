@@ -5,6 +5,7 @@
 <p>Contact: <%= @user.email %></p>
 <% @user.products.each do |product|%>
 <p>Currently Selling: <%= product.name %></p>
+<p>Reviews: <%= @user.reviews %></p>
 
 <%= link_to image_tag(product.image, style: "width:100px;"),  product_path(product)%>
 <% end %>
