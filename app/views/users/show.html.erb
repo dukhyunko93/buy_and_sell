@@ -4,6 +4,9 @@
 <p>Name: <%= @user.name %></p>
 <p>Contact: <%= @user.email %></p>
 
+<%= button_to "Write a Review", new_review_path, params: {id: params[:id]}, method: :get %>
+
+
 We need link for
     1. creating new reviews about this user (reviews#new => reviews#create)
     2. We want name, reviews, contact info, products purchased and sold.
