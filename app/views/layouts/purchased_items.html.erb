@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ScareCrow - Products</title>
+    <title>ScareCrow</title>
       <%= favicon_link_tag asset_path('favicon.ico') %>
-      <%= stylesheet_link_tag 'products' %>
+      <%= stylesheet_link_tag 'purchased_items' %>
   </head>
 
   <body>
@@ -19,7 +19,7 @@
           <div class='greeting'>
             Hi, <%= @user.name %> Welcome!
           </div>
-  
+          
           <div class='myaccount'>
             <button>My Account</button>
             <ul>
@@ -34,20 +34,21 @@
           <%= button_to 'New Account', signup_path, :method => 'get', class: 'path_box' %>
         <% end %>
 
-          <div class='browse'>
-            <button>Browse</button>
-            <ul>
-              <li><%= button_to 'All Item', products_path, class: 'browse_tab', :method => 'get' %></li>
-              <li><%= button_to 'Shoes', shoepage_path, class: 'browse_tab', :method => 'get' %></li>
-              <li><%= button_to 'Streetwears', streetwearpage_path, class: 'browse_tab', :method => 'get' %></li>
-              <li><%= button_to 'Accessories', accessorypage_path, class: 'browse_tab', :method => 'get' %></li>
-            </ul>
-          </div>
+      <div class='browse'>
+        <button>Browse</button>
+          <ul>
+          <li><%= button_to 'All Item', products_path, class: 'browse_tab', :method => 'get' %></li>
+          <li><%= button_to 'Shoes', shoepage_path, class: 'browse_tab', :method => 'get' %></li>
+          <li><%= button_to 'Streetwears', streetwearpage_path, class: 'browse_tab', :method => 'get' %></li>
+          <li><%= button_to 'Accessories', accessorypage_path, class: 'browse_tab', :method => 'get' %></li>
+          </ul>
+      </div>
     
-            <%= button_to "Sell", new_product_path, :method => 'get', class: 'path_box' %>
-            <%= button_to 'Log Out', logout_path, :method => 'post', class: 'path_box' %>
-        </div>
+        <%= button_to "Sell", new_product_path, :method => 'get', class: 'path_box' %>
+        <%= button_to 'Log Out', logout_path, :method => 'post', class: 'path_box' %>
+      
+      </div>
 
-    <%= yield %>
+      <%= yield %>
   </body>
 </html>

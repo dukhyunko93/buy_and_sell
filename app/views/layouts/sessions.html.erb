@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ScareCrow</title>
-   <%= stylesheet_link_tag 'sessions' %>
+    <title>ScareCrow - Account</title>
+    <%= favicon_link_tag asset_path('favicon.ico') %>
+    <%= stylesheet_link_tag 'sessions' %>
   </head>
 
   <body>
 
     <%= link_to image_tag('logo.png'), root_path, class: "logo" %>
     <%= yield %>
-    
   </body>
 </html>
