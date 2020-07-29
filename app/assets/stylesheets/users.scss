@@ -5,9 +5,21 @@ h1{
     text-align: center;
 }
 /*show page */
+.show_field{
+    text-align: center;
+}
+.show_field {
+    color: black;
+}
+// .show_box{
+//     border: solid 5px black;
+//     background-size: cover;
+//     width: 380px;
+//     margin: 0px auto 0px auto;
+// }
 
 
-/* edit age */
+/* edit page */
 
 .field{
     text-align: center;
@@ -126,7 +138,7 @@ body{
     transform: translateY(0px);
 }
 
-.path_box { 
+.path_box {
     background-color: transparent;
     border: none;
     color: white;

@@ -1,25 +1,29 @@
-<h1>User Show Page</h2>
-
-
-<p>Name: <%= @user.name %></p>
-<p>Contact: <%= @user.email %></p>
-<% @user.products.each do |product|%>
-<p>Currently Selling: <%= product.name %></p>
-<<<<<<< HEAD
-<p>Reviews: <%= @user.reviews %></p>
-
-=======
->>>>>>> 42a70a79c8c1b2cf7a3361431b198fe59c15c4e1
-<%= link_to image_tag(product.image, style: "width:100px;"),  product_path(product)%>
-<% end %>
-
-<% @user.seller_reviews.each do |review| %>
-<%= review.comment %>
-<%= review.rating %>
-<% end %>
 
 
 
-<p>We need link for
-    1. creating new reviews about this user (reviews#new => reviews#create)
-    2. We want name, reviews, contact info, products purchased and sold.</p>
+
+<div class="show_box">
+
+  <h1><%= @user.name %>'s Seller Page</h1>
+
+  <div class="show_field">
+    <p>Contact: <%= @user.email %></p>
+  </div>
+
+  <% @user.products.each do |product|%>
+  <div class="show_field">
+    <p>Currently Selling: <%= product.name %></p>
+
+    <%= link_to image_tag(product.image, style: "width:100px;"),  product_path(product)%>
+    <% end %>
+  </div>
+
+  <div class="show_field">
+    <% @user.seller_reviews.each do |review| %>
+    <p><%= "My Reviews" %></p>
+    <%= review.comment %>
+    <%= review.rating %>
+    <% end %>
+  </div>
+
+</div>

@@ -10,16 +10,16 @@
     <%= link_to image_tag('logo.png'), root_path, class: "logo" %>
 
     <% if @user.valid? %>
-    <%= link_to image_tag('cart.png'), pending_carts_path, class: 'cart' %>   
+    <%= link_to image_tag('cart.png'), pending_carts_path, class: 'cart' %>
     <% end %>
 
       <div class='header'>
 
         <% if @user.valid? %>
           <div class='greeting'>
-            Hi, <%= @user.name %> Welcome!
+            Hi, <%= @user.name %>. Welcome Back!
           </div>
-  
+
           <div class='myaccount'>
             <button>My Account</button>
             <ul>
@@ -28,7 +28,7 @@
               <li><%= button_to 'History', purchased_items_path, class: 'account_tab', :method => 'get' %></li>
             </ul>
           </div>
-    
+
         <% else %>
           <%= button_to 'Log In', login_path, :method => 'get', class: 'path_box' %>
           <%= button_to 'New Account', signup_path, :method => 'get', class: 'path_box' %>
@@ -43,10 +43,12 @@
               <li><%= button_to 'Accessories', accessorypage_path, class: 'browse_tab', :method => 'get' %></li>
             </ul>
           </div>
-    
+
             <%= button_to "Sell", new_product_path, :method => 'get', class: 'path_box' %>
             <%= button_to 'Log Out', logout_path, :method => 'post', class: 'path_box' %>
         </div>
+
+
 
     <%= yield %>
   </body>
