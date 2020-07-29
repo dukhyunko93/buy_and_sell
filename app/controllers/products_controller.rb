@@ -4,7 +4,21 @@ class ProductsController < ApplicationController
     layout 'product'
 
     def index
-      @products = Product.all.each {|t| t.purchased_item_id == nil}
+      @shoes = Product.shoe.select {|t| t.notsold}
+      @accessories = Product.accessory.select {|t| t.notsold}
+      @streetwears = Product.streetwear.select {|t| t.notsold}
+    end
+
+    def shoepage
+      @products = Product.shoe.select {|t| t.notsold}
+    end
+
+    def accessorypage
+      @products = Product.accessory.select {|t| t.notsold}
+    end
+
+    def streetwearpage
+      @products = Product.streetwear.select {|t| t.notsold}
     end
 
     def show

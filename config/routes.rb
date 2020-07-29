@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   post '/login' => 'sessions#create'
   post '/logout' => 'sessions#destroy'
   get '/signup' => 'users#new', as: 'signup'
+  get '/products/shoes' => 'products#shoepage', as: 'shoepage'
+  get '/products/accessories' => 'products#accessorypage', as: 'accessorypage'
+  get '/products/streetwears' => 'products#streetwearpage', as: 'streetwearpage'
   resources :products
   resources :pending_carts
   resources :purchased_items

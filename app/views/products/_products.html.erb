@@ -1,0 +1,6 @@
+<div class=subpage>
+    <% @products.each do |product|%>
+    <%= link_to image_tag(product.image, style: "width: 100px;"), product %>
+    <%= link_to product.name, product %>
+    <% end %>
+</div>

@@ -7,5 +7,26 @@ class Product < ApplicationRecord
     has_many :categories
 
     has_one_attached :image
+    
+    def notsold
+        self.purchased_item_id == nil
+    end
 
+    def self.shoe
+        Product.all.select do |t|
+            t.product_type == "Shoe"
+        end
+    end
+
+    def self.accessory
+        Product.all.select do |t|
+            t.product_type == "Accessory"
+        end
+    end
+
+    def self.streetwear
+        Product.all.select do |t|
+            t.product_type == "Streetwear"
+        end
+    end
 end
