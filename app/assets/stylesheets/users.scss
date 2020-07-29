@@ -1,6 +1,41 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+h1{
+    text-align: center;
+}
+/* edit age */
+
+.field{
+    text-align: center;
+}
+.field label{
+    color: black;
+    
+}
+
+.form_box{
+    border: solid 5px black;
+    background-image: url('graffit.jpeg');
+    background-size: cover;
+    width: 380px;
+    margin: 0px auto 0px auto;
+}
+
+.input{
+    width: 200px;
+    text-align:center
+}
+
+.address{
+    resize: none;
+    width: 200px;
+    line-height: 16px;
+    text-align:center
+}
+
+/* header and tabs */
+
 body{
     height: 120px;
 }
