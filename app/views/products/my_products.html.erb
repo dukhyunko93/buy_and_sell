@@ -1,0 +1,9 @@
+<h1> Choose the item you want to edit</h1>
+
+<% @products.each do |product| %>
+    <% if product.image.attached?%>
+        <%= link_to image_tag(product.image, style: "width:100px;"), edit_product_path(product) %>
+    <% end %>
+    <%= link_to product.name, edit_product_path(product) %>
+    $<%= product.price %>
+<% end %>

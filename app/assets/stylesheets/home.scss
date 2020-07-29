@@ -26,7 +26,7 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-
+ 
 .header {
     background-color: #282828;
     display: flex;
@@ -35,6 +35,21 @@ body{
     align-items: center;
     justify-content: space-evenly;
 }
+
+/* nav buttons */
+
+.path_box { 
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.path_box:hover {
+    background-color: white;
+    color: black;
+}
+
+/* browse tab */
 
 .browse {
     position: relative;
@@ -45,7 +60,7 @@ body{
     background-color: #282828;
     margin-top: 10px;
     width: 90px;
-    height: 100px;
+    height: 110px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -92,36 +107,7 @@ body{
     transform: translateY(0px);
 }
 
-.path_box { 
-    background-color: transparent;
-    border: none;
-    color: white;
-}
-
-.path_box:hover {
-    background-color: white;
-    color: black;
-}
-
-.slogan{
-    vertical-align:middle;
-}
-
-h1 {
-    color: black;
-    text-align: center;
-}
-
-
-#slogan_box {
-    height:100px;
-    width:100%;
-    background-color: transparent;
-    display:table;
-    text-align: center;
-    position: relative;
-    margin-top: 100px;    
-}
+/* account tab */
 
 .myaccount {
     position: relative;
@@ -132,7 +118,7 @@ h1 {
     background-color: #282828;
     margin-top: 10px;
     width: 90px;
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -178,3 +164,63 @@ h1 {
     pointer-events: all;
     transform: translateY(0px);
 }
+
+/* sell tab */
+
+.sell {
+    position: relative;
+}
+
+.sell ul {
+    position: absolute;
+    background-color: #282828;
+    margin-top: 10px;
+    width: 70px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translate(-10px);
+    transition: all 1s ease;
+}
+.sell li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sell li:hover {
+    background-color: gray;
+}
+
+.sell_tab {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+}
+
+.sell button {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.sell button:hover {
+    background-color: white;
+    color: black;
+}
+
+.sell button:focus + ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+}
+
+

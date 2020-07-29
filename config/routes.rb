@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/products/shoes' => 'products#shoepage', as: 'shoepage'
   get '/products/accessories' => 'products#accessorypage', as: 'accessorypage'
   get '/products/streetwears' => 'products#streetwearpage', as: 'streetwearpage'
+  get '/products/my_products' => 'products#my_products', as: 'myproducts'
   resources :products
   resources :pending_carts
   resources :purchased_items

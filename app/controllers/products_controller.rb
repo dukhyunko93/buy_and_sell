@@ -2,8 +2,6 @@ class ProductsController < ApplicationController
     before_action :require_logged_in
     skip_before_action :require_logged_in, only: [:index, :show]
     layout 'product'
-
-    #delete and edit
     
     def index
       @shoes = Product.shoe.select {|t| t.notsold}
@@ -60,7 +58,17 @@ class ProductsController < ApplicationController
           redirect_to edit_product_path
       end
     end
+
+    def my_products
+      @products = Product.all.select {|t| t.seller_id == current_user.id}
+    end
         
+    def destroy
+      product = Product.find(params[:id])
+      product.destroy
+  
+      redirect_to myproducts_path
+    end
 
     private
 

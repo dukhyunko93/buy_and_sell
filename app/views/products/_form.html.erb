@@ -1,4 +1,4 @@
-<%= form_for @product do |p| %>
+<%= form_with model: @product do |p| %>
 
 <div>
 <%= p.label :name, "Name" %>
@@ -26,11 +26,17 @@
 </div>
 
 <div>
+<% if @product.image.attached? %>
+    <%= image_tag(@product.image, style: "width:100px;")  %>
+<% end %>
+
 <%= p.label :image, "Product Image" %>
 <%= p.file_field :image %>
 </div>
 
 <div>
-<%= p.submit "Sell" %>
+<%= p.submit "Save" %>
 </div>
 <% end %>
+
+

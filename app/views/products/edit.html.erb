@@ -1,3 +1,5 @@
 edit your item
 
-<%= render "form" %>
+<%= render 'form' %>
+
+<%= button_to 'Delete', @product, :confirm => 'Are you sure ?', method: 'delete'%>

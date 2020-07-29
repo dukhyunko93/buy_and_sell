@@ -3,7 +3,7 @@
   <head>
     <title>ScareCrow</title>
       <%= favicon_link_tag asset_path('favicon.ico') %>
-      <%= stylesheet_link_tag 'welcome' %>
+      <%= stylesheet_link_tag 'home' %>
   </head>
 
   <body>
@@ -29,9 +29,19 @@
             </ul>
           </div>
 
+          <div class='sell'>
+            <button>Sell</button>
+            <ul>
+              <li><%= button_to 'New', new_product_path, class: 'sell_tab', :method => 'get' %></li>
+              <li><%= button_to 'Edit', myproducts_path, class: 'sell_tab', :method => 'get' %></li>
+            </ul>
+          </div>
+
         <% else %>
-          <%= button_to 'Log In', login_path, :method => 'get', class: 'path_box' %>
-          <%= button_to 'New Account', signup_path, :method => 'get', class: 'path_box' %>
+
+            <%= button_to 'Log In', login_path, :method => 'get', class: 'path_box' %>
+            <%= button_to 'New Account', signup_path, :method => 'get', class: 'path_box' %>
+        
         <% end %>
 
       <div class='browse'>
@@ -43,9 +53,10 @@
           <li><%= button_to 'Accessories', accessorypage_path, class: 'browse_tab', :method => 'get' %></li>
           </ul>
       </div>
-
-        <%= button_to "Sell", new_product_path, :method => 'get', class: 'path_box' %>
+      
+      <% if @user.valid? %>
         <%= button_to 'Log Out', logout_path, :method => 'post', class: 'path_box' %>
+      <% end %>
 
       </div>
 

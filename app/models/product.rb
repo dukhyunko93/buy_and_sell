@@ -13,20 +13,15 @@ class Product < ApplicationRecord
     end
 
     def self.shoe
-        Product.all.select do |t|
-            t.product_type == "Shoe"
-        end
+        Product.all.select {|t| t.product_type == "Shoe"}
     end
 
     def self.accessory
-        Product.all.select do |t|
-            t.product_type == "Accessory"
-        end
+        Product.all.select {|t| t.product_type == "Accessory"}
     end
 
     def self.streetwear
-        Product.all.select do |t|
-            t.product_type == "Streetwear"
-        end
+        Product.all.select {|t| t.product_type == "Streetwear"}
     end
+
 end

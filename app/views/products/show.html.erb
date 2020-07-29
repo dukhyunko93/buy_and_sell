@@ -6,9 +6,11 @@
 
 <div class='product_info'>
     
+    <% if @product.image.attached? %>
     <div class='img_box'>
         <%= image_tag(@product.image, class:'img') %></p>
     </div>
+    <% end %>
     
     <div class='details'>
         <h3>Product: <%= @product.name %></h3>
