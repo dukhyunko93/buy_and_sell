@@ -61,7 +61,7 @@ class ProductsController < ApplicationController
     end
 
     def my_products
-      @products = Product.all.select {|t| t.seller_id == current_user.id}
+      @products = Product.all.select {|t| t.seller_id == current_user.id && t.notsold}
     end
         
     def destroy
@@ -74,7 +74,7 @@ class ProductsController < ApplicationController
     private
 
     def product_params
-      params.require(:product).permit(:name, :seller_id, :product_type, :price, :condition, :color, :image)
+      params.require(:product).permit(:name, :seller_id, :product_type, :price, :condition, :color, :image, :description)
     end
 
 end

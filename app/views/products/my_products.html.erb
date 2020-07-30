@@ -1,7 +1,19 @@
-<h1> Choose the item you want to edit</h1>
+<h1 class=item_edit_banner> Choose the item you want to edit</h1>
 
-<% @products.each do |product| %>
-    <%= link_to image_tag(product.image, style: "width:100px;"), edit_product_path(product) %>
-    <%= link_to product.name, edit_product_path(product) %>
-    $<%= product.price %>
-<% end %>
+    <div class=container>
+        <div class=subpage>
+            <% @products.each do |product|%>
+            <div class='tile'>
+                    <div class='each_item_img'>
+                        <%= link_to image_tag(product.image, :class => 'item_img'), edit_product_path(product) %>
+                    </div>
+                    <div class='each_item_name_price'>
+                        <%= link_to product.name, edit_product_path(product), :class => 'item_link' %><br>
+                        <p class=item.price>$<%= product.price %></p>
+                    </div>
+            </div>    
+            <% end %>
+        </div>
+    </div>
+
+

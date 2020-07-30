@@ -17,9 +17,12 @@
 
   <div class="show_field">
     <% @user.seller_reviews.each do |review| %>
-    <p><%= "My Reviews" %></p>
-    <%= review.comment %>
-    <%= review.rating %>
+    <h2><%= "My Reviews" %></h2>
+    <p>Buyer: <%= review.buyer.name %></p>
+    <p><%= "#{review.comment} || Rating: #{review.rating}" %></p>
+    <%= review.purchased_item.product.name %>
+    <%= image_tag(review.purchased_item.product.image, style: "width:100px;") %>
+    <p><%= @user.avg_rating %></p>
     <% end %>
   </div>
 

@@ -20,5 +20,10 @@
 #       )
 # end
 
+100.times do
+    PendingCart.create (
+        user: User.all.sample
+        product: Product.all.sample
+    )
 
 

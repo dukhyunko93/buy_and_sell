@@ -13,10 +13,11 @@ class User < ApplicationRecord
         Review.all.select {|t| t.seller_id == self.id}
     end
 
-    def avg
-      self.seller_reviews.map do |r|
-        r.rating.inject{ |sum, el| sum + el }.to_f / r.size
-      end
+    def avg_rating
+      # self.seller_reviews.map do |r|
+      #   r.rating.inject{ |sum, el| sum + el }.to_f / r.size
+      total = self.seller_reviews.map {|r| r.rating}.sum
+      total.to_f / self.seller_reviews.count
     end
 
 

@@ -1,13 +1,15 @@
-<div class=container>
-    <div class=subpage>
-        <% @products.each do |product|%>
-        <div class='tile'>
-                <div class='each_item_img'>
-                    <%= link_to image_tag(product.image, :class => 'item_img'), product %>
-                </div>
-                    <%= link_to product.name, product, :class => 'item_link' %><br>
-                    <p class=item.price>$<%= product.price %></p>
-        </div>    
-        <% end %>
+    <div class=container>
+        <div class=subpage>
+            <% @products.each do |product|%>
+            <div class='tile'>
+                    <div class='each_item_img'>
+                        <%= link_to image_tag(product.image, :class => 'item_img'), product %>
+                    </div>
+                    <div class='each_item_name_price'>
+                        <%= link_to product.name, product, :class => 'item_link' %><br>
+                        <p class=item.price>$<%= product.price %></p>
+                    </div>
+            </div>    
+            <% end %>
+        </div>
     </div>
-</div>

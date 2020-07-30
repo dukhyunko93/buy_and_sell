@@ -4,7 +4,7 @@
   <div class='row_box'>
     <% @shoes.each do |shoe|%>
     <div class='one_tile'>
-      <div class='each_item_img_inex'>
+      <div class='each_item_img_index'>
         <%= link_to image_tag(shoe.image, style: "width: 100px;"), shoe %>
       </div>
       <div class='one_item_info'>
@@ -18,7 +18,7 @@
   <div class='row_box'>
     <% @accessories.each do |accessory| %>
     <div class='one_tile'>
-      <div class='each_item_img_inex'>
+      <div class='each_item_img_index'>
         <%= link_to image_tag(accessory.image, style: "width: 100px;"), accessory %>
       </div>
       <div class='one_item_info'>
@@ -32,7 +32,7 @@
   <div class='row_box'>
     <% @streetwears.each do |streetwear| %>
     <div class='one_tile'>
-      <div class='each_item_img_inex'>    
+      <div class='each_item_img_index'>    
         <%= link_to image_tag(streetwear.image, style: "width: 100px;"), streetwear %>
       </div>
       <div class='one_item_info'>        
