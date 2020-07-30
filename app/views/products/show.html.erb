@@ -5,12 +5,16 @@
 </div>
 
 <div class='product_info'>
-    
     <div class='img_box'>
         <%= image_tag(@product.image, class:'show_page_img') %></p>
     </div>
     
     <div class='details'>
+
+        <% if @product.cart_count > 0%>
+            <p>This item is in <%= pluralize(@product.cart_count, 'cart') %>!</p>
+        <% end %>
+
         <h3>Product: <%= @product.name %></h3>
         <p>Seller: <%= link_to @seller.name, user_path(@seller) %></p>
         <p>$<%= @product.price %></p>

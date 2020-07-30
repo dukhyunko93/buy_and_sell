@@ -2,6 +2,8 @@ class PurchasedItemsController < ApplicationController
     before_action :require_logged_in
     layout 'purchased_items'
 
+    #NEED VALIDATION FOR NOT BEING ABLE TO BUY THE SAME SHOE TWICE
+
     def new
       @current_user = current_user
       @product = Product.find(params[:id])
@@ -14,11 +16,16 @@ class PurchasedItemsController < ApplicationController
     end
 
     def create
-      purchased_item = PurchasedItem.create(purchase_params)
-      product = purchased_item.product
-      product.purchased_item_id = purchased_item.id
-      product.save
-      redirect_to root_path
+      purchased_item = PurchasedItem.new(purchase_params)
+      if purchased_item.save
+        product = purchased_item.product
+        product.purchased_item_id = purchased_item.id
+        product.save
+        redirect_to purchased_items_path
+      else
+        flash[:user_error] = purchased_item.errors.full_messages
+        redirect_back fallback_location: products_path
+      end
     end
 
     def index

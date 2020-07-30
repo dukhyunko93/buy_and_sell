@@ -14,6 +14,10 @@ class Product < ApplicationRecord
         self.purchased_item_id == nil
     end
 
+    def cart_count
+        pending_cart.count
+    end
+
     def self.shoe
         Product.all.select {|t| t.product_type == "Shoe"}
     end

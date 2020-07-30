@@ -1,8 +1,9 @@
 <% @cart.each do |item| %>
 
-    <%= link_to image_tag(item.product.image, style: "width:100px;"), product_path(item.product) %>
-
-    <%= button_to "Purchase", new_purchased_item_path, params: {:id => item.product.id }, :method => "get" %>
-    <%= button_to "Remove Item", pending_cart_path(item), params: {:id => item.id }, :method => "delete" %>
+    <% if item.product.notsold %>
+        <%= link_to image_tag(item.product.image, style: "width:100px;"), product_path(item.product) %>
+        <%= button_to "Purchase", new_purchased_item_path, params: {:id => item.product.id }, :method => "get" %>
+        <%= button_to "Remove Item", pending_cart_path(item), params: {:id => item.id }, :method => "delete" %>
+    <% end %>
     
 <% end %>

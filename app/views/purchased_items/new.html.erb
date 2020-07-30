@@ -1,4 +1,11 @@
 <div class='purchase_box'>
+
+    <div class='error_message_login'>
+        <% if flash[:user_error] %>
+            <p><%= flash[:user_error] %></p>
+        <% end %>
+    </div>
+
     <div class='img_box'>
         <p><%= image_tag(@product.image, class:'img') %></p>
     </div>

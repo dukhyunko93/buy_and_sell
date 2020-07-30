@@ -1,6 +1,9 @@
 class PendingCartsController < ApplicationController
   layout 'cart'
 
+
+  # NEED VALIDATION FOR PURCHASED ITEM CANNOT BE IN SHOPPING CART
+
   def index
     @cart = PendingCart.all
   end
