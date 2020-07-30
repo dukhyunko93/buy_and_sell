@@ -4,6 +4,23 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+/* review product */
+.purchase_box{
+  // border: solid 3px black;
+  background-size: cover;
+  width: 380px;
+  margin: 0px auto 0px auto;
+}
+
+.review_button{
+  color: red;
+  border: solid 1px black;
+  width: 139px;
+  margin: 0px auto 0px auto;
+}
+
+
 /* prodcut info */
 
 .img_box {
@@ -58,7 +75,7 @@ body{
 
 /* nav buttons */
 
-.path_box { 
+.path_box {
     background-color: transparent;
     border: none;
     color: white;
@@ -242,5 +259,3 @@ body{
     pointer-events: all;
     transform: translateY(0px);
 }
-
-
