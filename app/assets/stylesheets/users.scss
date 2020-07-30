@@ -22,12 +22,16 @@ h1{
 .show_field {
     color: black;
 }
-// .show_box{
-//     border: solid 5px black;
-//     background-size: cover;
-//     width: 380px;
-//     margin: 0px auto 0px auto;
-// }
+
+
+.show_box{
+
+    border: solid 3px black;
+    background-size: cover;
+    width: 380px;
+    margin: 0px auto 0px auto;
+}
+
 
 
 /* edit page */
@@ -96,7 +100,7 @@ body{
 
 /* nav buttons */
 
-.path_box { 
+.path_box {
     background-color: transparent;
     border: none;
     color: white;
@@ -283,5 +287,3 @@ body{
     pointer-events: all;
     transform: translateY(0px);
 }
-
-

@@ -66,6 +66,13 @@ html * {
     padding-top: 58%;
 }
 
+/* new product page */
+.product_box{
+  // border: solid 3px black;
+  background-size: cover;
+  width: 380px;
+  margin: 0px auto 0px auto;
+}
 
 .item_img {
     max-width: 100%;
@@ -133,6 +140,11 @@ html * {
     max-width: 100%;
     max-height: 100%;
 }
+ /* index page */
+
+.lsting li{
+    display: inline-block;
+}
 
 /* header and tabs */
 
@@ -169,7 +181,7 @@ body{
 
 /* nav buttons */
 
-.path_box { 
+.path_box {
     background-color: transparent;
     border: none;
     color: white;
@@ -356,5 +368,3 @@ body{
     pointer-events: all;
     transform: translateY(0px);
 }
-
-

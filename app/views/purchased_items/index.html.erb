@@ -1,9 +1,12 @@
-PurchasedItem Index
+<div class="purchase_box">
+  <h1>Your Purchased Items</h1>
+  <% @purchased_items.each do |item| %>
+  <p><%= item.product.name %></p>
+<p><%= image_tag(item.product.image, class:'img') %></p>
 
+  <div class="review_button">
+    <%= button_to 'Review this Purchase', new_review_path, params: {id: item.id}, :method => 'get' %>
+  </div>
 
-<% @purchased_items.each do |item| %>
-<p><%= item.product.name %></p>
-
-<%= button_to 'Review this Purchase', new_review_path, params: {id: item.id}, :method => 'get' %>
-
-<% end %>
+  <% end %>
+</div>
