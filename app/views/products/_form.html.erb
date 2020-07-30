@@ -25,7 +25,7 @@
                 <%= p.text_field :color, :class => 'input' %><br><br>
 
                 <% if @product.image.attached? %><br>
-                    <%= image_tag(@product.image, style: "width:100px;")  %><br><br>
+                    <%= image_tag(@product.image, style: "width:100px;", :class => 'input')  %><br><br>
                 <% end %>
 
                 <%= p.label :image, "Product Image" %><br>
@@ -33,12 +33,11 @@
 
                 <%= p.label :description, "Description" %><br>
                 <%= p.text_area :description, :value => "Please include size and additional informtaion.", :class => 'input' %><br><br>
-            </div>
 
             <div class='submit'>
-                <%= p.submit "Sell" %>
+                <%= p.submit "Sell", :class => 'bttn' %>
             </div>
-
+            </div> 
         </div>
         <% end %>
     </div>

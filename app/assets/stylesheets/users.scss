@@ -65,6 +65,18 @@ h1{
     text-align:center
 }
 
+.bttn {
+    background-color: black;
+    color: white;
+    margin-right:16px;
+    padding: 5px;
+}
+
+.bttn:hover {
+    background-color: white;
+    color: black
+}
+
 /* header and tabs */
 
 body{

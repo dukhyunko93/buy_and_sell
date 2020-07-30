@@ -23,9 +23,10 @@
           </tr>
       <% end %>
   </table>
-      
-          <div class='no_purchases'>
-            <p>WHERE IS MY CROW</p>
-            <%= link_to image_tag('crows-bird-animation-crow.jpg') %>
-          </div> 
+          <% if @purchased_items.none? %>
+            <div class='no_purchases'>
+              <%= link_to image_tag('crow.png', style: "width:300px;"), products_path %>
+              <p><strong>You haven't purchased anyting yet</p>
+            </div>
+          <% end %> 
 </div>
