@@ -1,28 +1,46 @@
 
 <div class='allproducts'>
 
-  <div class='shoes'>
+  <div class='row_box'>
     <% @shoes.each do |shoe|%>
-    <%= link_to image_tag(shoe.image, style: "width: 100px;"), shoe %><br>
-    <%= link_to shoe.name, shoe, :class => 'item_link' %><br>
-    <% end %><br>
-    <%= link_to "View More", shoepage_path, :class => 'item_link' %>
+    <div class='one_tile'>
+      <div class='each_item_img_inex'>
+        <%= link_to image_tag(shoe.image, style: "width: 100px;"), shoe %>
+      </div>
+      <div class='one_item_info'>
+        <%= link_to shoe.name, shoe, :class => 'item_link' %>
+      </div>
+    </div>
+    <% end %>
   </div>
+    <%= link_to "View More", shoepage_path, :class => 'view_link' %>
 
-  <div class='accessories'>
+  <div class='row_box'>
     <% @accessories.each do |accessory| %>
-    <%= link_to image_tag(accessory.image, style: "width: 100px;"), accessory %><br>
-    <%= link_to accessory.name, accessory, :class => 'item_link' %><br>
-    <% end %><br>
-    <%= link_to "View More", accessorypage_path, :class => 'item_link' %>
+    <div class='one_tile'>
+      <div class='each_item_img_inex'>
+        <%= link_to image_tag(accessory.image, style: "width: 100px;"), accessory %>
+      </div>
+      <div class='one_item_info'>
+        <%= link_to accessory.name, accessory, :class => 'item_link' %>
+      </div>
+    </div>
+    <% end %>
   </div>
+    <%= link_to "View More", accessorypage_path, :class => 'view_link' %>
 
-  <div class='streetwears'>
+  <div class='row_box'>
     <% @streetwears.each do |streetwear| %>
-    <%= link_to image_tag(streetwear.image, style: "width: 100px;"), streetwear %><br>
-    <%= link_to streetwear.name, streetwear, :class => 'item_link' %><br>
-    <% end %><br>
-    <%= link_to "View More", streetwearpage_path, :class => 'item_link' %>
+    <div class='one_tile'>
+      <div class='each_item_img_inex'>    
+        <%= link_to image_tag(streetwear.image, style: "width: 100px;"), streetwear %>
+      </div>
+      <div class='one_item_info'>        
+        <%= link_to streetwear.name, streetwear, :class => 'item_link' %>
+      </div>
+    </div>    
+    <% end %>
   </div>
+    <%= link_to "View More", streetwearpage_path, :class => 'view_link' %>
 
 </div>

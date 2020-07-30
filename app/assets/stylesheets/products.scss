@@ -13,37 +13,44 @@ html * {
 }
 
 /* idex page */
+
+.allproducts {
+    justify-content: space-evenly;
+}
+
+.row_box{
+    border: 3px solid black;
+    display: flex;
+    margin-top: 3%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.one_tile {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 20%;
+    position: relative;
+    padding: 0 8px 16px;
+    box-sizing: border-box;
+    color: #000;;
+    text-align: center;
+}
+
+.each_item_img_index {
+    position: relative;
+    padding-top: 5px;
+}
+
+/* sub page */
+
 .container {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
-
-.allproducts {
-    display: flex;
-    text-align: center;
-    justify-content: space-evenly;
-    padding-top: 3%;
-}
-
-.shoes {
-    border: 3px solid black;
-    width: 300px;
-}
-
-.accessories {
-    border: 3px solid black;
-    width: 300px;
-}
-
-.streetwears {
-    border: 3px solid black;
-    width: 300px;
-}
-
-
-/* sub page */
 
 .subpage{
     display: flex;
@@ -67,6 +74,7 @@ html * {
 }
 
 /* new product page */
+
 .product_box{
   // border: solid 3px black;
   background-size: cover;
@@ -75,14 +83,18 @@ html * {
 }
 
 .item_img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 100px;
     position: absolute;
     top: 0px;
 }
 
 .item_link {
-    color: black
+    color: black;
+}
+
+.view_link {
+    color: black;
+    margin-left: 80%;
 }
 
 /* show page */

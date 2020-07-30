@@ -15,12 +15,14 @@ class PendingCartsController < ApplicationController
     redirect_to pending_carts_path
   end
 
+
   def create
     cart = PendingCart.new(cart_params)
-    if cart.save
+    if current_user.id != cart.product.seller_id
+      cart.save
       redirect_to pending_carts_path
     else
-      flash[:user_error] = cart.errors.full_messages
+      flash[:user_error] = "* You cannot add your own item *"
       redirect_back fallback_location: pending_carts_path
     end
   end

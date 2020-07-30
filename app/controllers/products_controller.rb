@@ -4,9 +4,9 @@ class ProductsController < ApplicationController
     layout 'product'
     
     def index
-      @shoes = Product.shoe.select {|t| t.notsold}.sample(4)
-      @accessories = Product.accessory.select {|t| t.notsold}.sample(4)
-      @streetwears = Product.streetwear.select {|t| t.notsold}.sample(4)
+      @shoes = Product.shoe.select {|t| t.notsold}.sample(5)
+      @accessories = Product.accessory.select {|t| t.notsold}.sample(5)
+      @streetwears = Product.streetwear.select {|t| t.notsold}.sample(5)
     end
 
     def shoepage
