@@ -1,17 +1,92 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/* sub page */
+html * {
+    font-family: 'Geneva';
+}
 
-
-
-/* show page */
 .error_message{
     color: red;
     position: relative;
     left: 475px;
     top: 50px;
 }
+
+/* idex page */
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.allproducts {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    padding-top: 3%;
+}
+
+.shoes {
+    border: 3px solid black;
+    width: 300px;
+}
+
+.accessories {
+    border: 3px solid black;
+    width: 300px;
+}
+
+.streetwears {
+    border: 3px solid black;
+    width: 300px;
+}
+
+
+/* sub page */
+
+.subpage{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding-top: 5%;
+}
+
+.tile {
+    width: 20%;
+    position: relative;
+    padding: 0 8px 16px;
+    box-sizing: border-box;
+    color: #000;;
+}
+
+.each_item_img {
+    position: relative;
+    padding-top: 58%;
+}
+
+
+.item_img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+.item_link {
+    color: black
+}
+
+/* show page */
+
+.error_message{
+    color: red;
+    position: relative;
+    left: 475px;
+    top: 50px;
+}
+
 .bttn {
     background-color: black;
     color: white;
@@ -54,14 +129,9 @@
     align-items: center;
 }
 
-.img {
+.show_page_img {
     max-width: 100%;
     max-height: 100%;
-}
- /* idex page */
-
-.lsting li{
-    display: inline-block;
 }
 
 /* header and tabs */
@@ -131,6 +201,7 @@ body{
     opacity: 0;
     transform: translate(-10px);
     transition: all 1s ease;
+    z-index: 1;
 }
 .browse li {
     width: 100%;
@@ -189,6 +260,7 @@ body{
     opacity: 0;
     transform: translate(-10px);
     transition: all 1s ease;
+    z-index: 1;
 }
 .myaccount li {
     width: 100%;
@@ -247,6 +319,7 @@ body{
     opacity: 0;
     transform: translate(-10px);
     transition: all 1s ease;
+    z-index: 1;
 }
 .sell li {
     width: 100%;

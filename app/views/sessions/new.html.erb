@@ -1,25 +1,44 @@
-<div class=banner>
-  <h1>Log In Page</h1>
-</div>
-
-<br>
-<br>
-
-<div class='form'>  
-<%= form_for @user, url: login_path, method: :post do |f| %>
-  <%= f.label :user_name %>:
-  <%= f.text_field :user_name %>
-  <br>
-  <br>
-  <br>
-  <%= f.label :password %>:
-  <%= f.password_field :password %>
-  <br>
-  <br>
+<div class="outer">
+  <div class="middle">
   
-  <div class='button'>
-    <%= f.submit "login" %> or <%= link_to(controller: 'users', action: 'new') { 'signup' } %>
-  </div>
+    <div class='logo_box'>
+      <%= link_to image_tag('logo.png'), root_path, class: "logo" %>
+    </div>
 
-<% end %>
+    <div class='login_box'>
+  
+     <div class=banner>
+        <h1>Login Page</h1>
+      </div>
+
+    <br>
+    <br>
+
+      <div class='form'> 
+        <div class='error_message_login'>
+          <% if flash[:user_error] %>
+              <p><%= flash[:user_error] %></p>
+          <% end %>
+        </div>
+
+       <%= form_for @user, url: login_path, method: :post do |f| %>
+         <%= f.label :user_name %>:
+         <%= f.text_field :user_name %>
+    <br>
+    <br>
+    <br>
+          <%= f.label :password %>:
+          <%= f.password_field :password %>
+    <br>
+    <br>
+  
+        <div class='button'>
+          <%= f.submit "login" %> or <%= link_to(controller: 'users', action: 'new') { 'signup' } %>
+        </div>
+
+        <% end %>
+     </div>
+
+    </div>
+  </div>
 </div>

@@ -4,9 +4,9 @@ class ProductsController < ApplicationController
     layout 'product'
     
     def index
-      @shoes = Product.shoe.select {|t| t.notsold}
-      @accessories = Product.accessory.select {|t| t.notsold}
-      @streetwears = Product.streetwear.select {|t| t.notsold}
+      @shoes = Product.shoe.select {|t| t.notsold}.sample(4)
+      @accessories = Product.accessory.select {|t| t.notsold}.sample(4)
+      @streetwears = Product.streetwear.select {|t| t.notsold}.sample(4)
     end
 
     def shoepage
@@ -24,6 +24,7 @@ class ProductsController < ApplicationController
     def show
       @product = Product.find(params[:id])
       @seller = @product.seller
+      @user = current_user
     end
 
     def new

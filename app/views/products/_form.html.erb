@@ -1,3 +1,9 @@
+ <div class='error_message'>
+    <% if flash[:user_error] %>
+        <p><%= flash[:user_error] %></p>
+    <% end %>
+</div>
+
 <%= form_with model: @product do |p| %>
 
 <div>
@@ -32,6 +38,9 @@
 
 <%= p.label :image, "Product Image" %>
 <%= p.file_field :image %>
+
+<%= p.label :description, "Description" %>
+<%= p.text_area :description, :value => "Please include size and additional informtaion." %>
 </div>
 
 <div>

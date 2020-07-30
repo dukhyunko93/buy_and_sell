@@ -5,26 +5,20 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
- Product.destroy_all
-# User.destroy_all
 
 
-5.times do
-  Product.create(
-      seller: User.all.sample,
-      name: Faker::Commerce.product_name,
-      price:Faker::Commerce.price,
-      color: "GREEN",
-      condition: "good",
-      product_type: "SHOE")
-end
 
-5.times do
-  Product.create(
-      seller: User.all.sample,
-      name: Faker::Commerce.product_name,
-      price:Faker::Commerce.price,
-      color: "red",
-      condition: "good",
-      product_type: "shirt")
-end
+# 20.times do
+#   User.create(
+#       name: Faker::Name.unique.name,
+#       user_name: Faker::Commerce.product_name,
+#       password_digest: "123",
+#       address: Faker::Address.full_address,
+#       email: Faker::Internet.email,
+#       phone_number: Faker::PhoneNumber.phone_number,
+#       dob: Faker::Date.birthday(min_age: 18, max_age: 65)
+#       )
+# end
+
+
+

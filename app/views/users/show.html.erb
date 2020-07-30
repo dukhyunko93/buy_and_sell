@@ -8,11 +8,8 @@
 
   <% @user.products.each do |product|%>
   <div class="show_field">
-    <p>Currently Selling: <%= product.name %></p>
-
-      <% if product.image.attached? %>
-        <%= link_to image_tag(product.image, style: "width:100px;"),  product_path(product)%>
-      <% end %>
+    <p><%= link_to product.name, product_path(product) %></p>
+      <%= link_to image_tag(product.image, style: "width:100px;"), product_path(product)%>
     <% end %>
   </div>
 

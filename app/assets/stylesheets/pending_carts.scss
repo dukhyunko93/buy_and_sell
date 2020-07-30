@@ -1,6 +1,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+html * {
+    font-family: 'Geneva';
+}
+
+.error_message{
+    color: red;
+    position: relative;
+    left: 475px;
+    top: 50px;
+}
+
 .logo img{
     width: 200px;
 }
@@ -81,6 +92,7 @@ body{
     opacity: 0;
     transform: translate(-10px);
     transition: all 1s ease;
+    z-index: 1;
 }
 .browse li {
     width: 100%;
@@ -139,6 +151,7 @@ body{
     opacity: 0;
     transform: translate(-10px);
     transition: all 1s ease;
+    z-index: 1;
 }
 .myaccount li {
     width: 100%;
@@ -197,6 +210,7 @@ body{
     opacity: 0;
     transform: translate(-10px);
     transition: all 1s ease;
+    z-index: 1;
 }
 .sell li {
     width: 100%;

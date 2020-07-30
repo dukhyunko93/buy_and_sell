@@ -1,3 +1,9 @@
+ <div class='error_message_form'>
+    <% if flash[:user_error] %>
+        <p><%= flash[:user_error] %></p>
+    <% end %>
+</div>
+
 <div class='form_box'>
   <%= form_for @user do |f| %>
       

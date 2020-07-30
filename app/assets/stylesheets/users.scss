@@ -1,6 +1,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+html * {
+    font-family: 'Geneva';
+}
+
+.error_message_form{
+    color: red;
+    position: relative;
+    text-align: center;
+    top: 10px;
+}
+
 h1{
     text-align: center;
 }
@@ -24,8 +35,10 @@ h1{
 .field{
     text-align: center;
 }
+
 .field label{
-    color: black;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 .form_box{
@@ -115,6 +128,7 @@ body{
     opacity: 0;
     transform: translate(-10px);
     transition: all 1s ease;
+    z-index: 1;
 }
 .browse li {
     width: 100%;
@@ -173,6 +187,7 @@ body{
     opacity: 0;
     transform: translate(-10px);
     transition: all 1s ease;
+    z-index: 1;
 }
 .myaccount li {
     width: 100%;
@@ -231,6 +246,7 @@ body{
     opacity: 0;
     transform: translate(-10px);
     transition: all 1s ease;
+    z-index: 1;
 }
 .sell li {
     width: 100%;

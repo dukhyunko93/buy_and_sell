@@ -8,6 +8,8 @@ class Product < ApplicationRecord
 
     has_one_attached :image
     
+    validates_presence_of :name, :product_type, :price, :condition, :color, :image
+
     def notsold
         self.purchased_item_id == nil
     end

@@ -1,8 +1,19 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+html * {
+    font-family: 'Geneva';
+}
+
 html{
     background-image: url('bred_background.jpg');
+}
+
+.error_message{
+    color: red;
+    position: relative;
+    left: 475px;
+    top: 50px;
 }
 
 body{
@@ -70,6 +81,7 @@ body{
     opacity: 0;
     transform: translate(-10px);
     transition: all 1s ease;
+    z-index: 1;
 }
 .browse li {
     width: 100%;
@@ -128,6 +140,7 @@ body{
     opacity: 0;
     transform: translate(-10px);
     transition: all 1s ease;
+    z-index: 1;
 }
 .myaccount li {
     width: 100%;
@@ -186,6 +199,7 @@ body{
     opacity: 0;
     transform: translate(-10px);
     transition: all 1s ease;
+    z-index: 1;
 }
 .sell li {
     width: 100%;
@@ -222,5 +236,7 @@ body{
     pointer-events: all;
     transform: translateY(0px);
 }
+
+
 
 

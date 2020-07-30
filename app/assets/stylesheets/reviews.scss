@@ -1,2 +1,12 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+html * {
+    font-family: 'Geneva';
+}
+
+.error_message{
+    color: red;
+    position: relative;
+    left: 475px;
+    top: 50px;
+}

@@ -1,29 +1,28 @@
 
 <div class='allproducts'>
+
   <div class='shoes'>
     <% @shoes.each do |shoe|%>
-  <% if shoe.image.attached? %>
-    <%= link_to image_tag(shoe.image, style: "width: 100px;"), shoe %>
-  <% end %>
-    <%= link_to shoe.name, shoe %>
-    <% end %>
+    <%= link_to image_tag(shoe.image, style: "width: 100px;"), shoe %><br>
+    <%= link_to shoe.name, shoe, :class => 'item_link' %><br>
+    <% end %><br>
+    <%= link_to "View More", shoepage_path, :class => 'item_link' %>
   </div>
 
   <div class='accessories'>
     <% @accessories.each do |accessory| %>
-  <% if accessory.image.attached? %>
-    <%= link_to image_tag(accessory.image, style: "width: 100px;"), accessory %>
-  <% end %>  
-    <%= link_to accessory.name, accessory %>
-    <% end %>
+    <%= link_to image_tag(accessory.image, style: "width: 100px;"), accessory %><br>
+    <%= link_to accessory.name, accessory, :class => 'item_link' %><br>
+    <% end %><br>
+    <%= link_to "View More", accessorypage_path, :class => 'item_link' %>
   </div>
 
   <div class='streetwears'>
     <% @streetwears.each do |streetwear| %>
-  <% if streetwear.image.attached? %>    
-    <%= link_to image_tag(streetwear.image, style: "width: 100px;"), streetwear %>
-  <% end %>
-    <%= link_to streetwear.name, streetwear %>
-    <% end %>
+    <%= link_to image_tag(streetwear.image, style: "width: 100px;"), streetwear %><br>
+    <%= link_to streetwear.name, streetwear, :class => 'item_link' %><br>
+    <% end %><br>
+    <%= link_to "View More", streetwearpage_path, :class => 'item_link' %>
   </div>
+
 </div>
