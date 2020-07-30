@@ -5,7 +5,7 @@ class PendingCartsController < ApplicationController
   # NEED VALIDATION FOR PURCHASED ITEM CANNOT BE IN SHOPPING CART
 
   def index
-    @cart = PendingCart.all
+    @cart = PendingCart.all.select{|c| c.user_id == current_user.id}
   end
 
   def destroy
