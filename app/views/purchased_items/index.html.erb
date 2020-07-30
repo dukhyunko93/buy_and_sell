@@ -1,12 +1,31 @@
-<div class="purchase_box">
-  <h1>Your Purchased Items</h1>
-  <% @purchased_items.each do |item| %>
-  <p><%= item.product.name %></p>
-<p><%= image_tag(item.product.image, class:'img') %></p>
+<div class='purchase_history_box'>
+  <h1>Transaction History</h1>
 
-  <div class="review_button">
-    <%= button_to 'Review this Purchase', new_review_path, params: {id: item.id}, :method => 'get' %>
-  </div>
+  <table class='history_table'>
+    <tr>
+      <th></th>
+      <th> Name </th>
+      <th> Price </th>
+      <th> Seller </th>
+      <th> Date </th>
+      <th></th>
+    </tr>
 
-  <% end %>
+    
+      <% @purchased_items.each do |item| %>
+          <tr>
+              <td><%= image_tag(item.product.image, :class => 'purchased_img') %></td>
+              <td><%= item.product.name %></td>
+              <td>$<%= item.product.price%></td>
+              <td><%= link_to item.product.seller.name, user_path(item.product.seller), :class => 'seller_link' %></td>
+              <td><%= item.created_at.strftime("%Y-%m-%d") %></td>
+              <td><%= button_to 'Write a Review', new_review_path, params: {id: item.id}, :method => 'get', :class => 'bttn' %></td>
+          </tr>
+      <% end %>
+  </table>
+      
+          <div class='no_purchases'>
+            <p>WHERE IS MY CROW</p>
+            <%= link_to image_tag('crows-bird-animation-crow.jpg') %>
+          </div> 
 </div>

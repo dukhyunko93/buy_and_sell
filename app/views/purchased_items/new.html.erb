@@ -6,18 +6,34 @@
         <% end %>
     </div>
 
-    <div class='img_box'>
-        <p><%= image_tag(@product.image, class:'img') %></p>
+    <div class='product_info'>
+        <div class='img_box'>
+            <%= image_tag(@product.image, class:'show_page_img') %></p>
+        </div>
+
+        <div class='details'>
+            <ul>
+                <li><h3>Seller Information</h3></li>
+                <li><%= @product.name %></li>
+                <li>Seller: <%= @product.seller.name%></li>
+                <li>Contact info: <%= @product.seller.email %></li>
+                <li>Condition: <%= @product.condition %>
+                <li>Category: <%= @product.product_type %></li>
+                <li>Color: <%= @product.color %></li>
+                <li>Description: <%= @product.description %></li>
+                <li><b>Total: $<%= @product.price %></b></li>
+        </div>
+
+        <div class='user_info'>
+            <ul>
+                <li><h3>Your Information</h3></li>
+                <li><%= @user.name %></li>
+                <li>Contact: <%= @user.email %></li>
+                <li>Ship to: <%= @user.address %></li>
+             <div class='buybttn'>
+                <%= button_to "purchase", purchased_items_path, params: {purchased_item: {product_id: params[:id], buyer_id: @user.id}}, method: :post, :class => 'bttn' %>
+            </div>    
+            </ul>
+        </div>
     </div>
-
-    <div class='product_details'>
-        <p>Name: <%= @product.name %></p>
-        <p>Seller: <%= @product.seller.name%></p>
-        <p>Contact info: <%= @product.seller.email %></p>
-        <p>Condition: <%= @product.condition %>
-        <p>$<%= @product.price %></p>
-    </div>
-
-    <div >
-
-<%= button_to "purchase", purchased_items_path, params: {purchased_item: {product_id: params[:id], buyer_id: @current_user.id}}, method: :post %>
+</div>

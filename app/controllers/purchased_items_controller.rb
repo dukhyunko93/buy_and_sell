@@ -5,7 +5,7 @@ class PurchasedItemsController < ApplicationController
     #NEED VALIDATION FOR NOT BEING ABLE TO BUY THE SAME SHOE TWICE
 
     def new
-      @current_user = current_user
+      @user = current_user
       @product = Product.find(params[:id])
       if current_user.id == @product.seller_id
         flash[:user_error] = "* You cannot buy your own item *"
@@ -29,7 +29,7 @@ class PurchasedItemsController < ApplicationController
     end
 
     def index
-      @purchased_items = PurchasedItem.all
+      @purchased_items = PurchasedItem.all.select{|t| t.buyer_id == current_user.id}
     end
 
     private
