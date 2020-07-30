@@ -1,46 +1,45 @@
- <div class='error_message'>
-    <% if flash[:user_error] %>
-        <p><%= flash[:user_error] %></p>
-    <% end %>
+<div class='form_container'>
+    <div class='error_sell_edit'>
+        <% if flash[:user_error] %>
+            <p><%= flash[:user_error] %></p>
+        <% end %>
+    </div>
+
+        <div class='form_box'>
+        <%= form_with model: @product do |p| %>
+            <div class='field'>
+
+                <%= p.label :name, "Name" %><br>
+                <%= p.text_field :name, :class => 'input' %><br><br>
+
+                <%= p.label :product_type, "Type" %><br>
+                <%= p.collection_select :product_type, @categories, :title, :title, :class => 'input' %><br><br>
+
+                <%= p.label :price, "Price" %><br>
+                <%= p.number_field :price %><br><br>
+
+                <%= p.label :condition, "Condition" %><br>
+                <%= p.collection_select :condition, @conditions, :status, :status, :class => 'input' %><br><br>
+
+                <%= p.label :color, "Color" %><br>
+                <%= p.text_field :color, :class => 'input' %><br><br>
+
+                <% if @product.image.attached? %><br>
+                    <%= image_tag(@product.image, style: "width:100px;")  %><br><br>
+                <% end %>
+
+                <%= p.label :image, "Product Image" %><br>
+                <%= p.file_field :image, :class => 'input' %><br><br>
+
+                <%= p.label :description, "Description" %><br>
+                <%= p.text_area :description, :value => "Please include size and additional informtaion.", :class => 'input' %><br><br>
+            </div>
+
+            <div class='submit'>
+                <%= p.submit "Sell" %>
+            </div>
+
+        </div>
+        <% end %>
+    </div>
 </div>
-
-<%= form_with model: @product do |p| %>
-
-<div>
-<%= p.label :name, "Name" %>
-<%= p.text_field :name %>
-</div>
-
-<div>
-<%= p.label :product_type, "Type" %>
-<%= p.collection_select :product_type, @categories, :title, :title %>
-</div>
-
-<div>
-<%= p.label :price, "Price" %>
-<%= p.number_field :price %>
-</div>
-
-<div>
-<%= p.label :condition, "Condition" %>
-<%= p.collection_select :condition, @conditions, :status, :status %>
-</div>
-
-<div>
-<%= p.label :color, "Color" %>
-<%= p.text_field :color %>
-</div>
-
-<div>
-<% if @product.image.attached? %>
-    <%= image_tag(@product.image, style: "width:100px;")  %>
-<% end %>
-
-<%= p.label :image, "Product Image" %>
-<%= p.file_field :image %>
-
-<%= p.label :description, "Description" %>
-<%= p.text_area :description, :value => "Please include size and additional informtaion." %>
-</div>
-
-<% end %>
