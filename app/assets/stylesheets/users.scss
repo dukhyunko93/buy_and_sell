@@ -52,6 +52,12 @@ h1{
     margin-left: 60%;
     width: 20%;
     text-align: center;
+    background-color: #ECECEC;
+}
+
+.sell_list ul{
+    border: solid 2px white;
+    margin: 0px;    
 }
 
 .review_box{
@@ -84,6 +90,20 @@ h1{
     color:#ff8000;
 }
 
+.page_number {
+    text-align: center;
+}
+
+.pagination a{
+    color: black;
+    margin-right:16px;
+    padding: 5px;
+}
+
+.pagination a:hover{
+    background-color: black;
+    color: white
+}
 
 /* edit & new page */
 

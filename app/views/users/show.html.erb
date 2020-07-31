@@ -3,7 +3,7 @@
   <div class='user_info'>
     <ul>
       <div class='star_rate'>
-        <p><% @seller.avg_rating.to_i.times do%>
+        <p>Seller rating: <% @seller.avg_rating.to_i.times do%>
           <span class='glyphicon glyphicon-star'></span>
         <% end %>
         <% @seller.blank_stars.times do  %>
@@ -16,7 +16,7 @@
   </div>
   <div class='review_box'>
     <h3 class='review_banner'>Reviews</h3>
-    <% @seller.seller_reviews.each do |review| %>
+    <% @reviews.each do |review| %>
       <ul>
         <li class='name'><%= review.buyer.user_name %></li>
         <div class='star_rate'>
@@ -31,12 +31,14 @@
         <li><%=link_to review.purchased_item.product.name, product_path(review.purchased_item.product) %></li>
       </ul>
     <% end %>
+    <div class='page_number'>
+        <%= will_paginate @reviews, :param_name => 'review_page' %>
+    </div>
   </div>
 
   <div class='sell_list'>
     <h3>Listed Item</h3>
-      <% @seller.products.each do |product|%>
-        <% if product.notsold %>
+      <% @products.each do |product|%>
           <div class='show_field'>
             <ul>
               <li><%= link_to image_tag(product.image, style: 'width:75px;'), product_path(product)%></li>
@@ -44,7 +46,9 @@
               <li>$<%= product.price %></li>
             </ul>
           </div>
-        <% end %>
       <% end %>
+    <div class='page_number'>
+        <%= will_paginate @products, :param_name => 'product_page' %>
+    </div>
   </div>
 </div>

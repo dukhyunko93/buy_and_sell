@@ -36,6 +36,10 @@ class UsersController < ApplicationController
 
     def show
       @seller = User.find(params[:id])
+      reviews = @seller.seller_reviews
+      @reviews = reviews.paginate(page: params[:review_page], per_page: 5)
+      products = @seller.products.select {|p| p.notsold}
+      @products = products.paginate(page: params[:product_page], per_page: 4)
       @user = current_user
     end
      
