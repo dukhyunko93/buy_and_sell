@@ -14,6 +14,8 @@ html * {
 
 h1{
     text-align: center;
+    background-image: url('graffit.jpeg');
+    color: white;
 }
 /*show page */
 
@@ -27,10 +29,25 @@ h1{
 .show_box{
 
     border: solid 3px black;
+    background-image: url('');
     background-size: cover;
     width: 380px;
     margin: 0px auto 0px auto;
 }
+
+.bttn:hover {
+    background-color: white;
+    color: black
+}
+
+.review, h2 {
+  background-image: url('');
+    color: red;
+}
+
+
+
+
 
 
 

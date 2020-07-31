@@ -6,25 +6,27 @@
     <p>Contact: <%= @user.email %></p>
   </div>
 
+
+
   <% @user.products.each do |product|%>
   <div class="show_field">
         <% if product.notsold %>
-          <p><%= link_to product.name, product_path(product) %></p>
+          <p><%= link_to product.name, product_path(product), :class => 'bttn' %></p>
           <%= link_to image_tag(product.image, style: "width:100px;"), product_path(product)%>
         <% end %>
     <% end %>
   </div>
-
-  <div class="show_field">
+    <h2><%= "Buyer Reviews" %> </h2>
+  <div class="review">
     <% @user.seller_reviews.each do |review| %>
-    <h2><%= "My Reviews" %></h2>
+      <h2><%= "------------------" %> </h2>
     <p>Buyer: <%= review.buyer.name %></p>
     <p><%= "#{review.comment} || Rating: #{review.rating}" %></p>
-    <% if review.purchased_item.any? %>
-      <%= review.purchased_item.product.name %>
+    <% if review.purchased_item %>
+      <p><%= review.purchased_item.product.name %></p>
       <%= image_tag(review.purchased_item.product.image, style: "width:100px;") %>
     <% end %>
-    <p><%= @user.avg_rating %></p>
+    <p>Seller Rating: <%= @user.avg_rating %></p>
     <% end %>
   </div>
 
