@@ -10,8 +10,6 @@ class Product < ApplicationRecord
     
     validates_presence_of :name, :product_type, :price, :condition, :color, :image
 
-    self.per_page = 2
-
     def notsold
         self.purchased_item_id == nil
     end

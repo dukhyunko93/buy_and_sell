@@ -1,6 +1,7 @@
 class PurchasedItemsController < ApplicationController
     before_action :require_logged_in
     layout 'purchased_items'
+    require 'will_paginate/array'
 
     #NEED VALIDATION FOR NOT BEING ABLE TO BUY THE SAME SHOE TWICE
 
@@ -30,7 +31,8 @@ class PurchasedItemsController < ApplicationController
     end
 
     def index
-      @purchased_items = PurchasedItem.all.select{|t| t.buyer_id == current_user.id}
+      purchased_items = PurchasedItem.all.select{|t| t.buyer_id == current_user.id}
+      @purchased_items  = purchased_items.paginate(page: params[:page], per_page: 5)
     end
 
     private

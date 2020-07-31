@@ -45,6 +45,22 @@ html * {
     position: relative;
 }
 
+.page_number {
+    text-align: center;
+}
+
+.pagination a{
+    background-color: white;
+    color: black;
+    margin-right:16px;
+    padding: 5px;
+}
+
+.pagination a:hover{
+    background-color: black;
+    color: white
+}
+
 /* new page */
 
 .purchase_box {
