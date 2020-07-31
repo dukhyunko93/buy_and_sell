@@ -5,6 +5,13 @@ html * {
     font-family: 'Geneva';
 }
 
+.search_bar{
+    width: 700px;
+    position: absolute;
+    margin-left: 450px;
+    margin-top: -50px;
+}
+
 .error_message_form{
     color: red;
     position: relative;
@@ -14,41 +21,58 @@ html * {
 
 h1{
     text-align: center;
-    background-image: url('graffit.jpeg');
-    color: white;
 }
+
 /*show page */
 
-.show_field{
+.show_box{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user_info{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.user_info ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    line-height: 120%;
+}
+
+.seller_username{
+    font-size: 20px;
+}
+
+.sell_list{
+    position: absolute;
+    margin-left: 60%;
+    width: 20%;
     text-align: center;
 }
-.show_field {
-    color: black;
+
+.review_box{
+    width: 70%;
+    margin: 0px;
+    float: left;
 }
 
-.show_box{
-
-    border: solid 3px black;
-    background-image: url('');
-    background-size: cover;
-    width: 380px;
-    margin: 0px auto 0px auto;
+.show_field ul{
+    display: flex;
+    list-style: none;
+    line-height: 120%;
 }
 
-.bttn:hover {
-    background-color: white;
-    color: black
+.show_field li{
+    margin: 5px;
 }
 
-.review, h2 {
-  background-image: url('');
-    color: red;
+.star_rate{
+    color:#ff8000;
 }
-
-
-
-
-
 
 
 /* edit & new page */
@@ -163,7 +187,7 @@ body{
     border-radius: 5px;
     opacity: 0;
     transform: translate(-10px);
-    transition: all 1s ease;
+    transition: all 0.2s ease;
     z-index: 1;
 }
 .browse li {
@@ -222,7 +246,7 @@ body{
     border-radius: 5px;
     opacity: 0;
     transform: translate(-10px);
-    transition: all 1s ease;
+    transition: all 0.2s ease;
     z-index: 1;
 }
 .myaccount li {
@@ -281,7 +305,7 @@ body{
     border-radius: 5px;
     opacity: 0;
     transform: translate(-10px);
-    transition: all 1s ease;
+    transition: all 0.2s ease;
     z-index: 1;
 }
 .sell li {

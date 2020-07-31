@@ -5,6 +5,13 @@ html * {
     font-family: 'Geneva';
 }
 
+.search_bar{
+    width: 700px;
+    position: absolute;
+    margin-left: 450px;
+    margin-top: -50px;
+}
+
 .error_message{
     color: red;
     position: relative;
@@ -12,31 +19,7 @@ html * {
     top: 50px;
 }
 
-.logo img{
-    width: 200px;
-}
-
-.lsting li{
-    display: inline-block;
-}
-
-.cart img{
-    height: 40px;
-    position: absolute;
-    top: 30px;
-    right: 50px;
-}
-
-body{
-    height: 120px;
-}
-
-.cart img{
-    height: 40px;
-    position: absolute;
-    top: 30px;
-    right: 50px;
-}
+/* nav bar */
 
 .logo img{
     width: 200px;
@@ -49,6 +32,11 @@ body{
     box-sizing: border-box;
 }
 
+
+body{
+    height: 120px;
+}
+
 .header {
     background-color: #282828;
     display: flex;
@@ -56,6 +44,43 @@ body{
     margin: auto;
     align-items: center;
     justify-content: space-evenly;
+}
+
+/* Cart Index */
+.shopping_cart_box {
+    text-align: center;
+}
+
+.history_table {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.history_table td, tr, th {
+    background-color: #ECECEC;
+    border: solid white;
+    text-align: center;
+}
+
+.seller_link {
+    color: black;
+}
+
+.purchased_img {
+    width: 100px;
+    position: relative;
+}
+
+.bttn {
+    background-color: black;
+    color: white;
+    margin: 1px;
+}
+
+.bttn:hover {
+    background-color: white;
+    color: black
 }
 
 /* nav buttons */
@@ -91,7 +116,7 @@ body{
     border-radius: 5px;
     opacity: 0;
     transform: translate(-10px);
-    transition: all 1s ease;
+    transition: all 0.2s ease;
     z-index: 1;
 }
 .browse li {
@@ -150,7 +175,7 @@ body{
     border-radius: 5px;
     opacity: 0;
     transform: translate(-10px);
-    transition: all 1s ease;
+    transition: all 0.2s ease;
     z-index: 1;
 }
 .myaccount li {
@@ -209,7 +234,7 @@ body{
     border-radius: 5px;
     opacity: 0;
     transform: translate(-10px);
-    transition: all 1s ease;
+    transition: all 0.2s ease;
     z-index: 1;
 }
 .sell li {
@@ -247,5 +272,3 @@ body{
     pointer-events: all;
     transform: translateY(0px);
 }
-
-

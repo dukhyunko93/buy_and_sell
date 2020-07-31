@@ -1,31 +1,43 @@
-<div class="show_box">
+<div class='show_box'>
 
-  <h1><%= @user.name %>'s Seller Page</h1>
-
-  <div class="show_field">
-    <p>Contact: <%= @user.email %></p>
-  </div>
-
-
-
-  <% @user.products.each do |product|%>
-  <div class="show_field">
-        <% if product.notsold %>
-          <p><%= link_to product.name, product_path(product), :class => 'bttn' %></p>
-          <%= link_to image_tag(product.image, style: "width:100px;"), product_path(product)%>
+  <div class='user_info'>
+    <ul>
+      <div class='star_rate'>
+        <p><% @seller.avg_rating.to_i.times do%>
+          <span class="glyphicon glyphicon-star"></span>
         <% end %>
-    <% end %>
+        <% @seller.blank_stars.times do  %>
+          <span class="glyphicon glyphicon-star-empty"></span>
+        <% end %></p>
+      </div>
+      <li><strong class ='seller_username'><%= @seller.user_name %></strong></li>
+      <li>Contact: <%= @seller.email %></li>
+    <ul>
   </div>
-    <h2><%= "Buyer Reviews" %> </h2>
-  <div class="review">
-    <% @user.seller_reviews.each do |review| %>
-      <h2><%= "------------------" %> </h2>
-    <p>Buyer: <%= review.buyer.name %></p>
-    <p><%= "#{review.comment} || Rating: #{review.rating}" %></p>
-    <%= review.purchased_item.product.name %>
-    <%= image_tag(review.purchased_item.product.image, style: "width:100px;") %>
-    <p><%= @user.avg_rating %></p>
+  <div class=review_box>
+    <h3 class=review_banner>Reviews</h3>
+    <% @seller.seller_reviews.each do |review| %>
+      <ul>
+        <li><%= review.buyer.user_name %></li>
+        <li>Rating: <%= review.rating %></li>
+        <li><%= review.comment %> </li>
+        <li><%=link_to review.purchased_item.product.name, product_path(review.purchased_item.product) %></li>
+      </ul>
     <% end %>
   </div>
 
+  <div class='sell_list'>
+    <h3>Listed Item</h3>
+      <% @seller.products.each do |product|%>
+        <% if product.notsold %>
+          <div class='show_field'>
+            <ul>
+              <li><%= link_to image_tag(product.image, style: 'width:75px;'), product_path(product)%></li>
+              <li><%= link_to product.name, product_path(product)%></li>
+              <li><%= product.price %></li>
+            </ul>
+          </div>
+        <% end %>
+      <% end %>
+  </div>
 </div>
