@@ -7,7 +7,13 @@ html * {
 
 html {
     background-image: url('login background.jpg');
+    animation: login_anim 100s linear infinite;
     background-size: 25%;
+}
+
+@keyframes login_anim{
+  0%{background-position:0 0;}
+  100%{background-position:-2122px 0;}
 }
 
 
