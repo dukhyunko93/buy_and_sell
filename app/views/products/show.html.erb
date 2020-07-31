@@ -15,7 +15,7 @@
     <div class='details'>
 
         <% if @product.cart_count > 0%>
-            <p>This item is in <%= pluralize(@product.cart_count, 'cart') %>!</p>
+            <p class='cart_count_info'><%= image_tag('eyes_1f440.png', :class => "style_eye") %> This item is in <%= pluralize(@product.cart_count, 'cart') %>!</p>
         <% end %>
         
         <% if @product.sold %>
