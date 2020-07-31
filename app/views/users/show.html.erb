@@ -4,22 +4,29 @@
     <ul>
       <div class='star_rate'>
         <p><% @seller.avg_rating.to_i.times do%>
-          <span class="glyphicon glyphicon-star"></span>
+          <span class='glyphicon glyphicon-star'></span>
         <% end %>
         <% @seller.blank_stars.times do  %>
-          <span class="glyphicon glyphicon-star-empty"></span>
+          <span class='glyphicon glyphicon-star-empty'></span>
         <% end %></p>
       </div>
       <li><strong class ='seller_username'><%= @seller.user_name %></strong></li>
       <li>Contact: <%= @seller.email %></li>
     <ul>
   </div>
-  <div class=review_box>
-    <h3 class=review_banner>Reviews</h3>
+  <div class='review_box'>
+    <h3 class='review_banner'>Reviews</h3>
     <% @seller.seller_reviews.each do |review| %>
       <ul>
-        <li><%= review.buyer.user_name %></li>
-        <li>Rating: <%= review.rating %></li>
+        <li class='name'><%= review.buyer.user_name %></li>
+        <div class='star_rate'>
+          <li><% @seller.avg_rating.to_i.times do%>
+                <span class='glyphicon glyphicon-star'></span>
+              <% end %>
+              <% @seller.blank_stars.times do  %>
+                <span class='glyphicon glyphicon-star-empty'></span>
+              <% end %></li>
+        </div>           
         <li><%= review.comment %> </li>
         <li><%=link_to review.purchased_item.product.name, product_path(review.purchased_item.product) %></li>
       </ul>

@@ -2,6 +2,7 @@ class ProductsController < ApplicationController
     before_action :require_logged_in
     skip_before_action :require_logged_in, only: [:index, :shoepage, :accessorypage, :streetwearpage]
     layout 'product'
+    require 'will_paginate/array'
     
     def index
       @shoes = Product.shoe.select {|t| t.notsold}.sample(5)
@@ -10,15 +11,18 @@ class ProductsController < ApplicationController
     end
 
     def shoepage
-      @products = Product.shoe.select {|t| t.notsold}
+      products = Product.shoe.select {|t| t.notsold}
+      @products  = products.paginate(page: params[:page], per_page: 10)
     end
 
     def accessorypage
-      @products = Product.accessory.select {|t| t.notsold}
+      products = Product.accessory.select {|t| t.notsold}
+      @products  = products.paginate(page: params[:page], per_page: 10)
     end
 
     def streetwearpage
-      @products = Product.streetwear.select {|t| t.notsold}
+      products = Product.streetwear.select {|t| t.notsold}
+      @products  = products.paginate(page: params[:page], per_page: 10)
     end
 
     def show

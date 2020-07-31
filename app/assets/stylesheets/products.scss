@@ -82,6 +82,9 @@ html * {
     position: relative;
     padding: 8px 16px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 1px;
     color: #000;
     background-color: #ECECEC;
     margin: 5px;
@@ -117,6 +120,22 @@ html * {
 
 .star_rate{
     color:#ff8000;
+}
+
+.page_number {
+    text-align: center;
+}
+
+.pagination a{
+    background-color: white;
+    color: black;
+    margin-right:16px;
+    padding: 5px;
+}
+
+.pagination a:hover{
+    background-color: black;
+    color: white
 }
 
 /* show page */
