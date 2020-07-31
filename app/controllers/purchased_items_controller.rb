@@ -21,6 +21,7 @@ class PurchasedItemsController < ApplicationController
         product = purchased_item.product
         product.purchased_item_id = purchased_item.id
         product.save
+        product.pending_carts
         redirect_to purchased_items_path
       else
         flash[:user_error] = purchased_item.errors.full_messages

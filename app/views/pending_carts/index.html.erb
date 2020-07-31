@@ -1,9 +1,13 @@
+<h1 class='cart_banner'>Shopping Cart</h1>
 <% @cart.each do |item| %>
-
+    
     <% if item.product.notsold %>
         <%= link_to image_tag(item.product.image, style: "width:100px;"), product_path(item.product) %>
         <%= button_to "Purchase", new_purchased_item_path, params: {:id => item.product.id }, :method => "get" %>
         <%= button_to "Remove Item", pending_cart_path(item), params: {:id => item.id }, :method => "delete" %>
     <% end %>
-    
+<% end %>
+
+<% if @cart.empty? %>
+    <%= link_to image_tag('empty item cart.png', style: "width:500px;"), products_path%>
 <% end %>

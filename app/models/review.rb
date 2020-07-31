@@ -4,6 +4,7 @@ class Review < ApplicationRecord
     belongs_to :seller, :class_name => :User
 
     validates_presence_of :comment, :rating
+    validates_uniqueness_of :purchased_item, :message => ": You already wrote a review for this item!"
 
     # def self.ratings
     #   Review.all.map do |r|

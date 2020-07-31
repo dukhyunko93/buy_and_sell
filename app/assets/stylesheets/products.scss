@@ -114,16 +114,20 @@ html * {
     top: 50px;
 }
 
+.submit {
+    padding-bottom: 7px;
+}
+
 .bttn {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     margin-right:16px;
     padding: 5px;
 }
 
 .bttn:hover {
-    background-color: white;
-    color: black
+    background-color: black;
+    color: white
 }
 
 .bttngrp {
@@ -163,6 +167,9 @@ html * {
 
 /* edit & new page */
 
+.edit_new {
+    text-align: center;
+}
 
 .field{
     text-align: center;

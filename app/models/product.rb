@@ -2,7 +2,7 @@ class Product < ApplicationRecord
     belongs_to :seller, :class_name => :User
     belongs_to :purchased_item, optional: true
     has_many :reviews
-    has_many :pending_cart
+    has_many :pending_carts
     has_many :conditions
     has_many :categories
 
@@ -15,7 +15,7 @@ class Product < ApplicationRecord
     end
 
     def cart_count
-        pending_cart.count
+        pending_carts.count
     end
 
     def self.shoe

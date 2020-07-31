@@ -20,10 +20,8 @@
     <h2><%= "My Reviews" %></h2>
     <p>Buyer: <%= review.buyer.name %></p>
     <p><%= "#{review.comment} || Rating: #{review.rating}" %></p>
-    <% if review.purchased_item.any? %>
-      <%= review.purchased_item.product.name %>
-      <%= image_tag(review.purchased_item.product.image, style: "width:100px;") %>
-    <% end %>
+    <%= review.purchased_item.product.name %>
+    <%= image_tag(review.purchased_item.product.image, style: "width:100px;") %>
     <p><%= @user.avg_rating %></p>
     <% end %>
   </div>
