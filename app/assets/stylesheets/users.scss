@@ -58,7 +58,16 @@ h1{
     width: 70%;
     margin: 0px;
     float: left;
+    background-color:#ECECEC;
 }
+
+.review_box ul{
+    list-style: none;
+    border: solid 2px white;
+    margin: 0px;
+}
+.name{
+} 
 
 .show_field ul{
     display: flex;
