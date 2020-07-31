@@ -1,10 +1,13 @@
  <div class='error_message'>
     <% if flash[:user_error] %>
-        <p><%= flash[:user_error] %></p>
+            <% flash[:user_error].each do |msg| %>
+                <%= msg %>
+            <% end %>
     <% end %>
 </div>
 
 <div class='product_info'>
+
     <div class='img_box'>
         <%= image_tag(@product.image, class:'show_page_img') %></p>
     </div>
@@ -14,9 +17,13 @@
         <% if @product.cart_count > 0%>
             <p>This item is in <%= pluralize(@product.cart_count, 'cart') %>!</p>
         <% end %>
+        
+        <% if @product.sold %>
+            <p id=sold_sign><%= ' * SOLD * ' %></p>
+        <% end %>
 
         <h3>Product: <%= @product.name %></h3>
-        <p>Seller: <%= link_to @seller.name, user_path(@seller) %></p>
+        <p>Seller: <%= link_to @seller.user_name, user_path(@seller) %></p>
         <p>Rating:
         <div class='star_rate'>
             <% @seller.avg_rating.to_i.times do%>

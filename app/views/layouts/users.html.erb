@@ -21,14 +21,14 @@
     </div>
     
     <% if @user.valid? %>
-    <%= link_to image_tag('cart.png'), pending_carts_path, class: 'cart' %>
+      <%= link_to image_tag('cart.png'), pending_carts_path, class: 'cart' %>
     <% end %>
 
       <div class='header'>
 
         <% if @user.valid?  %>
           <div class='greeting'>
-            Hi, <%= @user.name %>. Welcome Back!
+            Hi, <%= @user.name %> Welcome!
           </div>
 
           <div class='myaccount'>

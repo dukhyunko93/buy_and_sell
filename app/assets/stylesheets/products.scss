@@ -12,11 +12,13 @@ html * {
     margin-top: -50px;
 }
 
-.error_message{
+.error_sell_edit{
     color: red;
     position: relative;
-    left: 475px;
-    top: 50px;
+}
+
+.no_item{
+    text-align: center;
 }
 
 /* idex page */
@@ -119,6 +121,9 @@ html * {
 
 /* show page */
 
+#sold_sign{
+    color: red;
+}
 .error_message{
     color: red;
     position: relative;
