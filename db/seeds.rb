@@ -20,11 +20,11 @@
 #       )
 # end
 
-# 100.times do
-#     PendingCart.create(
-#         user_id: User.all.sample.id,
-#         product_id: Product.all.sample.id
-#     )
-# end
+100.times do
+    PendingCart.create(
+        user_id: User.all.sample.id,
+        product_id: Product.all.sample.id
+    )
+end
 
 

@@ -1,13 +1,33 @@
-<h1 class='cart_banner'>Shopping Cart</h1>
-<% @cart.each do |item| %>
-    
-    <% if item.product.notsold %>
-        <%= link_to image_tag(item.product.image, style: "width:100px;"), product_path(item.product) %>
-        <%= button_to "Purchase", new_purchased_item_path, params: {:id => item.product.id }, :method => "get" %>
-        <%= button_to "Remove Item", pending_cart_path(item), params: {:id => item.id }, :method => "delete" %>
-    <% end %>
-<% end %>
+<div class='shopping_cart_box'>
+    <h1>Shopping Cart</h1>
 
-<% if @cart.empty? %>
-    <%= link_to image_tag('empty item cart.png', style: "width:500px;"), products_path%>
-<% end %>
+    <table class='history_table'>
+
+    <% if @cart.any? %>
+        <tr>
+            <th></th>
+            <th> Username </th>
+            <th> Price </th>
+            <th> Seller </th>
+            <th></th>
+         </tr>
+      
+        <% @cart.each do |item| %>
+        <tr>
+            <td><%= image_tag(item.product.image, :class => 'purchased_img') %></td>
+            <td><%= item.product.name %></td>
+            <td>$<%= item.product.price%></td>
+            <td><%= link_to item.product.seller.user_name, user_path(item.product.seller), :class => 'seller_link' %></td>
+            <td>
+                <%= button_to "Purchase", new_purchased_item_path, params: {:id => item.product.id }, :method => "get", :class => 'bttn' %>
+                <%= button_to "Remove Item", pending_cart_path(item), params: {:id => item.id }, :method => "delete", :class => 'bttn' %>
+            </td>
+        </tr>
+        <% end %>
+    <% end %>
+
+        <% if @cart.empty? %>
+            <%= link_to image_tag('empty item cart.png', style: "width:500px;"), products_path%>
+        <% end %>
+  </table>
+</div>

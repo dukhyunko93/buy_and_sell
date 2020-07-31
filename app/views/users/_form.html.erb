@@ -1,7 +1,9 @@
 <div class='form_container'>
   <div class='error_message_form'>
       <% if flash[:user_error] %>
-          <p><%= flash[:user_error] %></p>
+            <% flash[:user_error].each do |msg| %>
+              <%= msg %>
+            <% end %>
       <% end %>
   </div>
 

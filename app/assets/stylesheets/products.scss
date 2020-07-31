@@ -5,11 +5,20 @@ html * {
     font-family: 'Geneva';
 }
 
-.error_message{
+.search_bar{
+    width: 700px;
+    position: absolute;
+    margin-left: 450px;
+    margin-top: -50px;
+}
+
+.error_sell_edit{
     color: red;
     position: relative;
-    left: 475px;
-    top: 50px;
+}
+
+.no_item{
+    text-align: center;
 }
 
 /* idex page */
@@ -58,6 +67,7 @@ html * {
     margin-left: auto;
     background-color: white;
     padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .subpage{
@@ -105,8 +115,15 @@ html * {
     margin-left: 80%;
 }
 
+.star_rate{
+    color:#ff8000;
+}
+
 /* show page */
 
+#sold_sign{
+    color: red;
+}
 .error_message{
     color: red;
     position: relative;
@@ -272,7 +289,7 @@ body{
     border-radius: 5px;
     opacity: 0;
     transform: translate(-10px);
-    transition: all 1s ease;
+    transition: all s ease;
     z-index: 1;
 }
 .browse li {
@@ -331,7 +348,7 @@ body{
     border-radius: 5px;
     opacity: 0;
     transform: translate(-10px);
-    transition: all 1s ease;
+    transition: all s ease;
     z-index: 1;
 }
 .myaccount li {
@@ -390,7 +407,7 @@ body{
     border-radius: 5px;
     opacity: 0;
     transform: translate(-10px);
-    transition: all 1s ease;
+    transition: all s ease;
     z-index: 1;
 }
 .sell li {

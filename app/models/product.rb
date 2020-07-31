@@ -14,6 +14,10 @@ class Product < ApplicationRecord
         self.purchased_item_id == nil
     end
 
+    def sold
+        self.purchased_item != nil
+    end
+
     def cart_count
         pending_carts.count
     end

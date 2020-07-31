@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
     before_action :require_logged_in
-    skip_before_action :require_logged_in, only: [:index, :show]
+    skip_before_action :require_logged_in, only: [:index, :shoepage, :accessorypage, :streetwearpage]
     layout 'product'
     
     def index

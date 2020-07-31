@@ -9,19 +9,30 @@
   <body>
     <%= link_to image_tag('logo.png'), root_path, class: "logo" %>
 
+    <div class='search_bar'>
+      <%= form_tag(search_page_path, :method => "get") do %>  
+        <div class="input-group">  
+          <%= search_field_tag :search, params[:search], placeholder: "Search", class: "form-control" %>  
+            <div class="input-group-btn">  
+              <%= button_tag "", :class => 'btn btn-info glyphicon glyphicon-search',:name => nil%>  
+            </div>  
+        </div>  
+      <% end %>
+    </div>
+    
     <% if @user.valid? %>
-    <%= link_to image_tag('cart.png'), pending_carts_path, class: 'cart' %>
+      <%= link_to image_tag('cart.png'), pending_carts_path, class: 'cart' %>
     <% end %>
 
       <div class='header'>
 
         <% if @user.valid?  %>
           <div class='greeting'>
-            Hi, <%= @user.name %>. Welcome Back!
+            Hi, <%= @user.name %> Welcome!
           </div>
 
           <div class='myaccount'>
-            <button>My Account</button>
+            <button>Account</button>
             <ul>
               <li><%= button_to 'Profile', user_path(@user), class: 'account_tab', :method => 'get' %></li>
               <li><%= button_to 'Edit', edit_user_path(@user), class: 'account_tab', :method => 'get' %></li>

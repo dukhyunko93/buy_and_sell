@@ -14,10 +14,16 @@ class User < ApplicationRecord
     end
 
     def avg_rating
-      # self.seller_reviews.map do |r|
-      #   r.rating.inject{ |sum, el| sum + el }.to_f / r.size
-      total = self.seller_reviews.map {|r| r.rating}.sum
-      total.to_f / self.seller_reviews.count
+      if self.seller_reviews.any?
+        total = self.seller_reviews.map {|r| r.rating}.sum
+        total / self.seller_reviews.count
+      else
+        'No Rating'
+      end
+    end
+
+    def blank_stars
+       5 - avg_rating.to_i
     end
 
 

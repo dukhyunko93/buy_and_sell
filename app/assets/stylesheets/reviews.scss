@@ -5,11 +5,16 @@ html * {
     font-family: 'Geneva';
 }
 
-.error_message{
+.search_bar{
+    width: 700px;
+    position: absolute;
+    margin-left: 450px;
+    margin-top: -50px;
+}
+
+.error_message_form{
     color: red;
     position: relative;
-    left: 475px;
-    top: 50px;
 }
 
 /* Write Review Form */
@@ -119,7 +124,7 @@ body{
     border-radius: 5px;
     opacity: 0;
     transform: translate(-10px);
-    transition: all 1s ease;
+    transition: all 0.2s ease;
     z-index: 1;
 }
 .browse li {
@@ -178,7 +183,7 @@ body{
     border-radius: 5px;
     opacity: 0;
     transform: translate(-10px);
-    transition: all 1s ease;
+    transition: all 0.2s ease;
     z-index: 1;
 }
 .myaccount li {
@@ -237,7 +242,7 @@ body{
     border-radius: 5px;
     opacity: 0;
     transform: translate(-10px);
-    transition: all 1s ease;
+    transition: all 0.2s ease;
     z-index: 1;
 }
 .sell li {

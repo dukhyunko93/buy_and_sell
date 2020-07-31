@@ -16,7 +16,7 @@ class UsersController < ApplicationController
             redirect_to controller: 'sessions', action: 'new'
         else
             flash[:user_error] = @user.errors.full_messages
-            redirect_to new_user_path
+            redirect_to signup_path
         end
     end
 
@@ -35,7 +35,8 @@ class UsersController < ApplicationController
     end
 
     def show
-      @user = User.find(params[:id])
+      @seller = User.find(params[:id])
+      @user = current_user
     end
      
       private
